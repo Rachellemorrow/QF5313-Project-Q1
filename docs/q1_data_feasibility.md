@@ -1,5 +1,15 @@
 # Q1 M1 — Historical option data feasibility audit
 
+> **M1.5 recovery update (2026-11-05): BLOCKED.** See
+> [Historical ETF archive recovery](q1_source_recovery.md) and
+> `data/clean/q1/m15_recovery/source_evidence.json`. BigQuant's catalog documents
+> relevant price/static tables but also gaps and unresolved access/export rights.
+> SSE's public specifications confirm historical price/OI/snapshot products, not
+> delivery of a licensed historical master. RiceQuant and Tushare require authorized
+> account/entitlement access. No new qualifying market-data sample was obtained.
+> All original M1 observations and snapshot checksums below remain unchanged;
+> the original Q1 historical requirements are still not demonstrated as satisfied.
+
 ## Decision
 
 **PARTIAL feasibility; the examination's historical ETF option dataset is NOT yet

@@ -1,0 +1,25 @@
+{
+  "kind": "Source-access audit records, NOT a market-data snapshot manifest",
+  "files": [
+    {
+      "path": "data/clean/q1/m15_recovery/new_verified_coverage.csv",
+      "bytes": 128,
+      "sha256": "22aa072771ad760a4391d08371ef015d7a7db7d4efbfe8d8c3658f88cfe9beff"
+    },
+    {
+      "path": "data/clean/q1/m15_recovery/public_reference_checks.json",
+      "bytes": 1947,
+      "sha256": "d56337b12d7a621a3a0494a09d2467b06727335f8f90e66aaed0369c662248d6"
+    },
+    {
+      "path": "data/clean/q1/m15_recovery/source_comparison.csv",
+      "bytes": 1777,
+      "sha256": "357f3ddf47827001a67abf7ac6454a2605fc724beea6898078683fed145507e2"
+    },
+    {
+      "path": "data/clean/q1/m15_recovery/source_evidence.json",
+      "bytes": 11518,
+      "sha256": "61e14450fd5b10e3a3e18390394ca3d1ca0d935fb42d75ae623456427b28e1df"
+    }
+  ]
+}

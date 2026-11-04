@@ -1,0 +1,39 @@
+[
+  {
+    "url": "https://www.sseinfo.com/services/assortment/market/hqywwd/wdcpsms/c/10782125/files/f2ba70dea74a4323bf13b76fffce0e40.pdf",
+    "requested_at_utc": "2026-11-04T16:47:26.208856+00:00",
+    "http_status": 200,
+    "content_type": "application/pdf",
+    "local_path": ".tmp/q1_m15_public_reference_inspection/sse_history_product.pdf",
+    "bytes": 146453,
+    "sha256": "36e12e4a7fbd9d719f9b17c733d7ab7153d7abb6cb87e7f7df3ce89a6f2753e6",
+    "verdict": "PUBLIC_REFERENCE_RETRIEVED"
+  },
+  {
+    "url": "https://www.sseinfo.com/services/assortment/market/hqywwd/wdzsjk/c/10824356/files/4ddcd5a592f9429f9288b0d2cb0c9549.pdf",
+    "requested_at_utc": "2026-11-04T16:47:26.650767+00:00",
+    "http_status": 200,
+    "content_type": "application/pdf",
+    "local_path": ".tmp/q1_m15_public_reference_inspection/sse_history_interface.pdf",
+    "bytes": 739656,
+    "sha256": "2772ee17e7392cd5faf6df15dc76cb542027075ed402b8ad4b3977b4837cac23",
+    "verdict": "PUBLIC_REFERENCE_RETRIEVED"
+  },
+  {
+    "url": "https://www.sseinfo.com/services/assortment/market/hqywwd/wdcpsms/c/10782127/files/557ef506aa2142ad92752dc3c9e81215.pdf",
+    "requested_at_utc": "2026-11-04T16:47:27.229811+00:00",
+    "http_status": 200,
+    "content_type": "application/pdf",
+    "local_path": ".tmp/q1_m15_public_reference_inspection/sse_options_product.pdf",
+    "bytes": 130383,
+    "sha256": "e7dab60a70674b9f76f2065d484f37793ada0f9dd5661331364fccce6a1afbf2",
+    "verdict": "PUBLIC_REFERENCE_RETRIEVED"
+  },
+  {
+    "url": "https://zenodo.org/api/records/4288593",
+    "requested_at_utc": "2026-11-04T16:47:27.732052+00:00",
+    "verdict": "FAILED",
+    "error_type": "ConnectionError",
+    "error": "HTTPSConnectionPool(host='zenodo.org', port=443): Max retries exceeded with url: /api/records/4288593 (Caused by NameResolutionError(\"HTTPSConnection(host='zenodo.org', port=443): Failed to resolve 'zenodo.org' ([Errno 11004] getaddrinfo failed)\"))"
+  }
+]
