@@ -1,0 +1,29 @@
+{
+  "probe_id": "cffex_current_months",
+  "api": "option_cffex_hs300_list_sina",
+  "parameters": {},
+  "role": "Current CSI300 INDEX option month discovery; not ETF options",
+  "context": {},
+  "started_at_utc": "2026-11-04T16:22:50.767826+00:00",
+  "akshare_version": "1.20.27",
+  "status": "PASS",
+  "signature": "() -> Dict[str, List[str]]",
+  "source_sha256": "1b9c9f35e494a75583aa2a0903dab1ffaeee4618d97268e621e2c985b5526535",
+  "value": {
+    "沪深300指数": [
+      "io2611",
+      "io2612",
+      "io2703",
+      "io2701",
+      "io2709",
+      "io2706"
+    ]
+  },
+  "snapshot": {
+    "path": "data/clean/q1/m1_audit/snapshots/cffex_current_months.json",
+    "bytes": 113,
+    "sha256": "c192debbcc9cce623a660bb3516020ff74d6f7b1b3424413a8166ddcb15bc9d2",
+    "kind": "AKShare-returned non-tabular result"
+  },
+  "seconds": 0.37239880000015546
+}

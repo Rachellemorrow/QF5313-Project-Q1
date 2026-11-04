@@ -1,0 +1,1994 @@
+{
+  "created_at_utc": "2026-11-04T16:31:49.240883+00:00",
+  "akshare_version": "1.20.27",
+  "source_audits": [
+    "data/clean/q1/m1_audit/api_audit.json",
+    "data/clean/q1/m1_alignment/api_audit.json",
+    "data/clean/q1/m1_pairs/api_audit.json"
+  ],
+  "probes": [
+    {
+      "probe_id": "sse_current_contracts",
+      "api": "option_current_day_sse",
+      "parameters": {},
+      "role": "Current SSE contract metadata, NOT historical chain prices",
+      "context": {},
+      "started_at_utc": "2026-11-04T16:22:47.465768+00:00",
+      "akshare_version": "1.20.27",
+      "status": "PASS",
+      "signature": "() -> pandas.DataFrame",
+      "source_sha256": "6e61957ae10eb1a2e7bf69c25bb692c46656d004a5c834733fefb9927452d734",
+      "rows": 702,
+      "columns": [
+        "合约编码",
+        "合约交易代码",
+        "合约简称",
+        "标的券名称及代码",
+        "类型",
+        "行权价",
+        "合约单位",
+        "期权行权日",
+        "行权交收日",
+        "到期日",
+        "开始日期"
+      ],
+      "dtypes": {
+        "合约编码": "str",
+        "合约交易代码": "str",
+        "合约简称": "str",
+        "标的券名称及代码": "str",
+        "类型": "str",
+        "行权价": "str",
+        "合约单位": "str",
+        "期权行权日": "str",
+        "行权交收日": "str",
+        "到期日": "str",
+        "开始日期": "str"
+      },
+      "null_counts": {
+        "合约编码": 0,
+        "合约交易代码": 0,
+        "合约简称": 0,
+        "标的券名称及代码": 0,
+        "类型": 0,
+        "行权价": 0,
+        "合约单位": 0,
+        "期权行权日": 0,
+        "行权交收日": 0,
+        "到期日": 0,
+        "开始日期": 0
+      },
+      "date_columns": {
+        "期权行权日": {
+          "min": "2026-11-25",
+          "max": "2027-06-23",
+          "distinct": 4
+        },
+        "行权交收日": {
+          "min": "2026-11-26",
+          "max": "2027-06-24",
+          "distinct": 4
+        },
+        "到期日": {
+          "min": "2026-11-25",
+          "max": "2027-06-23",
+          "distinct": 4
+        },
+        "开始日期": {
+          "min": "2026-04-23",
+          "max": "2026-11-04",
+          "distinct": 47
+        }
+      },
+      "snapshot": {
+        "path": "data/clean/q1/m1_audit/snapshots/sse_current_contracts.csv",
+        "bytes": 83497,
+        "sha256": "92fed6e81977952100c4d4029249ce99d42c1ae1a7d12c352db44089981bed50",
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV"
+      },
+      "seconds": 3.2916824000003544
+    },
+    {
+      "probe_id": "cffex_current_months",
+      "api": "option_cffex_hs300_list_sina",
+      "parameters": {},
+      "role": "Current CSI300 INDEX option month discovery; not ETF options",
+      "context": {},
+      "started_at_utc": "2026-11-04T16:22:50.767826+00:00",
+      "akshare_version": "1.20.27",
+      "status": "PASS",
+      "signature": "() -> Dict[str, List[str]]",
+      "source_sha256": "1b9c9f35e494a75583aa2a0903dab1ffaeee4618d97268e621e2c985b5526535",
+      "value": {
+        "沪深300指数": [
+          "io2611",
+          "io2612",
+          "io2703",
+          "io2701",
+          "io2709",
+          "io2706"
+        ]
+      },
+      "snapshot": {
+        "path": "data/clean/q1/m1_audit/snapshots/cffex_current_months.json",
+        "bytes": 113,
+        "sha256": "c192debbcc9cce623a660bb3516020ff74d6f7b1b3424413a8166ddcb15bc9d2",
+        "kind": "AKShare-returned non-tabular result"
+      },
+      "seconds": 0.37239880000015546
+    },
+    {
+      "probe_id": "cffex_expired_daily",
+      "api": "option_cffex_hs300_daily_sina",
+      "parameters": {
+        "symbol": "io2202P4350"
+      },
+      "role": "Expired INDEX contract history probe",
+      "context": {
+        "identifier_provenance": "Installed function's documented default; not independently verified metadata"
+      },
+      "started_at_utc": "2026-11-04T16:22:51.144576+00:00",
+      "akshare_version": "1.20.27",
+      "status": "PASS",
+      "signature": "(symbol: str = 'io2202P4350') -> pandas.DataFrame",
+      "source_sha256": "58ec4005730bbdc140e09dc07a2420f7f581242fe0cb8fb602ad18345fea0af6",
+      "rows": 54,
+      "columns": [
+        "date",
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume"
+      ],
+      "dtypes": {
+        "date": "object",
+        "open": "float64",
+        "high": "float64",
+        "low": "float64",
+        "close": "float64",
+        "volume": "int64"
+      },
+      "null_counts": {
+        "date": 0,
+        "open": 0,
+        "high": 0,
+        "low": 0,
+        "close": 0,
+        "volume": 0
+      },
+      "date_columns": {
+        "date": {
+          "min": "2021-11-29",
+          "max": "2022-02-18",
+          "distinct": 54
+        }
+      },
+      "snapshot": {
+        "path": "data/clean/q1/m1_audit/snapshots/cffex_expired_daily.csv",
+        "bytes": 1757,
+        "sha256": "480adae412cae951f4e8dc791809ccce15faed74076bda3d5900cba793332248",
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV"
+      },
+      "seconds": 0.22886600000128965
+    },
+    {
+      "probe_id": "etf_unadjusted",
+      "api": "fund_etf_hist_em",
+      "parameters": {
+        "symbol": "510050",
+        "period": "daily",
+        "start_date": "20261026",
+        "end_date": "20261030",
+        "adjust": ""
+      },
+      "role": "50ETF spot adjustment comparison, bounded five-calendar-day window",
+      "context": {},
+      "started_at_utc": "2026-11-04T16:22:51.375799+00:00",
+      "akshare_version": "1.20.27",
+      "status": "PASS",
+      "signature": "(symbol: str = '159707', period: str = 'daily', start_date: str = '19700101', end_date: str = '20500101', adjust: str = '') -> pandas.DataFrame",
+      "source_sha256": "7f10e4b9bec6f575fd6498147dc4617d1ae6fb6d82fec03fe969cd9f1d830e64",
+      "rows": 5,
+      "columns": [
+        "日期",
+        "开盘",
+        "收盘",
+        "最高",
+        "最低",
+        "成交量",
+        "成交额",
+        "振幅",
+        "涨跌幅",
+        "涨跌额",
+        "换手率"
+      ],
+      "dtypes": {
+        "日期": "str",
+        "开盘": "float64",
+        "收盘": "float64",
+        "最高": "float64",
+        "最低": "float64",
+        "成交量": "int64",
+        "成交额": "float64",
+        "振幅": "float64",
+        "涨跌幅": "float64",
+        "涨跌额": "float64",
+        "换手率": "float64"
+      },
+      "null_counts": {
+        "日期": 0,
+        "开盘": 0,
+        "收盘": 0,
+        "最高": 0,
+        "最低": 0,
+        "成交量": 0,
+        "成交额": 0,
+        "振幅": 0,
+        "涨跌幅": 0,
+        "涨跌额": 0,
+        "换手率": 0
+      },
+      "date_columns": {
+        "日期": {
+          "min": "2026-10-26",
+          "max": "2026-10-30",
+          "distinct": 5
+        }
+      },
+      "snapshot": {
+        "path": "data/clean/q1/m1_audit/snapshots/etf_unadjusted.csv",
+        "bytes": 478,
+        "sha256": "c71ab8f56d35faccf11b5268ffd389c789a4d1c29dba524729cb73d8c57fa0ee",
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV"
+      },
+      "seconds": 0.2274211000003561
+    },
+    {
+      "probe_id": "etf_qfq",
+      "api": "fund_etf_hist_em",
+      "parameters": {
+        "symbol": "510050",
+        "period": "daily",
+        "start_date": "20261026",
+        "end_date": "20261030",
+        "adjust": "qfq"
+      },
+      "role": "50ETF spot adjustment comparison, bounded five-calendar-day window",
+      "context": {},
+      "started_at_utc": "2026-11-04T16:22:51.607081+00:00",
+      "akshare_version": "1.20.27",
+      "status": "PASS",
+      "signature": "(symbol: str = '159707', period: str = 'daily', start_date: str = '19700101', end_date: str = '20500101', adjust: str = '') -> pandas.DataFrame",
+      "source_sha256": "7f10e4b9bec6f575fd6498147dc4617d1ae6fb6d82fec03fe969cd9f1d830e64",
+      "rows": 5,
+      "columns": [
+        "日期",
+        "开盘",
+        "收盘",
+        "最高",
+        "最低",
+        "成交量",
+        "成交额",
+        "振幅",
+        "涨跌幅",
+        "涨跌额",
+        "换手率"
+      ],
+      "dtypes": {
+        "日期": "str",
+        "开盘": "float64",
+        "收盘": "float64",
+        "最高": "float64",
+        "最低": "float64",
+        "成交量": "int64",
+        "成交额": "float64",
+        "振幅": "float64",
+        "涨跌幅": "float64",
+        "涨跌额": "float64",
+        "换手率": "float64"
+      },
+      "null_counts": {
+        "日期": 0,
+        "开盘": 0,
+        "收盘": 0,
+        "最高": 0,
+        "最低": 0,
+        "成交量": 0,
+        "成交额": 0,
+        "振幅": 0,
+        "涨跌幅": 0,
+        "涨跌额": 0,
+        "换手率": 0
+      },
+      "date_columns": {
+        "日期": {
+          "min": "2026-10-26",
+          "max": "2026-10-30",
+          "distinct": 5
+        }
+      },
+      "snapshot": {
+        "path": "data/clean/q1/m1_audit/snapshots/etf_qfq.csv",
+        "bytes": 478,
+        "sha256": "c71ab8f56d35faccf11b5268ffd389c789a4d1c29dba524729cb73d8c57fa0ee",
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV"
+      },
+      "seconds": 0.23436429999856045
+    },
+    {
+      "probe_id": "etf_hfq",
+      "api": "fund_etf_hist_em",
+      "parameters": {
+        "symbol": "510050",
+        "period": "daily",
+        "start_date": "20261026",
+        "end_date": "20261030",
+        "adjust": "hfq"
+      },
+      "role": "50ETF spot adjustment comparison, bounded five-calendar-day window",
+      "context": {},
+      "started_at_utc": "2026-11-04T16:22:51.845656+00:00",
+      "akshare_version": "1.20.27",
+      "status": "PASS",
+      "signature": "(symbol: str = '159707', period: str = 'daily', start_date: str = '19700101', end_date: str = '20500101', adjust: str = '') -> pandas.DataFrame",
+      "source_sha256": "7f10e4b9bec6f575fd6498147dc4617d1ae6fb6d82fec03fe969cd9f1d830e64",
+      "rows": 5,
+      "columns": [
+        "日期",
+        "开盘",
+        "收盘",
+        "最高",
+        "最低",
+        "成交量",
+        "成交额",
+        "振幅",
+        "涨跌幅",
+        "涨跌额",
+        "换手率"
+      ],
+      "dtypes": {
+        "日期": "str",
+        "开盘": "float64",
+        "收盘": "float64",
+        "最高": "float64",
+        "最低": "float64",
+        "成交量": "int64",
+        "成交额": "float64",
+        "振幅": "float64",
+        "涨跌幅": "float64",
+        "涨跌额": "float64",
+        "换手率": "float64"
+      },
+      "null_counts": {
+        "日期": 0,
+        "开盘": 0,
+        "收盘": 0,
+        "最高": 0,
+        "最低": 0,
+        "成交量": 0,
+        "成交额": 0,
+        "振幅": 0,
+        "涨跌幅": 0,
+        "涨跌额": 0,
+        "换手率": 0
+      },
+      "date_columns": {
+        "日期": {
+          "min": "2026-10-26",
+          "max": "2026-10-30",
+          "distinct": 5
+        }
+      },
+      "snapshot": {
+        "path": "data/clean/q1/m1_audit/snapshots/etf_hfq.csv",
+        "bytes": 478,
+        "sha256": "9ac586d2793f24ba310db48a1aba3fc5f25e304b86f242856b3ac9bf50b5baf8",
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV"
+      },
+      "seconds": 0.16959260000112408
+    },
+    {
+      "probe_id": "index_spot",
+      "api": "index_zh_a_hist",
+      "parameters": {
+        "symbol": "000300",
+        "period": "daily",
+        "start_date": "20241008",
+        "end_date": "20241011"
+      },
+      "role": "CSI300 INDEX spot; function internally fetches broad data before slicing",
+      "context": {},
+      "started_at_utc": "2026-11-04T16:22:52.018043+00:00",
+      "akshare_version": "1.20.27",
+      "status": "PASS",
+      "signature": "(symbol: str = '000859', period: str = 'daily', start_date: str = '19700101', end_date: str = '22220101') -> pandas.DataFrame",
+      "source_sha256": "8b2f6317492da74dd9d03015d91c9e5532dc8aa7e8aeaef7719ecc711560db4c",
+      "rows": 4,
+      "columns": [
+        "日期",
+        "开盘",
+        "收盘",
+        "最高",
+        "最低",
+        "成交量",
+        "成交额",
+        "振幅",
+        "涨跌幅",
+        "涨跌额",
+        "换手率"
+      ],
+      "dtypes": {
+        "日期": "str",
+        "开盘": "float64",
+        "收盘": "float64",
+        "最高": "float64",
+        "最低": "float64",
+        "成交量": "int64",
+        "成交额": "float64",
+        "振幅": "float64",
+        "涨跌幅": "float64",
+        "涨跌额": "float64",
+        "换手率": "float64"
+      },
+      "null_counts": {
+        "日期": 0,
+        "开盘": 0,
+        "收盘": 0,
+        "最高": 0,
+        "最低": 0,
+        "成交量": 0,
+        "成交额": 0,
+        "振幅": 0,
+        "涨跌幅": 0,
+        "涨跌额": 0,
+        "换手率": 0
+      },
+      "date_columns": {
+        "日期": {
+          "min": "2024-10-08",
+          "max": "2024-10-11",
+          "distinct": 4
+        }
+      },
+      "snapshot": {
+        "path": "data/clean/q1/m1_audit/snapshots/index_spot.csv",
+        "bytes": 454,
+        "sha256": "210d35a20d17410bd3fc553ac670cd4b21676ed13ad2cf749b97ce768b752152",
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV"
+      },
+      "seconds": 18.89236659999915
+    },
+    {
+      "probe_id": "shibor",
+      "api": "macro_china_shibor_all",
+      "parameters": {},
+      "role": "Full fixed-size SHIBOR response: API exposes no date bounds",
+      "context": {},
+      "started_at_utc": "2026-11-04T16:23:10.914612+00:00",
+      "akshare_version": "1.20.27",
+      "status": "PASS",
+      "signature": "() -> pandas.DataFrame",
+      "source_sha256": "97f6c51a07ef973a73610134fa9eb96a4db8e4ab702c2688202fbe3e4c598c9b",
+      "rows": 2398,
+      "columns": [
+        "日期",
+        "O/N-定价",
+        "O/N-涨跌幅",
+        "1W-定价",
+        "1W-涨跌幅",
+        "2W-定价",
+        "2W-涨跌幅",
+        "1M-定价",
+        "1M-涨跌幅",
+        "3M-定价",
+        "3M-涨跌幅",
+        "6M-定价",
+        "6M-涨跌幅",
+        "9M-定价",
+        "9M-涨跌幅",
+        "1Y-定价",
+        "1Y-涨跌幅"
+      ],
+      "dtypes": {
+        "日期": "str",
+        "O/N-定价": "float64",
+        "O/N-涨跌幅": "float64",
+        "1W-定价": "float64",
+        "1W-涨跌幅": "float64",
+        "2W-定价": "float64",
+        "2W-涨跌幅": "float64",
+        "1M-定价": "float64",
+        "1M-涨跌幅": "float64",
+        "3M-定价": "float64",
+        "3M-涨跌幅": "float64",
+        "6M-定价": "float64",
+        "6M-涨跌幅": "float64",
+        "9M-定价": "float64",
+        "9M-涨跌幅": "float64",
+        "1Y-定价": "float64",
+        "1Y-涨跌幅": "float64"
+      },
+      "null_counts": {
+        "日期": 0,
+        "O/N-定价": 0,
+        "O/N-涨跌幅": 1,
+        "1W-定价": 0,
+        "1W-涨跌幅": 1,
+        "2W-定价": 0,
+        "2W-涨跌幅": 1,
+        "1M-定价": 0,
+        "1M-涨跌幅": 1,
+        "3M-定价": 0,
+        "3M-涨跌幅": 1,
+        "6M-定价": 0,
+        "6M-涨跌幅": 1,
+        "9M-定价": 0,
+        "9M-涨跌幅": 1,
+        "1Y-定价": 0,
+        "1Y-涨跌幅": 1
+      },
+      "date_columns": {
+        "日期": {
+          "min": "2015-05-08",
+          "max": "2026-11-04",
+          "distinct": 2398
+        }
+      },
+      "snapshot": {
+        "path": "data/clean/q1/m1_audit/snapshots/shibor.csv",
+        "bytes": 230012,
+        "sha256": "aeee30e6ef5948115205265bc15ab99c8bef722c35f7efa370fb01c0aaaec3a8",
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV"
+      },
+      "seconds": 0.5299807999999757
+    },
+    {
+      "probe_id": "sse_current_months",
+      "api": "option_sse_list_sina",
+      "parameters": {
+        "symbol": "50ETF"
+      },
+      "role": "Current SSE expiry-month discovery, NOT archived identifiers",
+      "context": {},
+      "started_at_utc": "2026-11-04T16:23:11.451377+00:00",
+      "akshare_version": "1.20.27",
+      "status": "PASS",
+      "signature": "(symbol: str = '50ETF', exchange: str = 'null') -> List[str]",
+      "source_sha256": "c3aa631b196dc2409fab6283c1b7a755bb16de1682e834cda1d4e26054a17d8e",
+      "value": [
+        "202611",
+        "202612",
+        "202703",
+        "202706"
+      ],
+      "snapshot": {
+        "path": "data/clean/q1/m1_audit/snapshots/sse_current_months.json",
+        "bytes": 50,
+        "sha256": "9d08ed4d9df8bcb2e08ca81a525d926fb21361f0d6cc2c67157b29861e8976fb",
+        "kind": "AKShare-returned non-tabular result"
+      },
+      "seconds": 0.16754880000007688
+    },
+    {
+      "probe_id": "sse_expired_discovery_call",
+      "api": "option_sse_codes_sina",
+      "parameters": {
+        "symbol": "看涨期权",
+        "trade_date": "202410",
+        "underlying": "510050"
+      },
+      "role": "Expired-month identifier discovery; trade_date means EXPIRY MONTH, not quote date",
+      "context": {},
+      "started_at_utc": "2026-11-04T16:23:11.620929+00:00",
+      "akshare_version": "1.20.27",
+      "status": "FAIL",
+      "signature": "(symbol: str = '看涨期权', trade_date: str = '202202', underlying: str = '510050') -> pandas.DataFrame",
+      "source_sha256": "0a31ab26b181d24655a28da020c9db165267a8c34a70a8c977e6e94dd6ba6b81",
+      "error_type": "ValueError",
+      "error": "Length mismatch: Expected axis has 1 elements, new values have 2 elements",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\NUS\\after admission\\Academic\\QF5313-Submission\\code\\q1\\audit_interfaces.py\", line 148, in probe\n    value = function(**parameters)\n  File \"D:\\NUS\\after admission\\Academic\\QF5313-Submission\\.venv\\Lib\\site-packages\\akshare\\option\\option_finance_sina.py\", line 536, in option_sse_codes_sina\n    temp_df.columns = [\n    ^^^^^^^^^^^^^^^\n  File \"D:\\NUS\\after admission\\Academic\\QF5313-Submission\\.venv\\Lib\\site-packages\\pandas\\core\\generic.py\", line 6448, in __setattr__\n    return object.__setattr__(self, name, value)\n           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^\n  File \"pandas/_libs/properties.pyx\", line 69, in pandas._libs.properties.AxisProperty.__set__\n  File \"D:\\NUS\\after admission\\Academic\\QF5313-Submission\\.venv\\Lib\\site-packages\\pandas\\core\\generic.py\", line 769, in _set_axis\n    self._mgr.set_axis(axis, labels)\n    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^\n  File \"D:\\NUS\\after admission\\Academic\\QF5313-Submission\\.venv\\Lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 275, in set_axis\n    self._validate_set_axis(axis, new_labels)\n    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^\n  File \"D:\\NUS\\after admission\\Academic\\QF5313-Submission\\.venv\\Lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 290, in _validate_set_axis\n    raise ValueError(\n    ...<2 lines>...\n    )\nValueError: Length mismatch: Expected axis has 1 elements, new values have 2 elements\n",
+      "columns": null,
+      "dtypes": null,
+      "date_columns": null,
+      "seconds": 0.19238020000011602
+    },
+    {
+      "probe_id": "sse_expired_discovery_put",
+      "api": "option_sse_codes_sina",
+      "parameters": {
+        "symbol": "看跌期权",
+        "trade_date": "202410",
+        "underlying": "510050"
+      },
+      "role": "Expired-month identifier discovery; trade_date means EXPIRY MONTH, not quote date",
+      "context": {},
+      "started_at_utc": "2026-11-04T16:23:11.817035+00:00",
+      "akshare_version": "1.20.27",
+      "status": "FAIL",
+      "signature": "(symbol: str = '看涨期权', trade_date: str = '202202', underlying: str = '510050') -> pandas.DataFrame",
+      "source_sha256": "0a31ab26b181d24655a28da020c9db165267a8c34a70a8c977e6e94dd6ba6b81",
+      "error_type": "ValueError",
+      "error": "Length mismatch: Expected axis has 1 elements, new values have 2 elements",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\NUS\\after admission\\Academic\\QF5313-Submission\\code\\q1\\audit_interfaces.py\", line 148, in probe\n    value = function(**parameters)\n  File \"D:\\NUS\\after admission\\Academic\\QF5313-Submission\\.venv\\Lib\\site-packages\\akshare\\option\\option_finance_sina.py\", line 536, in option_sse_codes_sina\n    temp_df.columns = [\n    ^^^^^^^^^^^^^^^\n  File \"D:\\NUS\\after admission\\Academic\\QF5313-Submission\\.venv\\Lib\\site-packages\\pandas\\core\\generic.py\", line 6448, in __setattr__\n    return object.__setattr__(self, name, value)\n           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^\n  File \"pandas/_libs/properties.pyx\", line 69, in pandas._libs.properties.AxisProperty.__set__\n  File \"D:\\NUS\\after admission\\Academic\\QF5313-Submission\\.venv\\Lib\\site-packages\\pandas\\core\\generic.py\", line 769, in _set_axis\n    self._mgr.set_axis(axis, labels)\n    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^\n  File \"D:\\NUS\\after admission\\Academic\\QF5313-Submission\\.venv\\Lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 275, in set_axis\n    self._validate_set_axis(axis, new_labels)\n    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^\n  File \"D:\\NUS\\after admission\\Academic\\QF5313-Submission\\.venv\\Lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 290, in _validate_set_axis\n    raise ValueError(\n    ...<2 lines>...\n    )\nValueError: Length mismatch: Expected axis has 1 elements, new values have 2 elements\n",
+      "columns": null,
+      "dtypes": null,
+      "date_columns": null,
+      "seconds": 0.15072030000010272
+    },
+    {
+      "probe_id": "sse_expired_daily",
+      "api": "option_sse_daily_sina",
+      "parameters": {
+        "symbol": "10003889"
+      },
+      "role": "Expired SSE contract history probe",
+      "context": {
+        "identifier_provenance": "Installed function's default example, not independently matched historical metadata"
+      },
+      "started_at_utc": "2026-11-04T16:23:11.970870+00:00",
+      "akshare_version": "1.20.27",
+      "status": "PASS",
+      "signature": "(symbol: str = '10003889') -> pandas.DataFrame",
+      "source_sha256": "ca8e150559359a97d756b7ae87842182e3e8b793658825d031f8e5dd62fdd946",
+      "rows": 23,
+      "columns": [
+        "日期",
+        "开盘",
+        "最高",
+        "最低",
+        "收盘",
+        "成交量"
+      ],
+      "dtypes": {
+        "日期": "object",
+        "开盘": "float64",
+        "最高": "float64",
+        "最低": "float64",
+        "收盘": "float64",
+        "成交量": "int64"
+      },
+      "null_counts": {
+        "日期": 0,
+        "开盘": 0,
+        "最高": 0,
+        "最低": 0,
+        "收盘": 0,
+        "成交量": 0
+      },
+      "date_columns": {
+        "日期": {
+          "min": "2022-01-17",
+          "max": "2022-02-23",
+          "distinct": 23
+        }
+      },
+      "snapshot": {
+        "path": "data/clean/q1/m1_audit/snapshots/sse_expired_daily.csv",
+        "bytes": 1103,
+        "sha256": "0e2ee2002939de63c00edbfa697cd9a717cd831ed799dd84b28374e4a03402c5",
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV"
+      },
+      "seconds": 0.19132290000015928
+    },
+    {
+      "probe_id": "sse_expired_spot",
+      "api": "option_sse_spot_price_sina",
+      "parameters": {
+        "symbol": "10003889"
+      },
+      "role": "Check whether an expired example retains metadata/quotes; a nonempty table alone is not proof",
+      "context": {},
+      "started_at_utc": "2026-11-04T16:23:12.164735+00:00",
+      "akshare_version": "1.20.27",
+      "status": "PASS",
+      "signature": "(symbol: str = '10003720') -> pandas.DataFrame",
+      "source_sha256": "db4218daf0023ae023d10626f576232a4c088ae9d4f677d3e312e17a4e775d17",
+      "rows": 1,
+      "columns": [
+        "字段",
+        "值"
+      ],
+      "dtypes": {
+        "字段": "str",
+        "值": "str"
+      },
+      "null_counts": {
+        "字段": 0,
+        "值": 0
+      },
+      "date_columns": {},
+      "snapshot": {
+        "path": "data/clean/q1/m1_audit/snapshots/sse_expired_spot.csv",
+        "bytes": 19,
+        "sha256": "2b437d4f78c5fc1365da610b4fda2aea248793dcc46cf7fc47b8730b98c8d8ef",
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV"
+      },
+      "seconds": 0.13763620000099763
+    },
+    {
+      "probe_id": "sse_historical_statistics",
+      "api": "option_daily_stats_sse",
+      "parameters": {
+        "date": "20241008"
+      },
+      "role": "Historical underlying-level aggregate statistics, NOT per-contract prices",
+      "context": {},
+      "started_at_utc": "2026-11-04T16:23:12.304524+00:00",
+      "akshare_version": "1.20.27",
+      "status": "PASS",
+      "signature": "(date: str = '20240626') -> pandas.DataFrame",
+      "source_sha256": "8e56f282a03e7379e9273becccf70542c0209694c03d62da2dab512d64c0c767",
+      "rows": 5,
+      "columns": [
+        "合约标的代码",
+        "合约标的名称",
+        "合约数量",
+        "总成交额",
+        "总成交量",
+        "认购成交量",
+        "认沽成交量",
+        "认沽/认购",
+        "未平仓合约总数",
+        "未平仓认购合约数",
+        "未平仓认沽合约数",
+        "交易日"
+      ],
+      "dtypes": {
+        "合约标的代码": "str",
+        "合约标的名称": "str",
+        "合约数量": "int64",
+        "总成交额": "int64",
+        "总成交量": "int64",
+        "认购成交量": "int64",
+        "认沽成交量": "int64",
+        "认沽/认购": "float64",
+        "未平仓合约总数": "int64",
+        "未平仓认购合约数": "int64",
+        "未平仓认沽合约数": "int64",
+        "交易日": "object"
+      },
+      "null_counts": {
+        "合约标的代码": 0,
+        "合约标的名称": 0,
+        "合约数量": 0,
+        "总成交额": 0,
+        "总成交量": 0,
+        "认购成交量": 0,
+        "认沽成交量": 0,
+        "认沽/认购": 0,
+        "未平仓合约总数": 0,
+        "未平仓认购合约数": 0,
+        "未平仓认沽合约数": 0,
+        "交易日": 0
+      },
+      "date_columns": {
+        "交易日": {
+          "min": "2024-10-08",
+          "max": "2024-10-08",
+          "distinct": 1
+        }
+      },
+      "snapshot": {
+        "path": "data/clean/q1/m1_audit/snapshots/sse_historical_statistics.csv",
+        "bytes": 663,
+        "sha256": "46723a0a99a838d13a994d508c1564479fbefcdb4b28ac99f97fdf05fad9de9b",
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV"
+      },
+      "seconds": 0.8709707999987586
+    },
+    {
+      "probe_id": "sse_current_daily_0",
+      "api": "option_sse_daily_sina",
+      "parameters": {
+        "symbol": "10012637"
+      },
+      "role": "Daily price history for identifier observed in current SSE metadata",
+      "context": {
+        "metadata_probe": "sse_current_contracts"
+      },
+      "started_at_utc": "2026-11-04T16:23:13.187932+00:00",
+      "akshare_version": "1.20.27",
+      "status": "PASS",
+      "signature": "(symbol: str = '10003889') -> pandas.DataFrame",
+      "source_sha256": "ca8e150559359a97d756b7ae87842182e3e8b793658825d031f8e5dd62fdd946",
+      "rows": 13,
+      "columns": [
+        "日期",
+        "开盘",
+        "最高",
+        "最低",
+        "收盘",
+        "成交量"
+      ],
+      "dtypes": {
+        "日期": "object",
+        "开盘": "float64",
+        "最高": "float64",
+        "最低": "float64",
+        "收盘": "float64",
+        "成交量": "int64"
+      },
+      "null_counts": {
+        "日期": 0,
+        "开盘": 0,
+        "最高": 0,
+        "最低": 0,
+        "收盘": 0,
+        "成交量": 0
+      },
+      "date_columns": {
+        "日期": {
+          "min": "2026-10-19",
+          "max": "2026-11-04",
+          "distinct": 13
+        }
+      },
+      "snapshot": {
+        "path": "data/clean/q1/m1_audit/snapshots/sse_current_daily_0.csv",
+        "bytes": 652,
+        "sha256": "f0b4e87bf31254e10df0bf37bfe7dac784db680a38d1f2f2038f346b1c95a128",
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV"
+      },
+      "seconds": 0.22033170000031532
+    },
+    {
+      "probe_id": "sse_current_spot_0",
+      "api": "option_sse_spot_price_sina",
+      "parameters": {
+        "symbol": "10012637"
+      },
+      "role": "Current bid/ask, OI, volume and quote timestamp for actual SSE identifier",
+      "context": {},
+      "started_at_utc": "2026-11-04T16:23:13.411080+00:00",
+      "akshare_version": "1.20.27",
+      "status": "PASS",
+      "signature": "(symbol: str = '10003720') -> pandas.DataFrame",
+      "source_sha256": "db4218daf0023ae023d10626f576232a4c088ae9d4f677d3e312e17a4e775d17",
+      "rows": 43,
+      "columns": [
+        "字段",
+        "值"
+      ],
+      "dtypes": {
+        "字段": "str",
+        "值": "str"
+      },
+      "null_counts": {
+        "字段": 0,
+        "值": 0
+      },
+      "date_columns": {},
+      "snapshot": {
+        "path": "data/clean/q1/m1_audit/snapshots/sse_current_spot_0.csv",
+        "bytes": 771,
+        "sha256": "6df1f0e5b728d1acf50f1c89545be0a8408487d46d9528dbc23efbb61dd5056e",
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV"
+      },
+      "seconds": 0.18148130000008678
+    },
+    {
+      "probe_id": "sse_current_daily_1",
+      "api": "option_sse_daily_sina",
+      "parameters": {
+        "symbol": "10012537"
+      },
+      "role": "Daily price history for identifier observed in current SSE metadata",
+      "context": {
+        "metadata_probe": "sse_current_contracts"
+      },
+      "started_at_utc": "2026-11-04T16:23:13.596213+00:00",
+      "akshare_version": "1.20.27",
+      "status": "PASS",
+      "signature": "(symbol: str = '10003889') -> pandas.DataFrame",
+      "source_sha256": "ca8e150559359a97d756b7ae87842182e3e8b793658825d031f8e5dd62fdd946",
+      "rows": 22,
+      "columns": [
+        "日期",
+        "开盘",
+        "最高",
+        "最低",
+        "收盘",
+        "成交量"
+      ],
+      "dtypes": {
+        "日期": "object",
+        "开盘": "float64",
+        "最高": "float64",
+        "最低": "float64",
+        "收盘": "float64",
+        "成交量": "int64"
+      },
+      "null_counts": {
+        "日期": 0,
+        "开盘": 0,
+        "最高": 0,
+        "最低": 0,
+        "收盘": 0,
+        "成交量": 0
+      },
+      "date_columns": {
+        "日期": {
+          "min": "2026-09-29",
+          "max": "2026-11-04",
+          "distinct": 22
+        }
+      },
+      "snapshot": {
+        "path": "data/clean/q1/m1_audit/snapshots/sse_current_daily_1.csv",
+        "bytes": 1055,
+        "sha256": "07cf5c84ab1c5e019ffd319df5c36aa358f28bfbe18dcbe3854f985a81e9c2bf",
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV"
+      },
+      "seconds": 0.14956819999861182
+    },
+    {
+      "probe_id": "sse_current_spot_1",
+      "api": "option_sse_spot_price_sina",
+      "parameters": {
+        "symbol": "10012537"
+      },
+      "role": "Current bid/ask, OI, volume and quote timestamp for actual SSE identifier",
+      "context": {},
+      "started_at_utc": "2026-11-04T16:23:13.748554+00:00",
+      "akshare_version": "1.20.27",
+      "status": "PASS",
+      "signature": "(symbol: str = '10003720') -> pandas.DataFrame",
+      "source_sha256": "db4218daf0023ae023d10626f576232a4c088ae9d4f677d3e312e17a4e775d17",
+      "rows": 43,
+      "columns": [
+        "字段",
+        "值"
+      ],
+      "dtypes": {
+        "字段": "str",
+        "值": "str"
+      },
+      "null_counts": {
+        "字段": 0,
+        "值": 0
+      },
+      "date_columns": {},
+      "snapshot": {
+        "path": "data/clean/q1/m1_audit/snapshots/sse_current_spot_1.csv",
+        "bytes": 770,
+        "sha256": "6e1da62cbb04bee561e83b2e70b186bb8ec8cb184d91a0cd80d573393d3bdbf8",
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV"
+      },
+      "seconds": 0.14620300000024145
+    },
+    {
+      "probe_id": "sse_current_expiry",
+      "api": "option_sse_expire_day_sina",
+      "parameters": {
+        "trade_date": "202611",
+        "symbol": "50ETF"
+      },
+      "role": "Exact expiry day for a currently observed expiry month",
+      "context": {},
+      "started_at_utc": "2026-11-04T16:23:13.897146+00:00",
+      "akshare_version": "1.20.27",
+      "status": "PASS",
+      "signature": "(trade_date: str = '202102', symbol: str = '50ETF', exchange: str = 'null') -> Tuple[str, int]",
+      "source_sha256": "28dda220ddf25da5a4ecb2ae39c7dc82bee2ea5d9e6fe38337309f194e369541",
+      "value": [
+        "2026-11-25",
+        20
+      ],
+      "snapshot": {
+        "path": "data/clean/q1/m1_audit/snapshots/sse_current_expiry.json",
+        "bytes": 24,
+        "sha256": "1058a10fbf847473afe3dbd9639a5447985aaf460f3386bde1632b0a01957f13",
+        "kind": "AKShare-returned non-tabular result"
+      },
+      "seconds": 0.12268980000044394
+    },
+    {
+      "probe_id": "cffex_current_spot",
+      "api": "option_cffex_hs300_spot_sina",
+      "parameters": {
+        "symbol": "io2611"
+      },
+      "role": "INDEX chain metadata and live quote fields",
+      "context": {},
+      "started_at_utc": "2026-11-04T16:23:14.022087+00:00",
+      "akshare_version": "1.20.27",
+      "status": "PASS",
+      "signature": "(symbol: str = 'io2204') -> pandas.DataFrame",
+      "source_sha256": "b400c806df86a4f6ea103a2d8dbbdc30c733809ad28b879463e0dd10938ee4d9",
+      "rows": 31,
+      "columns": [
+        "看涨合约-买量",
+        "看涨合约-买价",
+        "看涨合约-最新价",
+        "看涨合约-卖价",
+        "看涨合约-卖量",
+        "看涨合约-持仓量",
+        "看涨合约-涨跌",
+        "行权价",
+        "看涨合约-标识",
+        "看跌合约-买量",
+        "看跌合约-买价",
+        "看跌合约-最新价",
+        "看跌合约-卖价",
+        "看跌合约-卖量",
+        "看跌合约-持仓量",
+        "看跌合约-涨跌",
+        "看跌合约-标识"
+      ],
+      "dtypes": {
+        "看涨合约-买量": "int64",
+        "看涨合约-买价": "float64",
+        "看涨合约-最新价": "float64",
+        "看涨合约-卖价": "float64",
+        "看涨合约-卖量": "int64",
+        "看涨合约-持仓量": "int64",
+        "看涨合约-涨跌": "float64",
+        "行权价": "int64",
+        "看涨合约-标识": "str",
+        "看跌合约-买量": "int64",
+        "看跌合约-买价": "float64",
+        "看跌合约-最新价": "float64",
+        "看跌合约-卖价": "float64",
+        "看跌合约-卖量": "int64",
+        "看跌合约-持仓量": "int64",
+        "看跌合约-涨跌": "float64",
+        "看跌合约-标识": "str"
+      },
+      "null_counts": {
+        "看涨合约-买量": 0,
+        "看涨合约-买价": 0,
+        "看涨合约-最新价": 0,
+        "看涨合约-卖价": 0,
+        "看涨合约-卖量": 0,
+        "看涨合约-持仓量": 0,
+        "看涨合约-涨跌": 0,
+        "行权价": 0,
+        "看涨合约-标识": 0,
+        "看跌合约-买量": 0,
+        "看跌合约-买价": 0,
+        "看跌合约-最新价": 0,
+        "看跌合约-卖价": 0,
+        "看跌合约-卖量": 0,
+        "看跌合约-持仓量": 0,
+        "看跌合约-涨跌": 0,
+        "看跌合约-标识": 0
+      },
+      "date_columns": {},
+      "snapshot": {
+        "path": "data/clean/q1/m1_audit/snapshots/cffex_current_spot.csv",
+        "bytes": 3130,
+        "sha256": "1911b803d04e0fd3c8d8dc19b2d0bffc687bac6ed958d2dc75685cde028ddc93",
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV"
+      },
+      "seconds": 0.1786846000013611
+    },
+    {
+      "probe_id": "cffex_current_daily",
+      "api": "option_cffex_hs300_daily_sina",
+      "parameters": {
+        "symbol": "io2611C4300"
+      },
+      "role": "INDEX history for identifier discovered in actual current chain",
+      "context": {},
+      "started_at_utc": "2026-11-04T16:23:14.204674+00:00",
+      "akshare_version": "1.20.27",
+      "status": "PASS",
+      "signature": "(symbol: str = 'io2202P4350') -> pandas.DataFrame",
+      "source_sha256": "58ec4005730bbdc140e09dc07a2420f7f581242fe0cb8fb602ad18345fea0af6",
+      "rows": 40,
+      "columns": [
+        "date",
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume"
+      ],
+      "dtypes": {
+        "date": "object",
+        "open": "float64",
+        "high": "float64",
+        "low": "float64",
+        "close": "float64",
+        "volume": "int64"
+      },
+      "null_counts": {
+        "date": 0,
+        "open": 0,
+        "high": 0,
+        "low": 0,
+        "close": 0,
+        "volume": 0
+      },
+      "date_columns": {
+        "date": {
+          "min": "2026-08-24",
+          "max": "2026-11-04",
+          "distinct": 40
+        }
+      },
+      "snapshot": {
+        "path": "data/clean/q1/m1_audit/snapshots/cffex_current_daily.csv",
+        "bytes": 1495,
+        "sha256": "af908c4d7ab91ad797a54ddb845561a67ebd330dc7769104d09690776132e3ba",
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV"
+      },
+      "seconds": 0.13932030000069062
+    },
+    {
+      "probe_id": "etf_unadjusted_history",
+      "api": "fund_etf_hist_em",
+      "parameters": {
+        "symbol": "510050",
+        "period": "daily",
+        "start_date": "20241008",
+        "end_date": "20261104",
+        "adjust": ""
+      },
+      "role": "Historical alignment and adjustment probe; no inference of option metadata",
+      "context": {},
+      "started_at_utc": "2026-11-04T16:24:25.133205+00:00",
+      "akshare_version": "1.20.27",
+      "status": "PASS",
+      "signature": "(symbol: str = '159707', period: str = 'daily', start_date: str = '19700101', end_date: str = '20500101', adjust: str = '') -> pandas.DataFrame",
+      "source_sha256": "7f10e4b9bec6f575fd6498147dc4617d1ae6fb6d82fec03fe969cd9f1d830e64",
+      "rows": 505,
+      "columns": [
+        "日期",
+        "开盘",
+        "收盘",
+        "最高",
+        "最低",
+        "成交量",
+        "成交额",
+        "振幅",
+        "涨跌幅",
+        "涨跌额",
+        "换手率"
+      ],
+      "dtypes": {
+        "日期": "str",
+        "开盘": "float64",
+        "收盘": "float64",
+        "最高": "float64",
+        "最低": "float64",
+        "成交量": "int64",
+        "成交额": "float64",
+        "振幅": "float64",
+        "涨跌幅": "float64",
+        "涨跌额": "float64",
+        "换手率": "float64"
+      },
+      "null_counts": {
+        "日期": 0,
+        "开盘": 0,
+        "收盘": 0,
+        "最高": 0,
+        "最低": 0,
+        "成交量": 0,
+        "成交额": 0,
+        "振幅": 0,
+        "涨跌幅": 0,
+        "涨跌额": 0,
+        "换手率": 0
+      },
+      "date_columns": {
+        "日期": {
+          "min": "2024-10-08",
+          "max": "2026-11-04",
+          "distinct": 505
+        }
+      },
+      "snapshot": {
+        "path": "data/clean/q1/m1_alignment/snapshots/etf_unadjusted_history.csv",
+        "bytes": 39108,
+        "sha256": "b83eb37d17f26aac4313fec1b3e53c30b99d0a96589036f39df8af334bebce28",
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV"
+      },
+      "seconds": 0.3567504000002373
+    },
+    {
+      "probe_id": "etf_qfq_old_date",
+      "api": "fund_etf_hist_em",
+      "parameters": {
+        "symbol": "510050",
+        "period": "daily",
+        "start_date": "20241008",
+        "end_date": "20241008",
+        "adjust": "qfq"
+      },
+      "role": "Historical alignment and adjustment probe; no inference of option metadata",
+      "context": {},
+      "started_at_utc": "2026-11-04T16:24:25.493387+00:00",
+      "akshare_version": "1.20.27",
+      "status": "PASS",
+      "signature": "(symbol: str = '159707', period: str = 'daily', start_date: str = '19700101', end_date: str = '20500101', adjust: str = '') -> pandas.DataFrame",
+      "source_sha256": "7f10e4b9bec6f575fd6498147dc4617d1ae6fb6d82fec03fe969cd9f1d830e64",
+      "rows": 1,
+      "columns": [
+        "日期",
+        "开盘",
+        "收盘",
+        "最高",
+        "最低",
+        "成交量",
+        "成交额",
+        "振幅",
+        "涨跌幅",
+        "涨跌额",
+        "换手率"
+      ],
+      "dtypes": {
+        "日期": "str",
+        "开盘": "float64",
+        "收盘": "float64",
+        "最高": "float64",
+        "最低": "float64",
+        "成交量": "int64",
+        "成交额": "float64",
+        "振幅": "float64",
+        "涨跌幅": "float64",
+        "涨跌额": "float64",
+        "换手率": "float64"
+      },
+      "null_counts": {
+        "日期": 0,
+        "开盘": 0,
+        "收盘": 0,
+        "最高": 0,
+        "最低": 0,
+        "成交量": 0,
+        "成交额": 0,
+        "振幅": 0,
+        "涨跌幅": 0,
+        "涨跌额": 0,
+        "换手率": 0
+      },
+      "date_columns": {
+        "日期": {
+          "min": "2024-10-08",
+          "max": "2024-10-08",
+          "distinct": 1
+        }
+      },
+      "snapshot": {
+        "path": "data/clean/q1/m1_alignment/snapshots/etf_qfq_old_date.csv",
+        "bytes": 173,
+        "sha256": "8294f058a31a211f3c81094952325eaaf28248656e8f3f43854c0f35a0b7c16e",
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV"
+      },
+      "seconds": 0.2873954999995476
+    },
+    {
+      "probe_id": "etf_hfq_old_date",
+      "api": "fund_etf_hist_em",
+      "parameters": {
+        "symbol": "510050",
+        "period": "daily",
+        "start_date": "20241008",
+        "end_date": "20241008",
+        "adjust": "hfq"
+      },
+      "role": "Historical alignment and adjustment probe; no inference of option metadata",
+      "context": {},
+      "started_at_utc": "2026-11-04T16:24:25.789380+00:00",
+      "akshare_version": "1.20.27",
+      "status": "PASS",
+      "signature": "(symbol: str = '159707', period: str = 'daily', start_date: str = '19700101', end_date: str = '20500101', adjust: str = '') -> pandas.DataFrame",
+      "source_sha256": "7f10e4b9bec6f575fd6498147dc4617d1ae6fb6d82fec03fe969cd9f1d830e64",
+      "rows": 1,
+      "columns": [
+        "日期",
+        "开盘",
+        "收盘",
+        "最高",
+        "最低",
+        "成交量",
+        "成交额",
+        "振幅",
+        "涨跌幅",
+        "涨跌额",
+        "换手率"
+      ],
+      "dtypes": {
+        "日期": "str",
+        "开盘": "float64",
+        "收盘": "float64",
+        "最高": "float64",
+        "最低": "float64",
+        "成交量": "int64",
+        "成交额": "float64",
+        "振幅": "float64",
+        "涨跌幅": "float64",
+        "涨跌额": "float64",
+        "换手率": "float64"
+      },
+      "null_counts": {
+        "日期": 0,
+        "开盘": 0,
+        "收盘": 0,
+        "最高": 0,
+        "最低": 0,
+        "成交量": 0,
+        "成交额": 0,
+        "振幅": 0,
+        "涨跌幅": 0,
+        "涨跌额": 0,
+        "换手率": 0
+      },
+      "date_columns": {
+        "日期": {
+          "min": "2024-10-08",
+          "max": "2024-10-08",
+          "distinct": 1
+        }
+      },
+      "snapshot": {
+        "path": "data/clean/q1/m1_alignment/snapshots/etf_hfq_old_date.csv",
+        "bytes": 171,
+        "sha256": "58e0ab86b35dcfecb15f96c490440e89d48397fc4488cad795aff0f78fe814a3",
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV"
+      },
+      "seconds": 0.19576749999941967
+    },
+    {
+      "probe_id": "sse_pair_0_call",
+      "api": "option_sse_daily_sina",
+      "parameters": {
+        "symbol": "10012439"
+      },
+      "role": "One observed standard-unit call/put pair per CURRENT expiry; not a full chain",
+      "context": {
+        "metadata_probe": "sse_current_contracts",
+        "expiry_from_current_metadata": "20261125",
+        "strike_from_current_metadata": "2.900",
+        "type_from_current_metadata": "认购"
+      },
+      "started_at_utc": "2026-11-04T16:28:49.542576+00:00",
+      "akshare_version": "1.20.27",
+      "status": "PASS",
+      "signature": "(symbol: str = '10003889') -> pandas.DataFrame",
+      "source_sha256": "ca8e150559359a97d756b7ae87842182e3e8b793658825d031f8e5dd62fdd946",
+      "rows": 24,
+      "columns": [
+        "日期",
+        "开盘",
+        "最高",
+        "最低",
+        "收盘",
+        "成交量"
+      ],
+      "dtypes": {
+        "日期": "object",
+        "开盘": "float64",
+        "最高": "float64",
+        "最低": "float64",
+        "收盘": "float64",
+        "成交量": "int64"
+      },
+      "null_counts": {
+        "日期": 0,
+        "开盘": 0,
+        "最高": 0,
+        "最低": 0,
+        "收盘": 0,
+        "成交量": 0
+      },
+      "date_columns": {
+        "日期": {
+          "min": "2026-09-24",
+          "max": "2026-11-04",
+          "distinct": 24
+        }
+      },
+      "snapshot": {
+        "path": "data/clean/q1/m1_pairs/snapshots/sse_pair_0_call.csv",
+        "bytes": 1188,
+        "sha256": "6d3aa688ad7d83d970eea0394c4dae53eee742e7769735efd97db0d5cfc19c2a",
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV"
+      },
+      "seconds": 0.26269759999922826
+    },
+    {
+      "probe_id": "sse_pair_0_put",
+      "api": "option_sse_daily_sina",
+      "parameters": {
+        "symbol": "10012448"
+      },
+      "role": "One observed standard-unit call/put pair per CURRENT expiry; not a full chain",
+      "context": {
+        "metadata_probe": "sse_current_contracts",
+        "expiry_from_current_metadata": "20261125",
+        "strike_from_current_metadata": "2.900",
+        "type_from_current_metadata": "认沽"
+      },
+      "started_at_utc": "2026-11-04T16:28:49.810603+00:00",
+      "akshare_version": "1.20.27",
+      "status": "PASS",
+      "signature": "(symbol: str = '10003889') -> pandas.DataFrame",
+      "source_sha256": "ca8e150559359a97d756b7ae87842182e3e8b793658825d031f8e5dd62fdd946",
+      "rows": 24,
+      "columns": [
+        "日期",
+        "开盘",
+        "最高",
+        "最低",
+        "收盘",
+        "成交量"
+      ],
+      "dtypes": {
+        "日期": "object",
+        "开盘": "float64",
+        "最高": "float64",
+        "最低": "float64",
+        "收盘": "float64",
+        "成交量": "int64"
+      },
+      "null_counts": {
+        "日期": 0,
+        "开盘": 0,
+        "最高": 0,
+        "最低": 0,
+        "收盘": 0,
+        "成交量": 0
+      },
+      "date_columns": {
+        "日期": {
+          "min": "2026-09-24",
+          "max": "2026-11-04",
+          "distinct": 24
+        }
+      },
+      "snapshot": {
+        "path": "data/clean/q1/m1_pairs/snapshots/sse_pair_0_put.csv",
+        "bytes": 1185,
+        "sha256": "3fa33a228b766fee12ba1c846d429588f072e640ee0924bd05af6a3143726bcd",
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV"
+      },
+      "seconds": 0.16523450000022422
+    },
+    {
+      "probe_id": "sse_pair_1_call",
+      "api": "option_sse_daily_sina",
+      "parameters": {
+        "symbol": "10011427"
+      },
+      "role": "One observed standard-unit call/put pair per CURRENT expiry; not a full chain",
+      "context": {
+        "metadata_probe": "sse_current_contracts",
+        "expiry_from_current_metadata": "20261223",
+        "strike_from_current_metadata": "2.900",
+        "type_from_current_metadata": "认购"
+      },
+      "started_at_utc": "2026-11-04T16:28:49.987190+00:00",
+      "akshare_version": "1.20.27",
+      "status": "PASS",
+      "signature": "(symbol: str = '10003889') -> pandas.DataFrame",
+      "source_sha256": "ca8e150559359a97d756b7ae87842182e3e8b793658825d031f8e5dd62fdd946",
+      "rows": 130,
+      "columns": [
+        "日期",
+        "开盘",
+        "最高",
+        "最低",
+        "收盘",
+        "成交量"
+      ],
+      "dtypes": {
+        "日期": "object",
+        "开盘": "float64",
+        "最高": "float64",
+        "最低": "float64",
+        "收盘": "float64",
+        "成交量": "int64"
+      },
+      "null_counts": {
+        "日期": 0,
+        "开盘": 0,
+        "最高": 0,
+        "最低": 0,
+        "收盘": 0,
+        "成交量": 0
+      },
+      "date_columns": {
+        "日期": {
+          "min": "2026-04-23",
+          "max": "2026-11-04",
+          "distinct": 130
+        }
+      },
+      "snapshot": {
+        "path": "data/clean/q1/m1_pairs/snapshots/sse_pair_1_call.csv",
+        "bytes": 5976,
+        "sha256": "a93653a139b9edbb1a79061008998409e0a252224e34f06509422ca11257269c",
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV"
+      },
+      "seconds": 0.16314920000149868
+    },
+    {
+      "probe_id": "sse_pair_1_put",
+      "api": "option_sse_daily_sina",
+      "parameters": {
+        "symbol": "10011436"
+      },
+      "role": "One observed standard-unit call/put pair per CURRENT expiry; not a full chain",
+      "context": {
+        "metadata_probe": "sse_current_contracts",
+        "expiry_from_current_metadata": "20261223",
+        "strike_from_current_metadata": "2.900",
+        "type_from_current_metadata": "认沽"
+      },
+      "started_at_utc": "2026-11-04T16:28:50.154727+00:00",
+      "akshare_version": "1.20.27",
+      "status": "PASS",
+      "signature": "(symbol: str = '10003889') -> pandas.DataFrame",
+      "source_sha256": "ca8e150559359a97d756b7ae87842182e3e8b793658825d031f8e5dd62fdd946",
+      "rows": 130,
+      "columns": [
+        "日期",
+        "开盘",
+        "最高",
+        "最低",
+        "收盘",
+        "成交量"
+      ],
+      "dtypes": {
+        "日期": "object",
+        "开盘": "float64",
+        "最高": "float64",
+        "最低": "float64",
+        "收盘": "float64",
+        "成交量": "int64"
+      },
+      "null_counts": {
+        "日期": 0,
+        "开盘": 0,
+        "最高": 0,
+        "最低": 0,
+        "收盘": 0,
+        "成交量": 0
+      },
+      "date_columns": {
+        "日期": {
+          "min": "2026-04-23",
+          "max": "2026-11-04",
+          "distinct": 130
+        }
+      },
+      "snapshot": {
+        "path": "data/clean/q1/m1_pairs/snapshots/sse_pair_1_put.csv",
+        "bytes": 6009,
+        "sha256": "38ea4161f2b173e3c9977f68e8b7bedef8e94982eabb1605e1afee98dfa02565",
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV"
+      },
+      "seconds": 0.20060630000079982
+    },
+    {
+      "probe_id": "sse_pair_2_call",
+      "api": "option_sse_daily_sina",
+      "parameters": {
+        "symbol": "10012164"
+      },
+      "role": "One observed standard-unit call/put pair per CURRENT expiry; not a full chain",
+      "context": {
+        "metadata_probe": "sse_current_contracts",
+        "expiry_from_current_metadata": "20270324",
+        "strike_from_current_metadata": "2.900",
+        "type_from_current_metadata": "认购"
+      },
+      "started_at_utc": "2026-11-04T16:28:50.359640+00:00",
+      "akshare_version": "1.20.27",
+      "status": "PASS",
+      "signature": "(symbol: str = '10003889') -> pandas.DataFrame",
+      "source_sha256": "ca8e150559359a97d756b7ae87842182e3e8b793658825d031f8e5dd62fdd946",
+      "rows": 65,
+      "columns": [
+        "日期",
+        "开盘",
+        "最高",
+        "最低",
+        "收盘",
+        "成交量"
+      ],
+      "dtypes": {
+        "日期": "object",
+        "开盘": "float64",
+        "最高": "float64",
+        "最低": "float64",
+        "收盘": "float64",
+        "成交量": "int64"
+      },
+      "null_counts": {
+        "日期": 0,
+        "开盘": 0,
+        "最高": 0,
+        "最低": 0,
+        "收盘": 0,
+        "成交量": 0
+      },
+      "date_columns": {
+        "日期": {
+          "min": "2026-07-23",
+          "max": "2026-11-04",
+          "distinct": 65
+        }
+      },
+      "snapshot": {
+        "path": "data/clean/q1/m1_pairs/snapshots/sse_pair_2_call.csv",
+        "bytes": 2944,
+        "sha256": "87b552cdc91202b7c59884dc5f65d471915733607be11929b83a18e7ad930b8b",
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV"
+      },
+      "seconds": 0.39217769999959273
+    },
+    {
+      "probe_id": "sse_pair_2_put",
+      "api": "option_sse_daily_sina",
+      "parameters": {
+        "symbol": "10012173"
+      },
+      "role": "One observed standard-unit call/put pair per CURRENT expiry; not a full chain",
+      "context": {
+        "metadata_probe": "sse_current_contracts",
+        "expiry_from_current_metadata": "20270324",
+        "strike_from_current_metadata": "2.900",
+        "type_from_current_metadata": "认沽"
+      },
+      "started_at_utc": "2026-11-04T16:28:50.755690+00:00",
+      "akshare_version": "1.20.27",
+      "status": "PASS",
+      "signature": "(symbol: str = '10003889') -> pandas.DataFrame",
+      "source_sha256": "ca8e150559359a97d756b7ae87842182e3e8b793658825d031f8e5dd62fdd946",
+      "rows": 69,
+      "columns": [
+        "日期",
+        "开盘",
+        "最高",
+        "最低",
+        "收盘",
+        "成交量"
+      ],
+      "dtypes": {
+        "日期": "object",
+        "开盘": "float64",
+        "最高": "float64",
+        "最低": "float64",
+        "收盘": "float64",
+        "成交量": "int64"
+      },
+      "null_counts": {
+        "日期": 0,
+        "开盘": 0,
+        "最高": 0,
+        "最低": 0,
+        "收盘": 0,
+        "成交量": 0
+      },
+      "date_columns": {
+        "日期": {
+          "min": "2026-07-23",
+          "max": "2026-11-04",
+          "distinct": 69
+        }
+      },
+      "snapshot": {
+        "path": "data/clean/q1/m1_pairs/snapshots/sse_pair_2_put.csv",
+        "bytes": 3132,
+        "sha256": "bbb882382602e30ed0216a8a4b183bc5564130327df76716cfbe270ca97c0295",
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV"
+      },
+      "seconds": 0.167378699999972
+    },
+    {
+      "probe_id": "sse_pair_3_call",
+      "api": "option_sse_daily_sina",
+      "parameters": {
+        "symbol": "10012704"
+      },
+      "role": "One observed standard-unit call/put pair per CURRENT expiry; not a full chain",
+      "context": {
+        "metadata_probe": "sse_current_contracts",
+        "expiry_from_current_metadata": "20270623",
+        "strike_from_current_metadata": "2.900",
+        "type_from_current_metadata": "认购"
+      },
+      "started_at_utc": "2026-11-04T16:28:50.927209+00:00",
+      "akshare_version": "1.20.27",
+      "status": "PASS",
+      "signature": "(symbol: str = '10003889') -> pandas.DataFrame",
+      "source_sha256": "ca8e150559359a97d756b7ae87842182e3e8b793658825d031f8e5dd62fdd946",
+      "rows": 5,
+      "columns": [
+        "日期",
+        "开盘",
+        "最高",
+        "最低",
+        "收盘",
+        "成交量"
+      ],
+      "dtypes": {
+        "日期": "object",
+        "开盘": "float64",
+        "最高": "float64",
+        "最低": "float64",
+        "收盘": "float64",
+        "成交量": "int64"
+      },
+      "null_counts": {
+        "日期": 0,
+        "开盘": 0,
+        "最高": 0,
+        "最低": 0,
+        "收盘": 0,
+        "成交量": 0
+      },
+      "date_columns": {
+        "日期": {
+          "min": "2026-10-29",
+          "max": "2026-11-04",
+          "distinct": 5
+        }
+      },
+      "snapshot": {
+        "path": "data/clean/q1/m1_pairs/snapshots/sse_pair_3_call.csv",
+        "bytes": 270,
+        "sha256": "ffc8a05de51b00fb28eed5b56d75c6584e19acb0a8818695f33d088ebc235908",
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV"
+      },
+      "seconds": 0.17731780000030994
+    },
+    {
+      "probe_id": "sse_pair_3_put",
+      "api": "option_sse_daily_sina",
+      "parameters": {
+        "symbol": "10012713"
+      },
+      "role": "One observed standard-unit call/put pair per CURRENT expiry; not a full chain",
+      "context": {
+        "metadata_probe": "sse_current_contracts",
+        "expiry_from_current_metadata": "20270623",
+        "strike_from_current_metadata": "2.900",
+        "type_from_current_metadata": "认沽"
+      },
+      "started_at_utc": "2026-11-04T16:28:51.108306+00:00",
+      "akshare_version": "1.20.27",
+      "status": "PASS",
+      "signature": "(symbol: str = '10003889') -> pandas.DataFrame",
+      "source_sha256": "ca8e150559359a97d756b7ae87842182e3e8b793658825d031f8e5dd62fdd946",
+      "rows": 5,
+      "columns": [
+        "日期",
+        "开盘",
+        "最高",
+        "最低",
+        "收盘",
+        "成交量"
+      ],
+      "dtypes": {
+        "日期": "object",
+        "开盘": "float64",
+        "最高": "float64",
+        "最低": "float64",
+        "收盘": "float64",
+        "成交量": "int64"
+      },
+      "null_counts": {
+        "日期": 0,
+        "开盘": 0,
+        "最高": 0,
+        "最低": 0,
+        "收盘": 0,
+        "成交量": 0
+      },
+      "date_columns": {
+        "日期": {
+          "min": "2026-10-29",
+          "max": "2026-11-04",
+          "distinct": 5
+        }
+      },
+      "snapshot": {
+        "path": "data/clean/q1/m1_pairs/snapshots/sse_pair_3_put.csv",
+        "bytes": 273,
+        "sha256": "11b5cbdaf0990f222416677dd57af69792dbf391f26914a4c93d5c4815b4fc78",
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV"
+      },
+      "seconds": 0.14989799999966635
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "data/clean/q1/m1_evidence/historical_coverage_matrix.csv",
+      "sha256": "9b7ae162279095f233cd056a41641aaaeec72f312d2b5f19e43c772a0e168b32",
+      "bytes": 141394,
+      "rows": 604
+    },
+    {
+      "path": "data/clean/q1/m1_evidence/current_contract_inventory.csv",
+      "sha256": "8d9b1cad57a4b0b5f4076ec81783cf55e6e09768ff6b23fc62e61e5fcbdc65c1",
+      "bytes": 118032,
+      "rows": 702
+    },
+    {
+      "path": "data/clean/q1/m1_evidence/historical_alignment.csv",
+      "sha256": "aa0c1c589a5665f94d19ca219089a6ff9585ef2a4cf53aa708821768ec9a740b",
+      "bytes": 106289,
+      "rows": 604
+    },
+    {
+      "path": "data/clean/q1/m1_evidence/target_date_coverage.csv",
+      "sha256": "a494c38a1167882f6eb5324526b6f67255089ce137a64c58d0aceafd293ba8f0",
+      "bytes": 508,
+      "rows": 5
+    },
+    {
+      "path": "data/clean/q1/m1_evidence/october_2026_coverage.csv",
+      "sha256": "c969e15362e8d6f10277932b1369744a89acd7c2c09ba36a4adea873d69db27a",
+      "bytes": 2146,
+      "rows": 17
+    }
+  ],
+  "network_capture_correction": {
+    "initial_run_capture_complete": false,
+    "captured_initial_http_requests": 21,
+    "omission": "index_zh_a_hist's index_code_id_map_em uses fetch_paginated_data -> request_with_retry(fresh_session=True), bypassing the initial http.request hook",
+    "additional_page_calls_inferred_from_progress_and_source": 18,
+    "actual_total_requests_and_bytes_initial_run": "UNVERIFIED: omitted helper responses were not captured; do not interpret the original limits/observed counts as whole-process totals",
+    "correction": "Runner now instruments request_with_retry without retries; original acquisition evidence preserved unchanged; index map NOT downloaded again",
+    "supplemental_captured_requests": 3,
+    "four_expiry_pairs_captured_requests": 8
+  },
+  "facts": {
+    "historical_price_rows": 604,
+    "known_etf_price_rows": 487,
+    "unknown_metadata_sse_price_rows": 23,
+    "index_price_rows": 94,
+    "current_sse_metadata_rows": 702,
+    "current_sse_underlyings": {
+      "科创50(588000)": 176,
+      "科创板50(588080)": 166,
+      "500ETF(510500)": 148,
+      "300ETF(510300)": 116,
+      "50ETF(510050)": 96
+    },
+    "current_sse_contract_units_observed": [
+      "10000",
+      "10180"
+    ],
+    "current_510050_expiries": [
+      "20261125",
+      "20261223",
+      "20270324",
+      "20270623"
+    ],
+    "etf_old_date_adjustments": {
+      "date": "2024-10-08",
+      "unadjusted": "2.978",
+      "qfq": "2.843",
+      "hfq": "3.64"
+    },
+    "shibor_tenors": [
+      "O/N",
+      "1W",
+      "2W",
+      "1M",
+      "3M",
+      "6M",
+      "9M",
+      "1Y"
+    ],
+    "shibor_observed_date_range": {
+      "日期": {
+        "min": "2015-05-08",
+        "max": "2026-11-04",
+        "distinct": 2398
+      }
+    },
+    "shibor_docstring_start_disagrees_with_observed": "Installed docstring says 20170317; response begins 2015-05-08",
+    "october_spot_dates": 17,
+    "etf_same_day_spot_and_all_rates_rows": 487,
+    "expired_spot_semantically_usable": false,
+    "current_metadata_listing_date_mismatch_rows": 0
+  },
+  "limitations": [
+    "Observed positive close is only a candidate market price, not a verified liquid/executable quote",
+    "Current metadata joined retrospectively is NOT proof of historical contract-unit/strike validity",
+    "Never combine index option rows with ETF rows to claim ETF coverage",
+    "Unknown expiry dates, units, types or underlying remain null; code-inferred values are separate columns",
+    "All model_ready flags are false: no financial validation or modeling is implemented in M1",
+    "Daily history interfaces omit bid/ask and OI; current quote fields cannot backfill historical liquidity"
+  ],
+  "requirement_evidence": [
+    {
+      "requirement": "Installed signatures and all six named interfaces exercised",
+      "status": "PASS",
+      "evidence": "m1_audit/api_audit.json: six named APIs returned actual data"
+    },
+    {
+      "requirement": "One month of daily complete ETF option chains",
+      "status": "FAIL",
+      "evidence": "october_2026_coverage.csv: sparse selected contracts only, not complete daily chains"
+    },
+    {
+      "requirement": "At least four priced expiries",
+      "status": "PARTIAL",
+      "evidence": "Four current expiries have matched sampled calls/puts, but only one paired strike and five common recent dates"
+    },
+    {
+      "requirement": "At least five complete sample chains spanning two years",
+      "status": "FAIL",
+      "evidence": "target_date_coverage.csv: no verified 2024/2025 ETF option chains"
+    },
+    {
+      "requirement": "Expired contract discovery",
+      "status": "FAIL",
+      "evidence": "Both 202410 expiry-month discovery responses are empty; installed parser raises ValueError"
+    },
+    {
+      "requirement": "Known expired contract prices",
+      "status": "PARTIAL",
+      "evidence": "23 SSE and 54 CFFEX history rows; historical metadata not independently verified"
+    },
+    {
+      "requirement": "Historical price and contract metadata pairing",
+      "status": "PARTIAL",
+      "evidence": "487 price rows join current SSE metadata; historical adjustment validity is UNVERIFIED"
+    },
+    {
+      "requirement": "Historical unadjusted ETF and index spot availability",
+      "status": "PASS",
+      "evidence": "505 ETF rows in 2024-2026 and four index rows in 2024; not all option dates covered for the index example"
+    },
+    {
+      "requirement": "Adjustment modes distinguished",
+      "status": "PASS",
+      "evidence": "2024-10-08 ETF closes: unadjusted 2.978, qfq 2.843, hfq 3.64"
+    },
+    {
+      "requirement": "SHIBOR eight-tenor historical availability",
+      "status": "PASS",
+      "evidence": "2398 source dates, 2015-05-08 to 2026-11-04; no missing level quotes"
+    },
+    {
+      "requirement": "Same-date option, underlying and rate alignment",
+      "status": "PARTIAL",
+      "evidence": "487 selected 50ETF rows have spot and all eight tenor levels on the same date; older chains remain unverified"
+    },
+    {
+      "requirement": "Rate units and discount-curve conventions",
+      "status": "PARTIAL",
+      "evidence": "Installed API labels levels as percent; official day-count, compounding and curve construction require verification/approval"
+    },
+    {
+      "requirement": "Corporate actions and historical contract-unit adjustments",
+      "status": "PARTIAL",
+      "evidence": "Current 500ETF A-series units 10180 observed; dated adjustment notices/history absent"
+    },
+    {
+      "requirement": "Historical bid/ask and open interest",
+      "status": "FAIL",
+      "evidence": "Both daily history APIs omit these fields; two current quote snapshots cannot backfill history"
+    },
+    {
+      "requirement": "Volume field and units",
+      "status": "PARTIAL",
+      "evidence": "Volume returned by daily APIs; unit definition and unusually large expired-example values not independently corroborated"
+    },
+    {
+      "requirement": "Dividend/forward assumptions approved by student",
+      "status": "UNVERIFIED",
+      "evidence": "No dividend yield, pricing convention or curve method chosen in M1"
+    },
+    {
+      "requirement": "Small reproducible offline evidence snapshots",
+      "status": "PASS",
+      "evidence": "SHA-256 source and derived manifests; Q1-only byte-preserving attributes; total archive below 50 MB"
+    },
+    {
+      "requirement": "Complete initial HTTP-request capture",
+      "status": "PARTIAL",
+      "evidence": "Initial index-code pagination bypass disclosed; later runs instrumented correctly; no repeated map download"
+    }
+  ]
+}

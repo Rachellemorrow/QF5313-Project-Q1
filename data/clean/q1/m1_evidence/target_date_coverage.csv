@@ -1,0 +1,6 @@
+target_observation_date,underlying,instrument_family,target_is_an_observation,observed_price_rows,observed_expiries_with_current_metadata,historically_verified_complete_chain,spot_in_snapshot,shibor_in_snapshot,status
+2024-10-08,510050,ETF,False,0,0,False,True,True,UNVERIFIED
+2024-10-31,510050,ETF,False,0,0,False,True,True,UNVERIFIED
+2025-10-09,510050,ETF,False,0,0,False,True,True,UNVERIFIED
+2026-10-08,510050,ETF,False,7,3,False,True,True,PARTIAL
+2026-10-30,510050,ETF,False,10,4,False,True,True,PARTIAL

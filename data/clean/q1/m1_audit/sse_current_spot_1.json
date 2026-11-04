@@ -1,0 +1,35 @@
+{
+  "probe_id": "sse_current_spot_1",
+  "api": "option_sse_spot_price_sina",
+  "parameters": {
+    "symbol": "10012537"
+  },
+  "role": "Current bid/ask, OI, volume and quote timestamp for actual SSE identifier",
+  "context": {},
+  "started_at_utc": "2026-11-04T16:23:13.748554+00:00",
+  "akshare_version": "1.20.27",
+  "status": "PASS",
+  "signature": "(symbol: str = '10003720') -> pandas.DataFrame",
+  "source_sha256": "db4218daf0023ae023d10626f576232a4c088ae9d4f677d3e312e17a4e775d17",
+  "rows": 43,
+  "columns": [
+    "字段",
+    "值"
+  ],
+  "dtypes": {
+    "字段": "str",
+    "值": "str"
+  },
+  "null_counts": {
+    "字段": 0,
+    "值": 0
+  },
+  "date_columns": {},
+  "snapshot": {
+    "path": "data/clean/q1/m1_audit/snapshots/sse_current_spot_1.csv",
+    "bytes": 770,
+    "sha256": "6e1da62cbb04bee561e83b2e70b186bb8ec8cb184d91a0cd80d573393d3bdbf8",
+    "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV"
+  },
+  "seconds": 0.14620300000024145
+}

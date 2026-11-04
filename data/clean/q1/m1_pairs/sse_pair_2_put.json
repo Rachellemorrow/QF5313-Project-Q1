@@ -1,0 +1,58 @@
+{
+  "probe_id": "sse_pair_2_put",
+  "api": "option_sse_daily_sina",
+  "parameters": {
+    "symbol": "10012173"
+  },
+  "role": "One observed standard-unit call/put pair per CURRENT expiry; not a full chain",
+  "context": {
+    "metadata_probe": "sse_current_contracts",
+    "expiry_from_current_metadata": "20270324",
+    "strike_from_current_metadata": "2.900",
+    "type_from_current_metadata": "认沽"
+  },
+  "started_at_utc": "2026-11-04T16:28:50.755690+00:00",
+  "akshare_version": "1.20.27",
+  "status": "PASS",
+  "signature": "(symbol: str = '10003889') -> pandas.DataFrame",
+  "source_sha256": "ca8e150559359a97d756b7ae87842182e3e8b793658825d031f8e5dd62fdd946",
+  "rows": 69,
+  "columns": [
+    "日期",
+    "开盘",
+    "最高",
+    "最低",
+    "收盘",
+    "成交量"
+  ],
+  "dtypes": {
+    "日期": "object",
+    "开盘": "float64",
+    "最高": "float64",
+    "最低": "float64",
+    "收盘": "float64",
+    "成交量": "int64"
+  },
+  "null_counts": {
+    "日期": 0,
+    "开盘": 0,
+    "最高": 0,
+    "最低": 0,
+    "收盘": 0,
+    "成交量": 0
+  },
+  "date_columns": {
+    "日期": {
+      "min": "2026-07-23",
+      "max": "2026-11-04",
+      "distinct": 69
+    }
+  },
+  "snapshot": {
+    "path": "data/clean/q1/m1_pairs/snapshots/sse_pair_2_put.csv",
+    "bytes": 3132,
+    "sha256": "bbb882382602e30ed0216a8a4b183bc5564130327df76716cfbe270ca97c0295",
+    "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV"
+  },
+  "seconds": 0.167378699999972
+}

@@ -1,0 +1,18 @@
+observation_date,underlying,calendar_basis,observed_contracts,observed_expiries_with_current_metadata,observed_calls,observed_puts,complete_chain_verified
+2026-10-08,510050,dates actually returned by unadjusted ETF history; NOT an official exchange calendar,7,3,4,3,False
+2026-10-09,510050,dates actually returned by unadjusted ETF history; NOT an official exchange calendar,7,3,4,3,False
+2026-10-12,510050,dates actually returned by unadjusted ETF history; NOT an official exchange calendar,7,3,4,3,False
+2026-10-13,510050,dates actually returned by unadjusted ETF history; NOT an official exchange calendar,7,3,4,3,False
+2026-10-14,510050,dates actually returned by unadjusted ETF history; NOT an official exchange calendar,7,3,4,3,False
+2026-10-15,510050,dates actually returned by unadjusted ETF history; NOT an official exchange calendar,7,3,4,3,False
+2026-10-16,510050,dates actually returned by unadjusted ETF history; NOT an official exchange calendar,7,3,4,3,False
+2026-10-19,510050,dates actually returned by unadjusted ETF history; NOT an official exchange calendar,8,3,5,3,False
+2026-10-20,510050,dates actually returned by unadjusted ETF history; NOT an official exchange calendar,8,3,5,3,False
+2026-10-21,510050,dates actually returned by unadjusted ETF history; NOT an official exchange calendar,8,3,5,3,False
+2026-10-22,510050,dates actually returned by unadjusted ETF history; NOT an official exchange calendar,8,3,5,3,False
+2026-10-23,510050,dates actually returned by unadjusted ETF history; NOT an official exchange calendar,8,3,5,3,False
+2026-10-26,510050,dates actually returned by unadjusted ETF history; NOT an official exchange calendar,8,3,5,3,False
+2026-10-27,510050,dates actually returned by unadjusted ETF history; NOT an official exchange calendar,8,3,5,3,False
+2026-10-28,510050,dates actually returned by unadjusted ETF history; NOT an official exchange calendar,8,3,5,3,False
+2026-10-29,510050,dates actually returned by unadjusted ETF history; NOT an official exchange calendar,10,4,6,4,False
+2026-10-30,510050,dates actually returned by unadjusted ETF history; NOT an official exchange calendar,10,4,6,4,False

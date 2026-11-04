@@ -1,0 +1,23 @@
+{
+  "probe_id": "sse_expired_discovery_put",
+  "api": "option_sse_codes_sina",
+  "parameters": {
+    "symbol": "看跌期权",
+    "trade_date": "202410",
+    "underlying": "510050"
+  },
+  "role": "Expired-month identifier discovery; trade_date means EXPIRY MONTH, not quote date",
+  "context": {},
+  "started_at_utc": "2026-11-04T16:23:11.817035+00:00",
+  "akshare_version": "1.20.27",
+  "status": "FAIL",
+  "signature": "(symbol: str = '看涨期权', trade_date: str = '202202', underlying: str = '510050') -> pandas.DataFrame",
+  "source_sha256": "0a31ab26b181d24655a28da020c9db165267a8c34a70a8c977e6e94dd6ba6b81",
+  "error_type": "ValueError",
+  "error": "Length mismatch: Expected axis has 1 elements, new values have 2 elements",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\NUS\\after admission\\Academic\\QF5313-Submission\\code\\q1\\audit_interfaces.py\", line 148, in probe\n    value = function(**parameters)\n  File \"D:\\NUS\\after admission\\Academic\\QF5313-Submission\\.venv\\Lib\\site-packages\\akshare\\option\\option_finance_sina.py\", line 536, in option_sse_codes_sina\n    temp_df.columns = [\n    ^^^^^^^^^^^^^^^\n  File \"D:\\NUS\\after admission\\Academic\\QF5313-Submission\\.venv\\Lib\\site-packages\\pandas\\core\\generic.py\", line 6448, in __setattr__\n    return object.__setattr__(self, name, value)\n           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^\n  File \"pandas/_libs/properties.pyx\", line 69, in pandas._libs.properties.AxisProperty.__set__\n  File \"D:\\NUS\\after admission\\Academic\\QF5313-Submission\\.venv\\Lib\\site-packages\\pandas\\core\\generic.py\", line 769, in _set_axis\n    self._mgr.set_axis(axis, labels)\n    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^\n  File \"D:\\NUS\\after admission\\Academic\\QF5313-Submission\\.venv\\Lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 275, in set_axis\n    self._validate_set_axis(axis, new_labels)\n    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^\n  File \"D:\\NUS\\after admission\\Academic\\QF5313-Submission\\.venv\\Lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 290, in _validate_set_axis\n    raise ValueError(\n    ...<2 lines>...\n    )\nValueError: Length mismatch: Expected axis has 1 elements, new values have 2 elements\n",
+  "columns": null,
+  "dtypes": null,
+  "date_columns": null,
+  "seconds": 0.15072030000010272
+}

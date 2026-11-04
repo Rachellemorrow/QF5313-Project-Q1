@@ -1,0 +1,792 @@
+{
+  "schema_version": 1,
+  "akshare_version": "1.20.27",
+  "http_capture_version": 2,
+  "completed_at_utc": "2026-11-04T16:28:51.276148+00:00",
+  "probes": [
+    {
+      "probe_id": "sse_pair_0_call",
+      "api": "option_sse_daily_sina",
+      "parameters": {
+        "symbol": "10012439"
+      },
+      "role": "One observed standard-unit call/put pair per CURRENT expiry; not a full chain",
+      "context": {
+        "metadata_probe": "sse_current_contracts",
+        "expiry_from_current_metadata": "20261125",
+        "strike_from_current_metadata": "2.900",
+        "type_from_current_metadata": "认购"
+      },
+      "started_at_utc": "2026-11-04T16:28:49.542576+00:00",
+      "akshare_version": "1.20.27",
+      "status": "PASS",
+      "signature": "(symbol: str = '10003889') -> pandas.DataFrame",
+      "source_sha256": "ca8e150559359a97d756b7ae87842182e3e8b793658825d031f8e5dd62fdd946",
+      "rows": 24,
+      "columns": [
+        "日期",
+        "开盘",
+        "最高",
+        "最低",
+        "收盘",
+        "成交量"
+      ],
+      "dtypes": {
+        "日期": "object",
+        "开盘": "float64",
+        "最高": "float64",
+        "最低": "float64",
+        "收盘": "float64",
+        "成交量": "int64"
+      },
+      "null_counts": {
+        "日期": 0,
+        "开盘": 0,
+        "最高": 0,
+        "最低": 0,
+        "收盘": 0,
+        "成交量": 0
+      },
+      "date_columns": {
+        "日期": {
+          "min": "2026-09-24",
+          "max": "2026-11-04",
+          "distinct": 24
+        }
+      },
+      "snapshot": {
+        "path": "data/clean/q1/m1_pairs/snapshots/sse_pair_0_call.csv",
+        "bytes": 1188,
+        "sha256": "6d3aa688ad7d83d970eea0394c4dae53eee742e7769735efd97db0d5cfc19c2a",
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV"
+      },
+      "seconds": 0.26269759999922826
+    },
+    {
+      "probe_id": "sse_pair_0_put",
+      "api": "option_sse_daily_sina",
+      "parameters": {
+        "symbol": "10012448"
+      },
+      "role": "One observed standard-unit call/put pair per CURRENT expiry; not a full chain",
+      "context": {
+        "metadata_probe": "sse_current_contracts",
+        "expiry_from_current_metadata": "20261125",
+        "strike_from_current_metadata": "2.900",
+        "type_from_current_metadata": "认沽"
+      },
+      "started_at_utc": "2026-11-04T16:28:49.810603+00:00",
+      "akshare_version": "1.20.27",
+      "status": "PASS",
+      "signature": "(symbol: str = '10003889') -> pandas.DataFrame",
+      "source_sha256": "ca8e150559359a97d756b7ae87842182e3e8b793658825d031f8e5dd62fdd946",
+      "rows": 24,
+      "columns": [
+        "日期",
+        "开盘",
+        "最高",
+        "最低",
+        "收盘",
+        "成交量"
+      ],
+      "dtypes": {
+        "日期": "object",
+        "开盘": "float64",
+        "最高": "float64",
+        "最低": "float64",
+        "收盘": "float64",
+        "成交量": "int64"
+      },
+      "null_counts": {
+        "日期": 0,
+        "开盘": 0,
+        "最高": 0,
+        "最低": 0,
+        "收盘": 0,
+        "成交量": 0
+      },
+      "date_columns": {
+        "日期": {
+          "min": "2026-09-24",
+          "max": "2026-11-04",
+          "distinct": 24
+        }
+      },
+      "snapshot": {
+        "path": "data/clean/q1/m1_pairs/snapshots/sse_pair_0_put.csv",
+        "bytes": 1185,
+        "sha256": "3fa33a228b766fee12ba1c846d429588f072e640ee0924bd05af6a3143726bcd",
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV"
+      },
+      "seconds": 0.16523450000022422
+    },
+    {
+      "probe_id": "sse_pair_1_call",
+      "api": "option_sse_daily_sina",
+      "parameters": {
+        "symbol": "10011427"
+      },
+      "role": "One observed standard-unit call/put pair per CURRENT expiry; not a full chain",
+      "context": {
+        "metadata_probe": "sse_current_contracts",
+        "expiry_from_current_metadata": "20261223",
+        "strike_from_current_metadata": "2.900",
+        "type_from_current_metadata": "认购"
+      },
+      "started_at_utc": "2026-11-04T16:28:49.987190+00:00",
+      "akshare_version": "1.20.27",
+      "status": "PASS",
+      "signature": "(symbol: str = '10003889') -> pandas.DataFrame",
+      "source_sha256": "ca8e150559359a97d756b7ae87842182e3e8b793658825d031f8e5dd62fdd946",
+      "rows": 130,
+      "columns": [
+        "日期",
+        "开盘",
+        "最高",
+        "最低",
+        "收盘",
+        "成交量"
+      ],
+      "dtypes": {
+        "日期": "object",
+        "开盘": "float64",
+        "最高": "float64",
+        "最低": "float64",
+        "收盘": "float64",
+        "成交量": "int64"
+      },
+      "null_counts": {
+        "日期": 0,
+        "开盘": 0,
+        "最高": 0,
+        "最低": 0,
+        "收盘": 0,
+        "成交量": 0
+      },
+      "date_columns": {
+        "日期": {
+          "min": "2026-04-23",
+          "max": "2026-11-04",
+          "distinct": 130
+        }
+      },
+      "snapshot": {
+        "path": "data/clean/q1/m1_pairs/snapshots/sse_pair_1_call.csv",
+        "bytes": 5976,
+        "sha256": "a93653a139b9edbb1a79061008998409e0a252224e34f06509422ca11257269c",
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV"
+      },
+      "seconds": 0.16314920000149868
+    },
+    {
+      "probe_id": "sse_pair_1_put",
+      "api": "option_sse_daily_sina",
+      "parameters": {
+        "symbol": "10011436"
+      },
+      "role": "One observed standard-unit call/put pair per CURRENT expiry; not a full chain",
+      "context": {
+        "metadata_probe": "sse_current_contracts",
+        "expiry_from_current_metadata": "20261223",
+        "strike_from_current_metadata": "2.900",
+        "type_from_current_metadata": "认沽"
+      },
+      "started_at_utc": "2026-11-04T16:28:50.154727+00:00",
+      "akshare_version": "1.20.27",
+      "status": "PASS",
+      "signature": "(symbol: str = '10003889') -> pandas.DataFrame",
+      "source_sha256": "ca8e150559359a97d756b7ae87842182e3e8b793658825d031f8e5dd62fdd946",
+      "rows": 130,
+      "columns": [
+        "日期",
+        "开盘",
+        "最高",
+        "最低",
+        "收盘",
+        "成交量"
+      ],
+      "dtypes": {
+        "日期": "object",
+        "开盘": "float64",
+        "最高": "float64",
+        "最低": "float64",
+        "收盘": "float64",
+        "成交量": "int64"
+      },
+      "null_counts": {
+        "日期": 0,
+        "开盘": 0,
+        "最高": 0,
+        "最低": 0,
+        "收盘": 0,
+        "成交量": 0
+      },
+      "date_columns": {
+        "日期": {
+          "min": "2026-04-23",
+          "max": "2026-11-04",
+          "distinct": 130
+        }
+      },
+      "snapshot": {
+        "path": "data/clean/q1/m1_pairs/snapshots/sse_pair_1_put.csv",
+        "bytes": 6009,
+        "sha256": "38ea4161f2b173e3c9977f68e8b7bedef8e94982eabb1605e1afee98dfa02565",
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV"
+      },
+      "seconds": 0.20060630000079982
+    },
+    {
+      "probe_id": "sse_pair_2_call",
+      "api": "option_sse_daily_sina",
+      "parameters": {
+        "symbol": "10012164"
+      },
+      "role": "One observed standard-unit call/put pair per CURRENT expiry; not a full chain",
+      "context": {
+        "metadata_probe": "sse_current_contracts",
+        "expiry_from_current_metadata": "20270324",
+        "strike_from_current_metadata": "2.900",
+        "type_from_current_metadata": "认购"
+      },
+      "started_at_utc": "2026-11-04T16:28:50.359640+00:00",
+      "akshare_version": "1.20.27",
+      "status": "PASS",
+      "signature": "(symbol: str = '10003889') -> pandas.DataFrame",
+      "source_sha256": "ca8e150559359a97d756b7ae87842182e3e8b793658825d031f8e5dd62fdd946",
+      "rows": 65,
+      "columns": [
+        "日期",
+        "开盘",
+        "最高",
+        "最低",
+        "收盘",
+        "成交量"
+      ],
+      "dtypes": {
+        "日期": "object",
+        "开盘": "float64",
+        "最高": "float64",
+        "最低": "float64",
+        "收盘": "float64",
+        "成交量": "int64"
+      },
+      "null_counts": {
+        "日期": 0,
+        "开盘": 0,
+        "最高": 0,
+        "最低": 0,
+        "收盘": 0,
+        "成交量": 0
+      },
+      "date_columns": {
+        "日期": {
+          "min": "2026-07-23",
+          "max": "2026-11-04",
+          "distinct": 65
+        }
+      },
+      "snapshot": {
+        "path": "data/clean/q1/m1_pairs/snapshots/sse_pair_2_call.csv",
+        "bytes": 2944,
+        "sha256": "87b552cdc91202b7c59884dc5f65d471915733607be11929b83a18e7ad930b8b",
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV"
+      },
+      "seconds": 0.39217769999959273
+    },
+    {
+      "probe_id": "sse_pair_2_put",
+      "api": "option_sse_daily_sina",
+      "parameters": {
+        "symbol": "10012173"
+      },
+      "role": "One observed standard-unit call/put pair per CURRENT expiry; not a full chain",
+      "context": {
+        "metadata_probe": "sse_current_contracts",
+        "expiry_from_current_metadata": "20270324",
+        "strike_from_current_metadata": "2.900",
+        "type_from_current_metadata": "认沽"
+      },
+      "started_at_utc": "2026-11-04T16:28:50.755690+00:00",
+      "akshare_version": "1.20.27",
+      "status": "PASS",
+      "signature": "(symbol: str = '10003889') -> pandas.DataFrame",
+      "source_sha256": "ca8e150559359a97d756b7ae87842182e3e8b793658825d031f8e5dd62fdd946",
+      "rows": 69,
+      "columns": [
+        "日期",
+        "开盘",
+        "最高",
+        "最低",
+        "收盘",
+        "成交量"
+      ],
+      "dtypes": {
+        "日期": "object",
+        "开盘": "float64",
+        "最高": "float64",
+        "最低": "float64",
+        "收盘": "float64",
+        "成交量": "int64"
+      },
+      "null_counts": {
+        "日期": 0,
+        "开盘": 0,
+        "最高": 0,
+        "最低": 0,
+        "收盘": 0,
+        "成交量": 0
+      },
+      "date_columns": {
+        "日期": {
+          "min": "2026-07-23",
+          "max": "2026-11-04",
+          "distinct": 69
+        }
+      },
+      "snapshot": {
+        "path": "data/clean/q1/m1_pairs/snapshots/sse_pair_2_put.csv",
+        "bytes": 3132,
+        "sha256": "bbb882382602e30ed0216a8a4b183bc5564130327df76716cfbe270ca97c0295",
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV"
+      },
+      "seconds": 0.167378699999972
+    },
+    {
+      "probe_id": "sse_pair_3_call",
+      "api": "option_sse_daily_sina",
+      "parameters": {
+        "symbol": "10012704"
+      },
+      "role": "One observed standard-unit call/put pair per CURRENT expiry; not a full chain",
+      "context": {
+        "metadata_probe": "sse_current_contracts",
+        "expiry_from_current_metadata": "20270623",
+        "strike_from_current_metadata": "2.900",
+        "type_from_current_metadata": "认购"
+      },
+      "started_at_utc": "2026-11-04T16:28:50.927209+00:00",
+      "akshare_version": "1.20.27",
+      "status": "PASS",
+      "signature": "(symbol: str = '10003889') -> pandas.DataFrame",
+      "source_sha256": "ca8e150559359a97d756b7ae87842182e3e8b793658825d031f8e5dd62fdd946",
+      "rows": 5,
+      "columns": [
+        "日期",
+        "开盘",
+        "最高",
+        "最低",
+        "收盘",
+        "成交量"
+      ],
+      "dtypes": {
+        "日期": "object",
+        "开盘": "float64",
+        "最高": "float64",
+        "最低": "float64",
+        "收盘": "float64",
+        "成交量": "int64"
+      },
+      "null_counts": {
+        "日期": 0,
+        "开盘": 0,
+        "最高": 0,
+        "最低": 0,
+        "收盘": 0,
+        "成交量": 0
+      },
+      "date_columns": {
+        "日期": {
+          "min": "2026-10-29",
+          "max": "2026-11-04",
+          "distinct": 5
+        }
+      },
+      "snapshot": {
+        "path": "data/clean/q1/m1_pairs/snapshots/sse_pair_3_call.csv",
+        "bytes": 270,
+        "sha256": "ffc8a05de51b00fb28eed5b56d75c6584e19acb0a8818695f33d088ebc235908",
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV"
+      },
+      "seconds": 0.17731780000030994
+    },
+    {
+      "probe_id": "sse_pair_3_put",
+      "api": "option_sse_daily_sina",
+      "parameters": {
+        "symbol": "10012713"
+      },
+      "role": "One observed standard-unit call/put pair per CURRENT expiry; not a full chain",
+      "context": {
+        "metadata_probe": "sse_current_contracts",
+        "expiry_from_current_metadata": "20270623",
+        "strike_from_current_metadata": "2.900",
+        "type_from_current_metadata": "认沽"
+      },
+      "started_at_utc": "2026-11-04T16:28:51.108306+00:00",
+      "akshare_version": "1.20.27",
+      "status": "PASS",
+      "signature": "(symbol: str = '10003889') -> pandas.DataFrame",
+      "source_sha256": "ca8e150559359a97d756b7ae87842182e3e8b793658825d031f8e5dd62fdd946",
+      "rows": 5,
+      "columns": [
+        "日期",
+        "开盘",
+        "最高",
+        "最低",
+        "收盘",
+        "成交量"
+      ],
+      "dtypes": {
+        "日期": "object",
+        "开盘": "float64",
+        "最高": "float64",
+        "最低": "float64",
+        "收盘": "float64",
+        "成交量": "int64"
+      },
+      "null_counts": {
+        "日期": 0,
+        "开盘": 0,
+        "最高": 0,
+        "最低": 0,
+        "收盘": 0,
+        "成交量": 0
+      },
+      "date_columns": {
+        "日期": {
+          "min": "2026-10-29",
+          "max": "2026-11-04",
+          "distinct": 5
+        }
+      },
+      "snapshot": {
+        "path": "data/clean/q1/m1_pairs/snapshots/sse_pair_3_put.csv",
+        "bytes": 273,
+        "sha256": "11b5cbdaf0990f222416677dd57af69792dbf391f26914a4c93d5c4815b4fc78",
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV"
+      },
+      "seconds": 0.14989799999966635
+    }
+  ],
+  "network_requests": [
+    {
+      "probe_id": "sse_pair_0_call",
+      "method": "get",
+      "url": "https://stock.finance.sina.com.cn/futures/api/jsonp_v2.php//StockOptionDaylineService.getSymbolInfo",
+      "params": {
+        "symbol": "CON_OP_10012439"
+      },
+      "retrieved_at_utc": "2026-11-04T16:28:49.545131+00:00",
+      "response_url": "https://stock.finance.sina.com.cn/futures/api/jsonp_v2.php//StockOptionDaylineService.getSymbolInfo?symbol=CON_OP_10012439",
+      "http_status": 200,
+      "content_type": "application/javascript; charset=gbk",
+      "body": {
+        "path": "data/clean/q1/m1_pairs/http/01.body",
+        "bytes": 2132,
+        "sha256": "cb2f35ccba15497a9f1a6aecd4aeefca5258d95261be2746c7b5d0ea3c0d5c00",
+        "kind": "HTTP response body after transfer decompression (not a packet capture)"
+      },
+      "seconds": 0.24500219999936235
+    },
+    {
+      "probe_id": "sse_pair_0_put",
+      "method": "get",
+      "url": "https://stock.finance.sina.com.cn/futures/api/jsonp_v2.php//StockOptionDaylineService.getSymbolInfo",
+      "params": {
+        "symbol": "CON_OP_10012448"
+      },
+      "retrieved_at_utc": "2026-11-04T16:28:49.811381+00:00",
+      "response_url": "https://stock.finance.sina.com.cn/futures/api/jsonp_v2.php//StockOptionDaylineService.getSymbolInfo?symbol=CON_OP_10012448",
+      "http_status": 200,
+      "content_type": "application/javascript; charset=gbk",
+      "body": {
+        "path": "data/clean/q1/m1_pairs/http/02.body",
+        "bytes": 2131,
+        "sha256": "9a19fa12ffb8ae50f4ed9c85b512dba3248deeea3d4d6d8130309506fb4c0494",
+        "kind": "HTTP response body after transfer decompression (not a packet capture)"
+      },
+      "seconds": 0.15330379999977595
+    },
+    {
+      "probe_id": "sse_pair_1_call",
+      "method": "get",
+      "url": "https://stock.finance.sina.com.cn/futures/api/jsonp_v2.php//StockOptionDaylineService.getSymbolInfo",
+      "params": {
+        "symbol": "CON_OP_10011427"
+      },
+      "retrieved_at_utc": "2026-11-04T16:28:49.988704+00:00",
+      "response_url": "https://stock.finance.sina.com.cn/futures/api/jsonp_v2.php//StockOptionDaylineService.getSymbolInfo?symbol=CON_OP_10011427",
+      "http_status": 200,
+      "content_type": "application/javascript; charset=gbk",
+      "body": {
+        "path": "data/clean/q1/m1_pairs/http/03.body",
+        "bytes": 11039,
+        "sha256": "faed5c40c2bab8539510ec5d17d86053e95ac6748f4e4814ff70aad780122a03",
+        "kind": "HTTP response body after transfer decompression (not a packet capture)"
+      },
+      "seconds": 0.15333620000092196
+    },
+    {
+      "probe_id": "sse_pair_1_put",
+      "method": "get",
+      "url": "https://stock.finance.sina.com.cn/futures/api/jsonp_v2.php//StockOptionDaylineService.getSymbolInfo",
+      "params": {
+        "symbol": "CON_OP_10011436"
+      },
+      "retrieved_at_utc": "2026-11-04T16:28:50.155439+00:00",
+      "response_url": "https://stock.finance.sina.com.cn/futures/api/jsonp_v2.php//StockOptionDaylineService.getSymbolInfo?symbol=CON_OP_10011436",
+      "http_status": 200,
+      "content_type": "application/javascript; charset=gbk",
+      "body": {
+        "path": "data/clean/q1/m1_pairs/http/04.body",
+        "bytes": 11076,
+        "sha256": "16613b48dc161f7bad513c6e676f41db4074d93e19cf315b1a3708ea1063242e",
+        "kind": "HTTP response body after transfer decompression (not a packet capture)"
+      },
+      "seconds": 0.18878640000002633
+    },
+    {
+      "probe_id": "sse_pair_2_call",
+      "method": "get",
+      "url": "https://stock.finance.sina.com.cn/futures/api/jsonp_v2.php//StockOptionDaylineService.getSymbolInfo",
+      "params": {
+        "symbol": "CON_OP_10012164"
+      },
+      "retrieved_at_utc": "2026-11-04T16:28:50.360345+00:00",
+      "response_url": "https://stock.finance.sina.com.cn/futures/api/jsonp_v2.php//StockOptionDaylineService.getSymbolInfo?symbol=CON_OP_10012164",
+      "http_status": 200,
+      "content_type": "application/javascript; charset=gbk",
+      "body": {
+        "path": "data/clean/q1/m1_pairs/http/05.body",
+        "bytes": 5501,
+        "sha256": "bb97e45a9752aa74ace01c6b6c996c5adf771a9f87e73546ca73b6b0a75e9ef0",
+        "kind": "HTTP response body after transfer decompression (not a packet capture)"
+      },
+      "seconds": 0.383658300001116
+    },
+    {
+      "probe_id": "sse_pair_2_put",
+      "method": "get",
+      "url": "https://stock.finance.sina.com.cn/futures/api/jsonp_v2.php//StockOptionDaylineService.getSymbolInfo",
+      "params": {
+        "symbol": "CON_OP_10012173"
+      },
+      "retrieved_at_utc": "2026-11-04T16:28:50.756407+00:00",
+      "response_url": "https://stock.finance.sina.com.cn/futures/api/jsonp_v2.php//StockOptionDaylineService.getSymbolInfo?symbol=CON_OP_10012173",
+      "http_status": 200,
+      "content_type": "application/javascript; charset=gbk",
+      "body": {
+        "path": "data/clean/q1/m1_pairs/http/06.body",
+        "bytes": 5836,
+        "sha256": "79eab92a70a2d2d1b4c4f4fa43eaad1c8daa01fc4dee040e3e029f91fd20e700",
+        "kind": "HTTP response body after transfer decompression (not a packet capture)"
+      },
+      "seconds": 0.15664899999865156
+    },
+    {
+      "probe_id": "sse_pair_3_call",
+      "method": "get",
+      "url": "https://stock.finance.sina.com.cn/futures/api/jsonp_v2.php//StockOptionDaylineService.getSymbolInfo",
+      "params": {
+        "symbol": "CON_OP_10012704"
+      },
+      "retrieved_at_utc": "2026-11-04T16:28:50.927927+00:00",
+      "response_url": "https://stock.finance.sina.com.cn/futures/api/jsonp_v2.php//StockOptionDaylineService.getSymbolInfo?symbol=CON_OP_10012704",
+      "http_status": 200,
+      "content_type": "application/javascript; charset=gbk",
+      "body": {
+        "path": "data/clean/q1/m1_pairs/http/07.body",
+        "bytes": 472,
+        "sha256": "a6760fb0fc46b872884b3bc66ad8d545174f03a0284a4fb25e15aa91f2a4b0ad",
+        "kind": "HTTP response body after transfer decompression (not a packet capture)"
+      },
+      "seconds": 0.1677944999992178
+    },
+    {
+      "probe_id": "sse_pair_3_put",
+      "method": "get",
+      "url": "https://stock.finance.sina.com.cn/futures/api/jsonp_v2.php//StockOptionDaylineService.getSymbolInfo",
+      "params": {
+        "symbol": "CON_OP_10012713"
+      },
+      "retrieved_at_utc": "2026-11-04T16:28:51.109101+00:00",
+      "response_url": "https://stock.finance.sina.com.cn/futures/api/jsonp_v2.php//StockOptionDaylineService.getSymbolInfo?symbol=CON_OP_10012713",
+      "http_status": 200,
+      "content_type": "application/javascript; charset=gbk",
+      "body": {
+        "path": "data/clean/q1/m1_pairs/http/08.body",
+        "bytes": 471,
+        "sha256": "9c5cb3bcef80db18dd340d5bfa920b63805659d4db1eafaee63c3685d925c840",
+        "kind": "HTTP response body after transfer decompression (not a packet capture)"
+      },
+      "seconds": 0.14116029999968305
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "data/clean/q1/m1_pairs/http/01.body",
+      "bytes": 2132,
+      "sha256": "cb2f35ccba15497a9f1a6aecd4aeefca5258d95261be2746c7b5d0ea3c0d5c00",
+      "kind": "HTTP response body after transfer decompression (not a packet capture)"
+    },
+    {
+      "path": "data/clean/q1/m1_pairs/snapshots/sse_pair_0_call.csv",
+      "bytes": 1188,
+      "sha256": "6d3aa688ad7d83d970eea0394c4dae53eee742e7769735efd97db0d5cfc19c2a",
+      "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV"
+    },
+    {
+      "path": "data/clean/q1/m1_pairs/sse_pair_0_call.json",
+      "bytes": 1505,
+      "sha256": "6d8f860f8a3036afc4dc9e480fcc785e86e0425c6fdbe1909e3875d033226d57",
+      "kind": "Individual API audit record"
+    },
+    {
+      "path": "data/clean/q1/m1_pairs/http/02.body",
+      "bytes": 2131,
+      "sha256": "9a19fa12ffb8ae50f4ed9c85b512dba3248deeea3d4d6d8130309506fb4c0494",
+      "kind": "HTTP response body after transfer decompression (not a packet capture)"
+    },
+    {
+      "path": "data/clean/q1/m1_pairs/snapshots/sse_pair_0_put.csv",
+      "bytes": 1185,
+      "sha256": "3fa33a228b766fee12ba1c846d429588f072e640ee0924bd05af6a3143726bcd",
+      "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV"
+    },
+    {
+      "path": "data/clean/q1/m1_pairs/sse_pair_0_put.json",
+      "bytes": 1503,
+      "sha256": "8b54fb402780a90b3c090208fecbcb02eed90862eb28d0d716e2c624db57f5f9",
+      "kind": "Individual API audit record"
+    },
+    {
+      "path": "data/clean/q1/m1_pairs/http/03.body",
+      "bytes": 11039,
+      "sha256": "faed5c40c2bab8539510ec5d17d86053e95ac6748f4e4814ff70aad780122a03",
+      "kind": "HTTP response body after transfer decompression (not a packet capture)"
+    },
+    {
+      "path": "data/clean/q1/m1_pairs/snapshots/sse_pair_1_call.csv",
+      "bytes": 5976,
+      "sha256": "a93653a139b9edbb1a79061008998409e0a252224e34f06509422ca11257269c",
+      "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV"
+    },
+    {
+      "path": "data/clean/q1/m1_pairs/sse_pair_1_call.json",
+      "bytes": 1507,
+      "sha256": "a58cce474d3028bec54f8ae0f659d545f5887dcf96726a41eff91d4748392bbd",
+      "kind": "Individual API audit record"
+    },
+    {
+      "path": "data/clean/q1/m1_pairs/http/04.body",
+      "bytes": 11076,
+      "sha256": "16613b48dc161f7bad513c6e676f41db4074d93e19cf315b1a3708ea1063242e",
+      "kind": "HTTP response body after transfer decompression (not a packet capture)"
+    },
+    {
+      "path": "data/clean/q1/m1_pairs/snapshots/sse_pair_1_put.csv",
+      "bytes": 6009,
+      "sha256": "38ea4161f2b173e3c9977f68e8b7bedef8e94982eabb1605e1afee98dfa02565",
+      "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV"
+    },
+    {
+      "path": "data/clean/q1/m1_pairs/sse_pair_1_put.json",
+      "bytes": 1505,
+      "sha256": "c0ed0f52a416cb4e6db7e82324d2661f2f8f8f7059ace406b10c6500d5556354",
+      "kind": "Individual API audit record"
+    },
+    {
+      "path": "data/clean/q1/m1_pairs/http/05.body",
+      "bytes": 5501,
+      "sha256": "bb97e45a9752aa74ace01c6b6c996c5adf771a9f87e73546ca73b6b0a75e9ef0",
+      "kind": "HTTP response body after transfer decompression (not a packet capture)"
+    },
+    {
+      "path": "data/clean/q1/m1_pairs/snapshots/sse_pair_2_call.csv",
+      "bytes": 2944,
+      "sha256": "87b552cdc91202b7c59884dc5f65d471915733607be11929b83a18e7ad930b8b",
+      "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV"
+    },
+    {
+      "path": "data/clean/q1/m1_pairs/sse_pair_2_call.json",
+      "bytes": 1505,
+      "sha256": "f726d3dc7e1eeb01173e31342949d59ecb5cde2c99e28b82481acbb9f0811740",
+      "kind": "Individual API audit record"
+    },
+    {
+      "path": "data/clean/q1/m1_pairs/http/06.body",
+      "bytes": 5836,
+      "sha256": "79eab92a70a2d2d1b4c4f4fa43eaad1c8daa01fc4dee040e3e029f91fd20e700",
+      "kind": "HTTP response body after transfer decompression (not a packet capture)"
+    },
+    {
+      "path": "data/clean/q1/m1_pairs/snapshots/sse_pair_2_put.csv",
+      "bytes": 3132,
+      "sha256": "bbb882382602e30ed0216a8a4b183bc5564130327df76716cfbe270ca97c0295",
+      "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV"
+    },
+    {
+      "path": "data/clean/q1/m1_pairs/sse_pair_2_put.json",
+      "bytes": 1501,
+      "sha256": "522f5bf94154a152d8b1f6aed49e1e3c288ca7d746a491fa26c7dee7bdca6eb9",
+      "kind": "Individual API audit record"
+    },
+    {
+      "path": "data/clean/q1/m1_pairs/http/07.body",
+      "bytes": 472,
+      "sha256": "a6760fb0fc46b872884b3bc66ad8d545174f03a0284a4fb25e15aa91f2a4b0ad",
+      "kind": "HTTP response body after transfer decompression (not a packet capture)"
+    },
+    {
+      "path": "data/clean/q1/m1_pairs/snapshots/sse_pair_3_call.csv",
+      "bytes": 270,
+      "sha256": "ffc8a05de51b00fb28eed5b56d75c6584e19acb0a8818695f33d088ebc235908",
+      "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV"
+    },
+    {
+      "path": "data/clean/q1/m1_pairs/sse_pair_3_call.json",
+      "bytes": 1502,
+      "sha256": "2f64f1af0455eef83dca02d49e67c62c8dddd63747df9bade622bf66b2675095",
+      "kind": "Individual API audit record"
+    },
+    {
+      "path": "data/clean/q1/m1_pairs/http/08.body",
+      "bytes": 471,
+      "sha256": "9c5cb3bcef80db18dd340d5bfa920b63805659d4db1eafaee63c3685d925c840",
+      "kind": "HTTP response body after transfer decompression (not a packet capture)"
+    },
+    {
+      "path": "data/clean/q1/m1_pairs/snapshots/sse_pair_3_put.csv",
+      "bytes": 273,
+      "sha256": "11b5cbdaf0990f222416677dd57af69792dbf391f26914a4c93d5c4815b4fc78",
+      "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV"
+    },
+    {
+      "path": "data/clean/q1/m1_pairs/sse_pair_3_put.json",
+      "bytes": 1500,
+      "sha256": "8b0b615078650d2149428d2f9a6a2f85072d7ab211a5a04404a6de8a27f729b0",
+      "kind": "Individual API audit record"
+    },
+    {
+      "path": "data/clean/q1/m1_pairs/installed_api_sources.json",
+      "bytes": 36361,
+      "sha256": "234632823f50f2b78aca25e1813e882e47e1aee923b6deb6bf75c839380e00cb",
+      "kind": "Installed API signatures, docstrings and exact source"
+    }
+  ],
+  "limits": {
+    "max_requests": 32,
+    "max_total_response_bytes": 8000000,
+    "max_response_bytes": 2000000,
+    "timeout_connect_read_seconds": [
+      5,
+      12
+    ]
+  },
+  "observed": {
+    "requests": 8,
+    "response_bytes": 38658
+  },
+  "status_meaning": "Probe PASS means nonempty API return ONLY; it is not a requirements/coverage PASS"
+}

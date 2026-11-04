@@ -1,0 +1,72 @@
+{
+  "probe_id": "etf_qfq_old_date",
+  "api": "fund_etf_hist_em",
+  "parameters": {
+    "symbol": "510050",
+    "period": "daily",
+    "start_date": "20241008",
+    "end_date": "20241008",
+    "adjust": "qfq"
+  },
+  "role": "Historical alignment and adjustment probe; no inference of option metadata",
+  "context": {},
+  "started_at_utc": "2026-11-04T16:24:25.493387+00:00",
+  "akshare_version": "1.20.27",
+  "status": "PASS",
+  "signature": "(symbol: str = '159707', period: str = 'daily', start_date: str = '19700101', end_date: str = '20500101', adjust: str = '') -> pandas.DataFrame",
+  "source_sha256": "7f10e4b9bec6f575fd6498147dc4617d1ae6fb6d82fec03fe969cd9f1d830e64",
+  "rows": 1,
+  "columns": [
+    "日期",
+    "开盘",
+    "收盘",
+    "最高",
+    "最低",
+    "成交量",
+    "成交额",
+    "振幅",
+    "涨跌幅",
+    "涨跌额",
+    "换手率"
+  ],
+  "dtypes": {
+    "日期": "str",
+    "开盘": "float64",
+    "收盘": "float64",
+    "最高": "float64",
+    "最低": "float64",
+    "成交量": "int64",
+    "成交额": "float64",
+    "振幅": "float64",
+    "涨跌幅": "float64",
+    "涨跌额": "float64",
+    "换手率": "float64"
+  },
+  "null_counts": {
+    "日期": 0,
+    "开盘": 0,
+    "收盘": 0,
+    "最高": 0,
+    "最低": 0,
+    "成交量": 0,
+    "成交额": 0,
+    "振幅": 0,
+    "涨跌幅": 0,
+    "涨跌额": 0,
+    "换手率": 0
+  },
+  "date_columns": {
+    "日期": {
+      "min": "2024-10-08",
+      "max": "2024-10-08",
+      "distinct": 1
+    }
+  },
+  "snapshot": {
+    "path": "data/clean/q1/m1_alignment/snapshots/etf_qfq_old_date.csv",
+    "bytes": 173,
+    "sha256": "8294f058a31a211f3c81094952325eaaf28248656e8f3f43854c0f35a0b7c16e",
+    "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV"
+  },
+  "seconds": 0.2873954999995476
+}

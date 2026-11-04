@@ -1,0 +1,379 @@
+{
+  "schema_version": 1,
+  "akshare_version": "1.20.27",
+  "completed_at_utc": "2026-11-04T16:24:26.004743+00:00",
+  "probes": [
+    {
+      "probe_id": "etf_unadjusted_history",
+      "api": "fund_etf_hist_em",
+      "parameters": {
+        "symbol": "510050",
+        "period": "daily",
+        "start_date": "20241008",
+        "end_date": "20261104",
+        "adjust": ""
+      },
+      "role": "Historical alignment and adjustment probe; no inference of option metadata",
+      "context": {},
+      "started_at_utc": "2026-11-04T16:24:25.133205+00:00",
+      "akshare_version": "1.20.27",
+      "status": "PASS",
+      "signature": "(symbol: str = '159707', period: str = 'daily', start_date: str = '19700101', end_date: str = '20500101', adjust: str = '') -> pandas.DataFrame",
+      "source_sha256": "7f10e4b9bec6f575fd6498147dc4617d1ae6fb6d82fec03fe969cd9f1d830e64",
+      "rows": 505,
+      "columns": [
+        "日期",
+        "开盘",
+        "收盘",
+        "最高",
+        "最低",
+        "成交量",
+        "成交额",
+        "振幅",
+        "涨跌幅",
+        "涨跌额",
+        "换手率"
+      ],
+      "dtypes": {
+        "日期": "str",
+        "开盘": "float64",
+        "收盘": "float64",
+        "最高": "float64",
+        "最低": "float64",
+        "成交量": "int64",
+        "成交额": "float64",
+        "振幅": "float64",
+        "涨跌幅": "float64",
+        "涨跌额": "float64",
+        "换手率": "float64"
+      },
+      "null_counts": {
+        "日期": 0,
+        "开盘": 0,
+        "收盘": 0,
+        "最高": 0,
+        "最低": 0,
+        "成交量": 0,
+        "成交额": 0,
+        "振幅": 0,
+        "涨跌幅": 0,
+        "涨跌额": 0,
+        "换手率": 0
+      },
+      "date_columns": {
+        "日期": {
+          "min": "2024-10-08",
+          "max": "2026-11-04",
+          "distinct": 505
+        }
+      },
+      "snapshot": {
+        "path": "data/clean/q1/m1_alignment/snapshots/etf_unadjusted_history.csv",
+        "bytes": 39108,
+        "sha256": "b83eb37d17f26aac4313fec1b3e53c30b99d0a96589036f39df8af334bebce28",
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV"
+      },
+      "seconds": 0.3567504000002373
+    },
+    {
+      "probe_id": "etf_qfq_old_date",
+      "api": "fund_etf_hist_em",
+      "parameters": {
+        "symbol": "510050",
+        "period": "daily",
+        "start_date": "20241008",
+        "end_date": "20241008",
+        "adjust": "qfq"
+      },
+      "role": "Historical alignment and adjustment probe; no inference of option metadata",
+      "context": {},
+      "started_at_utc": "2026-11-04T16:24:25.493387+00:00",
+      "akshare_version": "1.20.27",
+      "status": "PASS",
+      "signature": "(symbol: str = '159707', period: str = 'daily', start_date: str = '19700101', end_date: str = '20500101', adjust: str = '') -> pandas.DataFrame",
+      "source_sha256": "7f10e4b9bec6f575fd6498147dc4617d1ae6fb6d82fec03fe969cd9f1d830e64",
+      "rows": 1,
+      "columns": [
+        "日期",
+        "开盘",
+        "收盘",
+        "最高",
+        "最低",
+        "成交量",
+        "成交额",
+        "振幅",
+        "涨跌幅",
+        "涨跌额",
+        "换手率"
+      ],
+      "dtypes": {
+        "日期": "str",
+        "开盘": "float64",
+        "收盘": "float64",
+        "最高": "float64",
+        "最低": "float64",
+        "成交量": "int64",
+        "成交额": "float64",
+        "振幅": "float64",
+        "涨跌幅": "float64",
+        "涨跌额": "float64",
+        "换手率": "float64"
+      },
+      "null_counts": {
+        "日期": 0,
+        "开盘": 0,
+        "收盘": 0,
+        "最高": 0,
+        "最低": 0,
+        "成交量": 0,
+        "成交额": 0,
+        "振幅": 0,
+        "涨跌幅": 0,
+        "涨跌额": 0,
+        "换手率": 0
+      },
+      "date_columns": {
+        "日期": {
+          "min": "2024-10-08",
+          "max": "2024-10-08",
+          "distinct": 1
+        }
+      },
+      "snapshot": {
+        "path": "data/clean/q1/m1_alignment/snapshots/etf_qfq_old_date.csv",
+        "bytes": 173,
+        "sha256": "8294f058a31a211f3c81094952325eaaf28248656e8f3f43854c0f35a0b7c16e",
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV"
+      },
+      "seconds": 0.2873954999995476
+    },
+    {
+      "probe_id": "etf_hfq_old_date",
+      "api": "fund_etf_hist_em",
+      "parameters": {
+        "symbol": "510050",
+        "period": "daily",
+        "start_date": "20241008",
+        "end_date": "20241008",
+        "adjust": "hfq"
+      },
+      "role": "Historical alignment and adjustment probe; no inference of option metadata",
+      "context": {},
+      "started_at_utc": "2026-11-04T16:24:25.789380+00:00",
+      "akshare_version": "1.20.27",
+      "status": "PASS",
+      "signature": "(symbol: str = '159707', period: str = 'daily', start_date: str = '19700101', end_date: str = '20500101', adjust: str = '') -> pandas.DataFrame",
+      "source_sha256": "7f10e4b9bec6f575fd6498147dc4617d1ae6fb6d82fec03fe969cd9f1d830e64",
+      "rows": 1,
+      "columns": [
+        "日期",
+        "开盘",
+        "收盘",
+        "最高",
+        "最低",
+        "成交量",
+        "成交额",
+        "振幅",
+        "涨跌幅",
+        "涨跌额",
+        "换手率"
+      ],
+      "dtypes": {
+        "日期": "str",
+        "开盘": "float64",
+        "收盘": "float64",
+        "最高": "float64",
+        "最低": "float64",
+        "成交量": "int64",
+        "成交额": "float64",
+        "振幅": "float64",
+        "涨跌幅": "float64",
+        "涨跌额": "float64",
+        "换手率": "float64"
+      },
+      "null_counts": {
+        "日期": 0,
+        "开盘": 0,
+        "收盘": 0,
+        "最高": 0,
+        "最低": 0,
+        "成交量": 0,
+        "成交额": 0,
+        "振幅": 0,
+        "涨跌幅": 0,
+        "涨跌额": 0,
+        "换手率": 0
+      },
+      "date_columns": {
+        "日期": {
+          "min": "2024-10-08",
+          "max": "2024-10-08",
+          "distinct": 1
+        }
+      },
+      "snapshot": {
+        "path": "data/clean/q1/m1_alignment/snapshots/etf_hfq_old_date.csv",
+        "bytes": 171,
+        "sha256": "58e0ab86b35dcfecb15f96c490440e89d48397fc4488cad795aff0f78fe814a3",
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV"
+      },
+      "seconds": 0.19576749999941967
+    }
+  ],
+  "network_requests": [
+    {
+      "probe_id": "etf_unadjusted_history",
+      "method": "get",
+      "url": "https://push2his.eastmoney.com/api/qt/stock/kline/get",
+      "params": {
+        "fields1": "f1,f2,f3,f4,f5,f6",
+        "fields2": "f51,f52,f53,f54,f55,f56,f57,f58,f59,f60,f61,f116",
+        "ut": "7eea3edcaed734bea9cbfc24409ed989",
+        "klt": "101",
+        "fqt": "0",
+        "beg": "20241008",
+        "end": "20261104",
+        "secid": "1.510050"
+      },
+      "retrieved_at_utc": "2026-11-04T16:24:25.135501+00:00",
+      "response_url": "https://push2his.eastmoney.com/api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=0&beg=20241008&end=20261104&secid=1.510050",
+      "http_status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "body": {
+        "path": "data/clean/q1/m1_alignment/http/01.body",
+        "bytes": 41719,
+        "sha256": "72082ef874f745e4e8d5288ff3bda92f25111e298ce62afdbea6888d4754e45d",
+        "kind": "HTTP response body after transfer decompression (not a packet capture)"
+      },
+      "seconds": 0.3245528000006743
+    },
+    {
+      "probe_id": "etf_qfq_old_date",
+      "method": "get",
+      "url": "https://push2his.eastmoney.com/api/qt/stock/kline/get",
+      "params": {
+        "fields1": "f1,f2,f3,f4,f5,f6",
+        "fields2": "f51,f52,f53,f54,f55,f56,f57,f58,f59,f60,f61,f116",
+        "ut": "7eea3edcaed734bea9cbfc24409ed989",
+        "klt": "101",
+        "fqt": "1",
+        "beg": "20241008",
+        "end": "20241008",
+        "secid": "1.510050"
+      },
+      "retrieved_at_utc": "2026-11-04T16:24:25.494959+00:00",
+      "response_url": "https://push2his.eastmoney.com/api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=1&beg=20241008&end=20241008&secid=1.510050",
+      "http_status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "body": {
+        "path": "data/clean/q1/m1_alignment/http/02.body",
+        "bytes": 274,
+        "sha256": "70febf9015565ea3ddc3277b7fec03cc38fee3e4c0b4ecfaabc761f0c90a2ef1",
+        "kind": "HTTP response body after transfer decompression (not a packet capture)"
+      },
+      "seconds": 0.27449520000118355
+    },
+    {
+      "probe_id": "etf_hfq_old_date",
+      "method": "get",
+      "url": "https://push2his.eastmoney.com/api/qt/stock/kline/get",
+      "params": {
+        "fields1": "f1,f2,f3,f4,f5,f6",
+        "fields2": "f51,f52,f53,f54,f55,f56,f57,f58,f59,f60,f61,f116",
+        "ut": "7eea3edcaed734bea9cbfc24409ed989",
+        "klt": "101",
+        "fqt": "2",
+        "beg": "20241008",
+        "end": "20241008",
+        "secid": "1.510050"
+      },
+      "retrieved_at_utc": "2026-11-04T16:24:25.790681+00:00",
+      "response_url": "https://push2his.eastmoney.com/api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=2&beg=20241008&end=20241008&secid=1.510050",
+      "http_status": 200,
+      "content_type": "application/json; charset=UTF-8",
+      "body": {
+        "path": "data/clean/q1/m1_alignment/http/03.body",
+        "bytes": 273,
+        "sha256": "59e14bf500f2d03f3e8fea0cc6f974f4c706d9ae5895f16bbe41428932528975",
+        "kind": "HTTP response body after transfer decompression (not a packet capture)"
+      },
+      "seconds": 0.18525819999922533
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "data/clean/q1/m1_alignment/http/01.body",
+      "bytes": 41719,
+      "sha256": "72082ef874f745e4e8d5288ff3bda92f25111e298ce62afdbea6888d4754e45d",
+      "kind": "HTTP response body after transfer decompression (not a packet capture)"
+    },
+    {
+      "path": "data/clean/q1/m1_alignment/snapshots/etf_unadjusted_history.csv",
+      "bytes": 39108,
+      "sha256": "b83eb37d17f26aac4313fec1b3e53c30b99d0a96589036f39df8af334bebce28",
+      "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV"
+    },
+    {
+      "path": "data/clean/q1/m1_alignment/etf_unadjusted_history.json",
+      "bytes": 1838,
+      "sha256": "2f33abff0ce2bf87ae44e1347d7ff06ecd6cfb7ff595ef1fdaeed518d6cc8c67",
+      "kind": "Individual API audit record"
+    },
+    {
+      "path": "data/clean/q1/m1_alignment/http/02.body",
+      "bytes": 274,
+      "sha256": "70febf9015565ea3ddc3277b7fec03cc38fee3e4c0b4ecfaabc761f0c90a2ef1",
+      "kind": "HTTP response body after transfer decompression (not a packet capture)"
+    },
+    {
+      "path": "data/clean/q1/m1_alignment/snapshots/etf_qfq_old_date.csv",
+      "bytes": 173,
+      "sha256": "8294f058a31a211f3c81094952325eaaf28248656e8f3f43854c0f35a0b7c16e",
+      "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV"
+    },
+    {
+      "path": "data/clean/q1/m1_alignment/etf_qfq_old_date.json",
+      "bytes": 1823,
+      "sha256": "76e716ae0d8d1dd8c4226347718dfe94d405e208e6861aa3494ad766815be022",
+      "kind": "Individual API audit record"
+    },
+    {
+      "path": "data/clean/q1/m1_alignment/http/03.body",
+      "bytes": 273,
+      "sha256": "59e14bf500f2d03f3e8fea0cc6f974f4c706d9ae5895f16bbe41428932528975",
+      "kind": "HTTP response body after transfer decompression (not a packet capture)"
+    },
+    {
+      "path": "data/clean/q1/m1_alignment/snapshots/etf_hfq_old_date.csv",
+      "bytes": 171,
+      "sha256": "58e0ab86b35dcfecb15f96c490440e89d48397fc4488cad795aff0f78fe814a3",
+      "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV"
+    },
+    {
+      "path": "data/clean/q1/m1_alignment/etf_hfq_old_date.json",
+      "bytes": 1824,
+      "sha256": "2218249f5a3d3f3a81756a2fafd0ed6747b2b91400a36db454ad2de236426328",
+      "kind": "Individual API audit record"
+    },
+    {
+      "path": "data/clean/q1/m1_alignment/installed_api_sources.json",
+      "bytes": 36361,
+      "sha256": "234632823f50f2b78aca25e1813e882e47e1aee923b6deb6bf75c839380e00cb",
+      "kind": "Installed API signatures, docstrings and exact source"
+    }
+  ],
+  "limits": {
+    "max_requests": 32,
+    "max_total_response_bytes": 8000000,
+    "max_response_bytes": 2000000,
+    "timeout_connect_read_seconds": [
+      5,
+      12
+    ]
+  },
+  "observed": {
+    "requests": 3,
+    "response_bytes": 42266
+  },
+  "status_meaning": "Probe PASS means nonempty API return ONLY; it is not a requirements/coverage PASS"
+}

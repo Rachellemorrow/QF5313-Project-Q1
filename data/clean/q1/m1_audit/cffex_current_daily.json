@@ -1,0 +1,53 @@
+{
+  "probe_id": "cffex_current_daily",
+  "api": "option_cffex_hs300_daily_sina",
+  "parameters": {
+    "symbol": "io2611C4300"
+  },
+  "role": "INDEX history for identifier discovered in actual current chain",
+  "context": {},
+  "started_at_utc": "2026-11-04T16:23:14.204674+00:00",
+  "akshare_version": "1.20.27",
+  "status": "PASS",
+  "signature": "(symbol: str = 'io2202P4350') -> pandas.DataFrame",
+  "source_sha256": "58ec4005730bbdc140e09dc07a2420f7f581242fe0cb8fb602ad18345fea0af6",
+  "rows": 40,
+  "columns": [
+    "date",
+    "open",
+    "high",
+    "low",
+    "close",
+    "volume"
+  ],
+  "dtypes": {
+    "date": "object",
+    "open": "float64",
+    "high": "float64",
+    "low": "float64",
+    "close": "float64",
+    "volume": "int64"
+  },
+  "null_counts": {
+    "date": 0,
+    "open": 0,
+    "high": 0,
+    "low": 0,
+    "close": 0,
+    "volume": 0
+  },
+  "date_columns": {
+    "date": {
+      "min": "2026-08-24",
+      "max": "2026-11-04",
+      "distinct": 40
+    }
+  },
+  "snapshot": {
+    "path": "data/clean/q1/m1_audit/snapshots/cffex_current_daily.csv",
+    "bytes": 1495,
+    "sha256": "af908c4d7ab91ad797a54ddb845561a67ebd330dc7769104d09690776132e3ba",
+    "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV"
+  },
+  "seconds": 0.13932030000069062
+}

@@ -1,0 +1,81 @@
+{
+  "probe_id": "sse_current_contracts",
+  "api": "option_current_day_sse",
+  "parameters": {},
+  "role": "Current SSE contract metadata, NOT historical chain prices",
+  "context": {},
+  "started_at_utc": "2026-11-04T16:22:47.465768+00:00",
+  "akshare_version": "1.20.27",
+  "status": "PASS",
+  "signature": "() -> pandas.DataFrame",
+  "source_sha256": "6e61957ae10eb1a2e7bf69c25bb692c46656d004a5c834733fefb9927452d734",
+  "rows": 702,
+  "columns": [
+    "合约编码",
+    "合约交易代码",
+    "合约简称",
+    "标的券名称及代码",
+    "类型",
+    "行权价",
+    "合约单位",
+    "期权行权日",
+    "行权交收日",
+    "到期日",
+    "开始日期"
+  ],
+  "dtypes": {
+    "合约编码": "str",
+    "合约交易代码": "str",
+    "合约简称": "str",
+    "标的券名称及代码": "str",
+    "类型": "str",
+    "行权价": "str",
+    "合约单位": "str",
+    "期权行权日": "str",
+    "行权交收日": "str",
+    "到期日": "str",
+    "开始日期": "str"
+  },
+  "null_counts": {
+    "合约编码": 0,
+    "合约交易代码": 0,
+    "合约简称": 0,
+    "标的券名称及代码": 0,
+    "类型": 0,
+    "行权价": 0,
+    "合约单位": 0,
+    "期权行权日": 0,
+    "行权交收日": 0,
+    "到期日": 0,
+    "开始日期": 0
+  },
+  "date_columns": {
+    "期权行权日": {
+      "min": "2026-11-25",
+      "max": "2027-06-23",
+      "distinct": 4
+    },
+    "行权交收日": {
+      "min": "2026-11-26",
+      "max": "2027-06-24",
+      "distinct": 4
+    },
+    "到期日": {
+      "min": "2026-11-25",
+      "max": "2027-06-23",
+      "distinct": 4
+    },
+    "开始日期": {
+      "min": "2026-04-23",
+      "max": "2026-11-04",
+      "distinct": 47
+    }
+  },
+  "snapshot": {
+    "path": "data/clean/q1/m1_audit/snapshots/sse_current_contracts.csv",
+    "bytes": 83497,
+    "sha256": "92fed6e81977952100c4d4029249ce99d42c1ae1a7d12c352db44089981bed50",
+    "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV"
+  },
+  "seconds": 3.2916824000003544
+}

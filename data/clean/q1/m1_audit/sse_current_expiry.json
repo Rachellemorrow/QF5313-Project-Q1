@@ -1,0 +1,26 @@
+{
+  "probe_id": "sse_current_expiry",
+  "api": "option_sse_expire_day_sina",
+  "parameters": {
+    "trade_date": "202611",
+    "symbol": "50ETF"
+  },
+  "role": "Exact expiry day for a currently observed expiry month",
+  "context": {},
+  "started_at_utc": "2026-11-04T16:23:13.897146+00:00",
+  "akshare_version": "1.20.27",
+  "status": "PASS",
+  "signature": "(trade_date: str = '202102', symbol: str = '50ETF', exchange: str = 'null') -> Tuple[str, int]",
+  "source_sha256": "28dda220ddf25da5a4ecb2ae39c7dc82bee2ea5d9e6fe38337309f194e369541",
+  "value": [
+    "2026-11-25",
+    20
+  ],
+  "snapshot": {
+    "path": "data/clean/q1/m1_audit/snapshots/sse_current_expiry.json",
+    "bytes": 24,
+    "sha256": "1058a10fbf847473afe3dbd9639a5447985aaf460f3386bde1632b0a01957f13",
+    "kind": "AKShare-returned non-tabular result"
+  },
+  "seconds": 0.12268980000044394
+}
