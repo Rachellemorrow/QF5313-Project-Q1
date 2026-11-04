@@ -1,0 +1,17 @@
+{
+  "provenance": "SYNTHETIC_M4_SOFTWARE_VERIFICATION_ONLY",
+  "historical_market_data": false,
+  "dataset": "q1_synthetic_svi_verification",
+  "observation_date": "2000-01-03",
+  "expiry_day_offsets": [30, 90, 180, 365],
+  "variance_scales": [0.4, 0.75, 1.25, 2.0],
+  "base_svi": {"a": 0.02, "b": 0.15, "rho": -0.3, "m": 0.04, "eta": 0.2},
+  "training_log_moneyness": {"lower": -0.4, "upper": 0.4, "points": 41},
+  "spot": 100.0,
+  "continuous_rate": 0.02,
+  "continuous_dividend_yield": 0.01,
+  "synthetic_volume": 100,
+  "synthetic_relative_bid_ask_half_width": 0.005,
+  "recovery_parameter_absolute_tolerance": 0.000001,
+  "recovery_variance_absolute_tolerance": 0.000000001
+}

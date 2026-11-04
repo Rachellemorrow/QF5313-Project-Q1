@@ -1,0 +1,151 @@
+{
+  "milestone": "M4 classical SVI",
+  "SOFTWARE_VERIFICATION": "PASS",
+  "EMPIRICAL_REQUIREMENTS": "BLOCKED",
+  "verification_scope": "Synthetic software verification and strict real-data eligibility gate; NOT a completed market experiment",
+  "tests": {
+    "prerequisite_numerical_passed": 88,
+    "new_approach_a_passed": 23,
+    "full_q1_passed": 206,
+    "failed": 0,
+    "full_q1_seconds": 94.3,
+    "full_command": "py -3.11 -B scripts/project.py uv run --locked --offline python -m pytest tests/q1 -q"
+  },
+  "synthetic": {
+    "dataset": "q1_synthetic_svi_verification",
+    "origin": "SYNTHETIC_M4_SOFTWARE_VERIFICATION_ONLY",
+    "seed": 42,
+    "quote_count": 328,
+    "valuation_date_count": 1,
+    "metrics": {
+      "attempted_slices": 4,
+      "successful_slices": 4,
+      "failed_slices": 0,
+      "iv_failures": 0,
+      "quote_preparation_rejections": 0,
+      "cross_date_median_of_date_maxima": 2.4260657831879317e-12,
+      "cross_date_p95_of_date_maxima": 2.4260657831879317e-12,
+      "butterfly_examination_violations": 0,
+      "butterfly_complete_violations": 0,
+      "calendar_violations": 0,
+      "negative_forward_variance_locations": 0,
+      "max_known_parameter_absolute_error": 2.2937207688755734e-12,
+      "max_known_variance_absolute_error": 1.4066525722000733e-13
+    },
+    "fit_seconds_measured": 0.05559239999274723,
+    "slices": [
+      {
+        "slice_id": "2000-01-03|2000-02-02",
+        "initial_parameters": {
+          "a": -0.0079228577261857,
+          "b": 0.1,
+          "rho": 0.0,
+          "m": 0.0,
+          "eta": 0.2
+        },
+        "fitted_parameters": {
+          "a": 0.007999999999925409,
+          "b": 0.06000000000007372,
+          "rho": -0.2999999999985537,
+          "m": 0.04000000000007627,
+          "eta": 0.2000000000009956
+        },
+        "objective_value": 1.4414974867186315e-26,
+        "nfev": 11,
+        "njev": 11,
+        "global_minimum_variance": 0.019447270417005263
+      },
+      {
+        "slice_id": "2000-01-03|2000-04-02",
+        "initial_parameters": {
+          "a": 0.002644641763401876,
+          "b": 0.1,
+          "rho": 0.0,
+          "m": 0.0,
+          "eta": 0.2
+        },
+        "fitted_parameters": {
+          "a": 0.014999999999760545,
+          "b": 0.11250000000038103,
+          "rho": -0.29999999999770627,
+          "m": 0.040000000000358665,
+          "eta": 0.2000000000014344
+        },
+        "objective_value": 1.0113609965054691e-26,
+        "nfev": 11,
+        "njev": 11,
+        "global_minimum_variance": 0.036463632031884685
+      },
+      {
+        "slice_id": "2000-01-03|2000-07-01",
+        "initial_parameters": {
+          "a": 0.017741069605669187,
+          "b": 0.1,
+          "rho": 0.0,
+          "m": 0.0,
+          "eta": 0.2
+        },
+        "fitted_parameters": {
+          "a": 0.025000000000012713,
+          "b": 0.18749999999995962,
+          "rho": -0.2999999999998495,
+          "m": 0.040000000000083476,
+          "eta": 0.19999999999996373
+        },
+        "objective_value": 2.2774231033348154e-26,
+        "nfev": 10,
+        "njev": 10,
+        "global_minimum_variance": 0.060772720053135755
+      },
+      {
+        "slice_id": "2000-01-03|2001-01-02",
+        "initial_parameters": {
+          "a": 0.04038571136905761,
+          "b": 0.1,
+          "rho": 0.0,
+          "m": 0.0,
+          "eta": 0.2
+        },
+        "fitted_parameters": {
+          "a": 0.03999999999949406,
+          "b": 0.3000000000009391,
+          "rho": -0.2999999999991247,
+          "m": 0.03999999999994978,
+          "eta": 0.20000000000109538
+        },
+        "objective_value": 4.7189609179845875e-26,
+        "nfev": 18,
+        "njev": 17,
+        "global_minimum_variance": 0.09723635208501996
+      }
+    ],
+    "metrics_path": "results/verification/approach1/q1_synthetic_svi_verification/metrics.json",
+    "metrics_sha256": "710acb5f014f90a6e352c14ea05c6669b2f6d57995494b162350f8d11be0f27a",
+    "figures": [
+      "results/verification/approach1/q1_synthetic_svi_verification/volatility_smile.html",
+      "results/verification/approach1/q1_synthetic_svi_verification/total_variance.html",
+      "results/verification/approach1/q1_synthetic_svi_verification/butterfly.html",
+      "results/verification/approach1/q1_synthetic_svi_verification/calendar.html",
+      "results/verification/approach1/q1_synthetic_svi_verification/volatility_surface.html",
+      "results/verification/approach1/q1_synthetic_svi_verification/market_model_prices.html",
+      "results/verification/approach1/q1_synthetic_svi_verification/repricing_error_distribution.html"
+    ],
+    "artifact_manifest_sha256": "a93e16d3ffb39489240c70706fa1310eef487238b63b95d90be48683598f4fff",
+    "not_eligible_for_empirical_comparison": true
+  },
+  "empirical": {
+    "status": "BLOCKED",
+    "input_rows": 606,
+    "eligible_rows": 0,
+    "attempted_slices": 0,
+    "figures_generated": 0,
+    "partial_preview_used": false,
+    "metrics_path": "results/approach1/q1_510050/metrics.json",
+    "metrics_sha256": "7a60f4dd26479b8bbd437f4e032c3cf004f5f3b6bd310f398b4f52e8f1e23689"
+  },
+  "exit_behavior": {
+    "direct_cli_blocked_exit": 2,
+    "shared_launcher_nonzero_exit": 1,
+    "note": "An initial shell check incorrectly expected the wrapper to preserve exit 2; saved BLOCKED output and direct-CLI tests were then verified. Shared launcher unchanged."
+  }
+}
