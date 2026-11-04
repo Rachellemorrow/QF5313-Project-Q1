@@ -1,0 +1,970 @@
+{
+  "build_timestamp": null,
+  "code_lf_sha256": {
+    "code/q1/market_data.py": "c0d3eb7e92c323ac33e07fb5770ee705a869d4233c1af766fd06ff528583758c",
+    "code/q1/provenance.py": "f587a9be0af841fdf454132a136d285aa55a8be005f485d0538d6efc6b9636ec",
+    "code/q1/rates.py": "bda8b4320e65d28bfaed5ada7176b1dfc6e2e3e2b742fa9ee1ed36e8351ca616",
+    "data/fetch.py": "21b2dc83aaaba21dba419903517bd1e7036c7fbe465e16b32425e7ba3fe96981"
+  },
+  "excluded_source_kinds": [
+    "SSE aggregate statistics are not per-contract quotes",
+    "Untimestamped CFFEX live-chain prices are not assigned an observation date",
+    "Catalog documentation examples are not market observations"
+  ],
+  "license_status": "UNVERIFIED for external redistribution; processes already committed course audit evidence only",
+  "mode": "OFFLINE_ONLY_NO_SOURCE_DISCOVERY",
+  "pipeline_schema_version": 1,
+  "policy": {
+    "max_abs_log_moneyness": null,
+    "max_relative_spread": 0.25,
+    "min_open_interest": null,
+    "min_volume": 1.0,
+    "rates": {
+      "approval_reference": null,
+      "dividend_yield": null,
+      "interpretation": "unapproved",
+      "tenor_calendar_approved": false
+    },
+    "require_bid_ask": false,
+    "target_family": "ETF",
+    "target_underlying": "510050"
+  },
+  "prior_initial_http_capture_limitation": "M1 index-map helper pagination was incompletely recorded; preserved audit disclosure remains applicable",
+  "question": "q1",
+  "rate_conventions": {
+    "default_zero_curve_interpretation": "UNAPPROVED; only raw quote interpolation is emitted",
+    "dividend_default": "UNAPPROVED; no q=0 assumption",
+    "no_default_discount_factor_or_forward": true,
+    "shibor_input_unit": "percent per annum as labelled by installed source API",
+    "tenor_dates_default": "Unadjusted calendar offsets; no business-day/spot-lag assumption asserted as verified",
+    "time_to_expiry": "ACT/365F calendar-date difference, indicative until approved"
+  },
+  "source_api_records": [
+    {
+      "api": "option_current_day_sse",
+      "columns": [
+        "合约编码",
+        "合约交易代码",
+        "合约简称",
+        "标的券名称及代码",
+        "类型",
+        "行权价",
+        "合约单位",
+        "期权行权日",
+        "行权交收日",
+        "到期日",
+        "开始日期"
+      ],
+      "date_columns": {
+        "到期日": {
+          "distinct": 4,
+          "max": "2027-06-23",
+          "min": "2026-11-25"
+        },
+        "开始日期": {
+          "distinct": 47,
+          "max": "2026-11-04",
+          "min": "2026-04-23"
+        },
+        "期权行权日": {
+          "distinct": 4,
+          "max": "2027-06-23",
+          "min": "2026-11-25"
+        },
+        "行权交收日": {
+          "distinct": 4,
+          "max": "2027-06-24",
+          "min": "2026-11-26"
+        }
+      },
+      "dtypes": {
+        "到期日": "str",
+        "合约交易代码": "str",
+        "合约单位": "str",
+        "合约简称": "str",
+        "合约编码": "str",
+        "开始日期": "str",
+        "期权行权日": "str",
+        "标的券名称及代码": "str",
+        "类型": "str",
+        "行权交收日": "str",
+        "行权价": "str"
+      },
+      "parameters": {},
+      "probe_id": "sse_current_contracts",
+      "snapshot": {
+        "bytes": 83497,
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV",
+        "path": "data/clean/q1/m1_audit/snapshots/sse_current_contracts.csv",
+        "sha256": "92fed6e81977952100c4d4029249ce99d42c1ae1a7d12c352db44089981bed50"
+      },
+      "started_at_utc": "2026-11-04T16:22:47.465768+00:00"
+    },
+    {
+      "api": "option_cffex_hs300_daily_sina",
+      "columns": [
+        "date",
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume"
+      ],
+      "date_columns": {
+        "date": {
+          "distinct": 54,
+          "max": "2022-02-18",
+          "min": "2021-11-29"
+        }
+      },
+      "dtypes": {
+        "close": "float64",
+        "date": "object",
+        "high": "float64",
+        "low": "float64",
+        "open": "float64",
+        "volume": "int64"
+      },
+      "parameters": {
+        "symbol": "io2202P4350"
+      },
+      "probe_id": "cffex_expired_daily",
+      "snapshot": {
+        "bytes": 1757,
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV",
+        "path": "data/clean/q1/m1_audit/snapshots/cffex_expired_daily.csv",
+        "sha256": "480adae412cae951f4e8dc791809ccce15faed74076bda3d5900cba793332248"
+      },
+      "started_at_utc": "2026-11-04T16:22:51.144576+00:00"
+    },
+    {
+      "api": "index_zh_a_hist",
+      "columns": [
+        "日期",
+        "开盘",
+        "收盘",
+        "最高",
+        "最低",
+        "成交量",
+        "成交额",
+        "振幅",
+        "涨跌幅",
+        "涨跌额",
+        "换手率"
+      ],
+      "date_columns": {
+        "日期": {
+          "distinct": 4,
+          "max": "2024-10-11",
+          "min": "2024-10-08"
+        }
+      },
+      "dtypes": {
+        "开盘": "float64",
+        "成交量": "int64",
+        "成交额": "float64",
+        "振幅": "float64",
+        "换手率": "float64",
+        "收盘": "float64",
+        "日期": "str",
+        "最低": "float64",
+        "最高": "float64",
+        "涨跌幅": "float64",
+        "涨跌额": "float64"
+      },
+      "parameters": {
+        "end_date": "20241011",
+        "period": "daily",
+        "start_date": "20241008",
+        "symbol": "000300"
+      },
+      "probe_id": "index_spot",
+      "snapshot": {
+        "bytes": 454,
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV",
+        "path": "data/clean/q1/m1_audit/snapshots/index_spot.csv",
+        "sha256": "210d35a20d17410bd3fc553ac670cd4b21676ed13ad2cf749b97ce768b752152"
+      },
+      "started_at_utc": "2026-11-04T16:22:52.018043+00:00"
+    },
+    {
+      "api": "macro_china_shibor_all",
+      "columns": [
+        "日期",
+        "O/N-定价",
+        "O/N-涨跌幅",
+        "1W-定价",
+        "1W-涨跌幅",
+        "2W-定价",
+        "2W-涨跌幅",
+        "1M-定价",
+        "1M-涨跌幅",
+        "3M-定价",
+        "3M-涨跌幅",
+        "6M-定价",
+        "6M-涨跌幅",
+        "9M-定价",
+        "9M-涨跌幅",
+        "1Y-定价",
+        "1Y-涨跌幅"
+      ],
+      "date_columns": {
+        "日期": {
+          "distinct": 2398,
+          "max": "2026-11-04",
+          "min": "2015-05-08"
+        }
+      },
+      "dtypes": {
+        "1M-定价": "float64",
+        "1M-涨跌幅": "float64",
+        "1W-定价": "float64",
+        "1W-涨跌幅": "float64",
+        "1Y-定价": "float64",
+        "1Y-涨跌幅": "float64",
+        "2W-定价": "float64",
+        "2W-涨跌幅": "float64",
+        "3M-定价": "float64",
+        "3M-涨跌幅": "float64",
+        "6M-定价": "float64",
+        "6M-涨跌幅": "float64",
+        "9M-定价": "float64",
+        "9M-涨跌幅": "float64",
+        "O/N-定价": "float64",
+        "O/N-涨跌幅": "float64",
+        "日期": "str"
+      },
+      "parameters": {},
+      "probe_id": "shibor",
+      "snapshot": {
+        "bytes": 230012,
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV",
+        "path": "data/clean/q1/m1_audit/snapshots/shibor.csv",
+        "sha256": "aeee30e6ef5948115205265bc15ab99c8bef722c35f7efa370fb01c0aaaec3a8"
+      },
+      "started_at_utc": "2026-11-04T16:23:10.914612+00:00"
+    },
+    {
+      "api": "option_sse_daily_sina",
+      "columns": [
+        "日期",
+        "开盘",
+        "最高",
+        "最低",
+        "收盘",
+        "成交量"
+      ],
+      "date_columns": {
+        "日期": {
+          "distinct": 23,
+          "max": "2022-02-23",
+          "min": "2022-01-17"
+        }
+      },
+      "dtypes": {
+        "开盘": "float64",
+        "成交量": "int64",
+        "收盘": "float64",
+        "日期": "object",
+        "最低": "float64",
+        "最高": "float64"
+      },
+      "parameters": {
+        "symbol": "10003889"
+      },
+      "probe_id": "sse_expired_daily",
+      "snapshot": {
+        "bytes": 1103,
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV",
+        "path": "data/clean/q1/m1_audit/snapshots/sse_expired_daily.csv",
+        "sha256": "0e2ee2002939de63c00edbfa697cd9a717cd831ed799dd84b28374e4a03402c5"
+      },
+      "started_at_utc": "2026-11-04T16:23:11.970870+00:00"
+    },
+    {
+      "api": "option_sse_daily_sina",
+      "columns": [
+        "日期",
+        "开盘",
+        "最高",
+        "最低",
+        "收盘",
+        "成交量"
+      ],
+      "date_columns": {
+        "日期": {
+          "distinct": 13,
+          "max": "2026-11-04",
+          "min": "2026-10-19"
+        }
+      },
+      "dtypes": {
+        "开盘": "float64",
+        "成交量": "int64",
+        "收盘": "float64",
+        "日期": "object",
+        "最低": "float64",
+        "最高": "float64"
+      },
+      "parameters": {
+        "symbol": "10012637"
+      },
+      "probe_id": "sse_current_daily_0",
+      "snapshot": {
+        "bytes": 652,
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV",
+        "path": "data/clean/q1/m1_audit/snapshots/sse_current_daily_0.csv",
+        "sha256": "f0b4e87bf31254e10df0bf37bfe7dac784db680a38d1f2f2038f346b1c95a128"
+      },
+      "started_at_utc": "2026-11-04T16:23:13.187932+00:00"
+    },
+    {
+      "api": "option_sse_spot_price_sina",
+      "columns": [
+        "字段",
+        "值"
+      ],
+      "date_columns": {},
+      "dtypes": {
+        "值": "str",
+        "字段": "str"
+      },
+      "parameters": {
+        "symbol": "10012637"
+      },
+      "probe_id": "sse_current_spot_0",
+      "snapshot": {
+        "bytes": 771,
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV",
+        "path": "data/clean/q1/m1_audit/snapshots/sse_current_spot_0.csv",
+        "sha256": "6df1f0e5b728d1acf50f1c89545be0a8408487d46d9528dbc23efbb61dd5056e"
+      },
+      "started_at_utc": "2026-11-04T16:23:13.411080+00:00"
+    },
+    {
+      "api": "option_sse_daily_sina",
+      "columns": [
+        "日期",
+        "开盘",
+        "最高",
+        "最低",
+        "收盘",
+        "成交量"
+      ],
+      "date_columns": {
+        "日期": {
+          "distinct": 22,
+          "max": "2026-11-04",
+          "min": "2026-09-29"
+        }
+      },
+      "dtypes": {
+        "开盘": "float64",
+        "成交量": "int64",
+        "收盘": "float64",
+        "日期": "object",
+        "最低": "float64",
+        "最高": "float64"
+      },
+      "parameters": {
+        "symbol": "10012537"
+      },
+      "probe_id": "sse_current_daily_1",
+      "snapshot": {
+        "bytes": 1055,
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV",
+        "path": "data/clean/q1/m1_audit/snapshots/sse_current_daily_1.csv",
+        "sha256": "07cf5c84ab1c5e019ffd319df5c36aa358f28bfbe18dcbe3854f985a81e9c2bf"
+      },
+      "started_at_utc": "2026-11-04T16:23:13.596213+00:00"
+    },
+    {
+      "api": "option_sse_spot_price_sina",
+      "columns": [
+        "字段",
+        "值"
+      ],
+      "date_columns": {},
+      "dtypes": {
+        "值": "str",
+        "字段": "str"
+      },
+      "parameters": {
+        "symbol": "10012537"
+      },
+      "probe_id": "sse_current_spot_1",
+      "snapshot": {
+        "bytes": 770,
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV",
+        "path": "data/clean/q1/m1_audit/snapshots/sse_current_spot_1.csv",
+        "sha256": "6e1da62cbb04bee561e83b2e70b186bb8ec8cb184d91a0cd80d573393d3bdbf8"
+      },
+      "started_at_utc": "2026-11-04T16:23:13.748554+00:00"
+    },
+    {
+      "api": "option_cffex_hs300_spot_sina",
+      "columns": [
+        "看涨合约-买量",
+        "看涨合约-买价",
+        "看涨合约-最新价",
+        "看涨合约-卖价",
+        "看涨合约-卖量",
+        "看涨合约-持仓量",
+        "看涨合约-涨跌",
+        "行权价",
+        "看涨合约-标识",
+        "看跌合约-买量",
+        "看跌合约-买价",
+        "看跌合约-最新价",
+        "看跌合约-卖价",
+        "看跌合约-卖量",
+        "看跌合约-持仓量",
+        "看跌合约-涨跌",
+        "看跌合约-标识"
+      ],
+      "date_columns": {},
+      "dtypes": {
+        "看涨合约-买价": "float64",
+        "看涨合约-买量": "int64",
+        "看涨合约-卖价": "float64",
+        "看涨合约-卖量": "int64",
+        "看涨合约-持仓量": "int64",
+        "看涨合约-最新价": "float64",
+        "看涨合约-标识": "str",
+        "看涨合约-涨跌": "float64",
+        "看跌合约-买价": "float64",
+        "看跌合约-买量": "int64",
+        "看跌合约-卖价": "float64",
+        "看跌合约-卖量": "int64",
+        "看跌合约-持仓量": "int64",
+        "看跌合约-最新价": "float64",
+        "看跌合约-标识": "str",
+        "看跌合约-涨跌": "float64",
+        "行权价": "int64"
+      },
+      "parameters": {
+        "symbol": "io2611"
+      },
+      "probe_id": "cffex_current_spot",
+      "snapshot": {
+        "bytes": 3130,
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV",
+        "path": "data/clean/q1/m1_audit/snapshots/cffex_current_spot.csv",
+        "sha256": "1911b803d04e0fd3c8d8dc19b2d0bffc687bac6ed958d2dc75685cde028ddc93"
+      },
+      "started_at_utc": "2026-11-04T16:23:14.022087+00:00"
+    },
+    {
+      "api": "option_cffex_hs300_daily_sina",
+      "columns": [
+        "date",
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume"
+      ],
+      "date_columns": {
+        "date": {
+          "distinct": 40,
+          "max": "2026-11-04",
+          "min": "2026-08-24"
+        }
+      },
+      "dtypes": {
+        "close": "float64",
+        "date": "object",
+        "high": "float64",
+        "low": "float64",
+        "open": "float64",
+        "volume": "int64"
+      },
+      "parameters": {
+        "symbol": "io2611C4300"
+      },
+      "probe_id": "cffex_current_daily",
+      "snapshot": {
+        "bytes": 1495,
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV",
+        "path": "data/clean/q1/m1_audit/snapshots/cffex_current_daily.csv",
+        "sha256": "af908c4d7ab91ad797a54ddb845561a67ebd330dc7769104d09690776132e3ba"
+      },
+      "started_at_utc": "2026-11-04T16:23:14.204674+00:00"
+    },
+    {
+      "api": "fund_etf_hist_em",
+      "columns": [
+        "日期",
+        "开盘",
+        "收盘",
+        "最高",
+        "最低",
+        "成交量",
+        "成交额",
+        "振幅",
+        "涨跌幅",
+        "涨跌额",
+        "换手率"
+      ],
+      "date_columns": {
+        "日期": {
+          "distinct": 505,
+          "max": "2026-11-04",
+          "min": "2024-10-08"
+        }
+      },
+      "dtypes": {
+        "开盘": "float64",
+        "成交量": "int64",
+        "成交额": "float64",
+        "振幅": "float64",
+        "换手率": "float64",
+        "收盘": "float64",
+        "日期": "str",
+        "最低": "float64",
+        "最高": "float64",
+        "涨跌幅": "float64",
+        "涨跌额": "float64"
+      },
+      "parameters": {
+        "adjust": "",
+        "end_date": "20261104",
+        "period": "daily",
+        "start_date": "20241008",
+        "symbol": "510050"
+      },
+      "probe_id": "etf_unadjusted_history",
+      "snapshot": {
+        "bytes": 39108,
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV",
+        "path": "data/clean/q1/m1_alignment/snapshots/etf_unadjusted_history.csv",
+        "sha256": "b83eb37d17f26aac4313fec1b3e53c30b99d0a96589036f39df8af334bebce28"
+      },
+      "started_at_utc": "2026-11-04T16:24:25.133205+00:00"
+    },
+    {
+      "api": "option_sse_daily_sina",
+      "columns": [
+        "日期",
+        "开盘",
+        "最高",
+        "最低",
+        "收盘",
+        "成交量"
+      ],
+      "date_columns": {
+        "日期": {
+          "distinct": 24,
+          "max": "2026-11-04",
+          "min": "2026-09-24"
+        }
+      },
+      "dtypes": {
+        "开盘": "float64",
+        "成交量": "int64",
+        "收盘": "float64",
+        "日期": "object",
+        "最低": "float64",
+        "最高": "float64"
+      },
+      "parameters": {
+        "symbol": "10012439"
+      },
+      "probe_id": "sse_pair_0_call",
+      "snapshot": {
+        "bytes": 1188,
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV",
+        "path": "data/clean/q1/m1_pairs/snapshots/sse_pair_0_call.csv",
+        "sha256": "6d3aa688ad7d83d970eea0394c4dae53eee742e7769735efd97db0d5cfc19c2a"
+      },
+      "started_at_utc": "2026-11-04T16:28:49.542576+00:00"
+    },
+    {
+      "api": "option_sse_daily_sina",
+      "columns": [
+        "日期",
+        "开盘",
+        "最高",
+        "最低",
+        "收盘",
+        "成交量"
+      ],
+      "date_columns": {
+        "日期": {
+          "distinct": 24,
+          "max": "2026-11-04",
+          "min": "2026-09-24"
+        }
+      },
+      "dtypes": {
+        "开盘": "float64",
+        "成交量": "int64",
+        "收盘": "float64",
+        "日期": "object",
+        "最低": "float64",
+        "最高": "float64"
+      },
+      "parameters": {
+        "symbol": "10012448"
+      },
+      "probe_id": "sse_pair_0_put",
+      "snapshot": {
+        "bytes": 1185,
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV",
+        "path": "data/clean/q1/m1_pairs/snapshots/sse_pair_0_put.csv",
+        "sha256": "3fa33a228b766fee12ba1c846d429588f072e640ee0924bd05af6a3143726bcd"
+      },
+      "started_at_utc": "2026-11-04T16:28:49.810603+00:00"
+    },
+    {
+      "api": "option_sse_daily_sina",
+      "columns": [
+        "日期",
+        "开盘",
+        "最高",
+        "最低",
+        "收盘",
+        "成交量"
+      ],
+      "date_columns": {
+        "日期": {
+          "distinct": 130,
+          "max": "2026-11-04",
+          "min": "2026-04-23"
+        }
+      },
+      "dtypes": {
+        "开盘": "float64",
+        "成交量": "int64",
+        "收盘": "float64",
+        "日期": "object",
+        "最低": "float64",
+        "最高": "float64"
+      },
+      "parameters": {
+        "symbol": "10011427"
+      },
+      "probe_id": "sse_pair_1_call",
+      "snapshot": {
+        "bytes": 5976,
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV",
+        "path": "data/clean/q1/m1_pairs/snapshots/sse_pair_1_call.csv",
+        "sha256": "a93653a139b9edbb1a79061008998409e0a252224e34f06509422ca11257269c"
+      },
+      "started_at_utc": "2026-11-04T16:28:49.987190+00:00"
+    },
+    {
+      "api": "option_sse_daily_sina",
+      "columns": [
+        "日期",
+        "开盘",
+        "最高",
+        "最低",
+        "收盘",
+        "成交量"
+      ],
+      "date_columns": {
+        "日期": {
+          "distinct": 130,
+          "max": "2026-11-04",
+          "min": "2026-04-23"
+        }
+      },
+      "dtypes": {
+        "开盘": "float64",
+        "成交量": "int64",
+        "收盘": "float64",
+        "日期": "object",
+        "最低": "float64",
+        "最高": "float64"
+      },
+      "parameters": {
+        "symbol": "10011436"
+      },
+      "probe_id": "sse_pair_1_put",
+      "snapshot": {
+        "bytes": 6009,
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV",
+        "path": "data/clean/q1/m1_pairs/snapshots/sse_pair_1_put.csv",
+        "sha256": "38ea4161f2b173e3c9977f68e8b7bedef8e94982eabb1605e1afee98dfa02565"
+      },
+      "started_at_utc": "2026-11-04T16:28:50.154727+00:00"
+    },
+    {
+      "api": "option_sse_daily_sina",
+      "columns": [
+        "日期",
+        "开盘",
+        "最高",
+        "最低",
+        "收盘",
+        "成交量"
+      ],
+      "date_columns": {
+        "日期": {
+          "distinct": 65,
+          "max": "2026-11-04",
+          "min": "2026-07-23"
+        }
+      },
+      "dtypes": {
+        "开盘": "float64",
+        "成交量": "int64",
+        "收盘": "float64",
+        "日期": "object",
+        "最低": "float64",
+        "最高": "float64"
+      },
+      "parameters": {
+        "symbol": "10012164"
+      },
+      "probe_id": "sse_pair_2_call",
+      "snapshot": {
+        "bytes": 2944,
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV",
+        "path": "data/clean/q1/m1_pairs/snapshots/sse_pair_2_call.csv",
+        "sha256": "87b552cdc91202b7c59884dc5f65d471915733607be11929b83a18e7ad930b8b"
+      },
+      "started_at_utc": "2026-11-04T16:28:50.359640+00:00"
+    },
+    {
+      "api": "option_sse_daily_sina",
+      "columns": [
+        "日期",
+        "开盘",
+        "最高",
+        "最低",
+        "收盘",
+        "成交量"
+      ],
+      "date_columns": {
+        "日期": {
+          "distinct": 69,
+          "max": "2026-11-04",
+          "min": "2026-07-23"
+        }
+      },
+      "dtypes": {
+        "开盘": "float64",
+        "成交量": "int64",
+        "收盘": "float64",
+        "日期": "object",
+        "最低": "float64",
+        "最高": "float64"
+      },
+      "parameters": {
+        "symbol": "10012173"
+      },
+      "probe_id": "sse_pair_2_put",
+      "snapshot": {
+        "bytes": 3132,
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV",
+        "path": "data/clean/q1/m1_pairs/snapshots/sse_pair_2_put.csv",
+        "sha256": "bbb882382602e30ed0216a8a4b183bc5564130327df76716cfbe270ca97c0295"
+      },
+      "started_at_utc": "2026-11-04T16:28:50.755690+00:00"
+    },
+    {
+      "api": "option_sse_daily_sina",
+      "columns": [
+        "日期",
+        "开盘",
+        "最高",
+        "最低",
+        "收盘",
+        "成交量"
+      ],
+      "date_columns": {
+        "日期": {
+          "distinct": 5,
+          "max": "2026-11-04",
+          "min": "2026-10-29"
+        }
+      },
+      "dtypes": {
+        "开盘": "float64",
+        "成交量": "int64",
+        "收盘": "float64",
+        "日期": "object",
+        "最低": "float64",
+        "最高": "float64"
+      },
+      "parameters": {
+        "symbol": "10012704"
+      },
+      "probe_id": "sse_pair_3_call",
+      "snapshot": {
+        "bytes": 270,
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV",
+        "path": "data/clean/q1/m1_pairs/snapshots/sse_pair_3_call.csv",
+        "sha256": "ffc8a05de51b00fb28eed5b56d75c6584e19acb0a8818695f33d088ebc235908"
+      },
+      "started_at_utc": "2026-11-04T16:28:50.927209+00:00"
+    },
+    {
+      "api": "option_sse_daily_sina",
+      "columns": [
+        "日期",
+        "开盘",
+        "最高",
+        "最低",
+        "收盘",
+        "成交量"
+      ],
+      "date_columns": {
+        "日期": {
+          "distinct": 5,
+          "max": "2026-11-04",
+          "min": "2026-10-29"
+        }
+      },
+      "dtypes": {
+        "开盘": "float64",
+        "成交量": "int64",
+        "收盘": "float64",
+        "日期": "object",
+        "最低": "float64",
+        "最高": "float64"
+      },
+      "parameters": {
+        "symbol": "10012713"
+      },
+      "probe_id": "sse_pair_3_put",
+      "snapshot": {
+        "bytes": 273,
+        "kind": "Unfiltered AKShare-returned table serialized to UTF-8 CSV",
+        "path": "data/clean/q1/m1_pairs/snapshots/sse_pair_3_put.csv",
+        "sha256": "11b5cbdaf0990f222416677dd57af69792dbf391f26914a4c93d5c4815b4fc78"
+      },
+      "started_at_utc": "2026-11-04T16:28:51.108306+00:00"
+    }
+  ],
+  "source_files_consumed": [
+    {
+      "bytes": 13429,
+      "path": "data/clean/q1/m1_alignment/api_audit.json",
+      "sha256": "c16dd97a64ab86d5be20a2aaba771c3c1efbf16154d7af6c34e525643e272664"
+    },
+    {
+      "bytes": 39108,
+      "path": "data/clean/q1/m1_alignment/snapshots/etf_unadjusted_history.csv",
+      "sha256": "b83eb37d17f26aac4313fec1b3e53c30b99d0a96589036f39df8af334bebce28"
+    },
+    {
+      "bytes": 73606,
+      "path": "data/clean/q1/m1_audit/api_audit.json",
+      "sha256": "e210474e6897c76768d60d744731c006d6ba74c6942c5a9027295c8855dec65b"
+    },
+    {
+      "bytes": 1495,
+      "path": "data/clean/q1/m1_audit/snapshots/cffex_current_daily.csv",
+      "sha256": "af908c4d7ab91ad797a54ddb845561a67ebd330dc7769104d09690776132e3ba"
+    },
+    {
+      "bytes": 3130,
+      "path": "data/clean/q1/m1_audit/snapshots/cffex_current_spot.csv",
+      "sha256": "1911b803d04e0fd3c8d8dc19b2d0bffc687bac6ed958d2dc75685cde028ddc93"
+    },
+    {
+      "bytes": 1757,
+      "path": "data/clean/q1/m1_audit/snapshots/cffex_expired_daily.csv",
+      "sha256": "480adae412cae951f4e8dc791809ccce15faed74076bda3d5900cba793332248"
+    },
+    {
+      "bytes": 454,
+      "path": "data/clean/q1/m1_audit/snapshots/index_spot.csv",
+      "sha256": "210d35a20d17410bd3fc553ac670cd4b21676ed13ad2cf749b97ce768b752152"
+    },
+    {
+      "bytes": 230012,
+      "path": "data/clean/q1/m1_audit/snapshots/shibor.csv",
+      "sha256": "aeee30e6ef5948115205265bc15ab99c8bef722c35f7efa370fb01c0aaaec3a8"
+    },
+    {
+      "bytes": 83497,
+      "path": "data/clean/q1/m1_audit/snapshots/sse_current_contracts.csv",
+      "sha256": "92fed6e81977952100c4d4029249ce99d42c1ae1a7d12c352db44089981bed50"
+    },
+    {
+      "bytes": 652,
+      "path": "data/clean/q1/m1_audit/snapshots/sse_current_daily_0.csv",
+      "sha256": "f0b4e87bf31254e10df0bf37bfe7dac784db680a38d1f2f2038f346b1c95a128"
+    },
+    {
+      "bytes": 1055,
+      "path": "data/clean/q1/m1_audit/snapshots/sse_current_daily_1.csv",
+      "sha256": "07cf5c84ab1c5e019ffd319df5c36aa358f28bfbe18dcbe3854f985a81e9c2bf"
+    },
+    {
+      "bytes": 771,
+      "path": "data/clean/q1/m1_audit/snapshots/sse_current_spot_0.csv",
+      "sha256": "6df1f0e5b728d1acf50f1c89545be0a8408487d46d9528dbc23efbb61dd5056e"
+    },
+    {
+      "bytes": 770,
+      "path": "data/clean/q1/m1_audit/snapshots/sse_current_spot_1.csv",
+      "sha256": "6e1da62cbb04bee561e83b2e70b186bb8ec8cb184d91a0cd80d573393d3bdbf8"
+    },
+    {
+      "bytes": 1103,
+      "path": "data/clean/q1/m1_audit/snapshots/sse_expired_daily.csv",
+      "sha256": "0e2ee2002939de63c00edbfa697cd9a717cd831ed799dd84b28374e4a03402c5"
+    },
+    {
+      "bytes": 28351,
+      "path": "data/clean/q1/m1_pairs/api_audit.json",
+      "sha256": "93e8eff4bda502000bc0490258c8ac2b75d0cf452246bd82bcd000ad97bdccca"
+    },
+    {
+      "bytes": 1188,
+      "path": "data/clean/q1/m1_pairs/snapshots/sse_pair_0_call.csv",
+      "sha256": "6d3aa688ad7d83d970eea0394c4dae53eee742e7769735efd97db0d5cfc19c2a"
+    },
+    {
+      "bytes": 1185,
+      "path": "data/clean/q1/m1_pairs/snapshots/sse_pair_0_put.csv",
+      "sha256": "3fa33a228b766fee12ba1c846d429588f072e640ee0924bd05af6a3143726bcd"
+    },
+    {
+      "bytes": 5976,
+      "path": "data/clean/q1/m1_pairs/snapshots/sse_pair_1_call.csv",
+      "sha256": "a93653a139b9edbb1a79061008998409e0a252224e34f06509422ca11257269c"
+    },
+    {
+      "bytes": 6009,
+      "path": "data/clean/q1/m1_pairs/snapshots/sse_pair_1_put.csv",
+      "sha256": "38ea4161f2b173e3c9977f68e8b7bedef8e94982eabb1605e1afee98dfa02565"
+    },
+    {
+      "bytes": 2944,
+      "path": "data/clean/q1/m1_pairs/snapshots/sse_pair_2_call.csv",
+      "sha256": "87b552cdc91202b7c59884dc5f65d471915733607be11929b83a18e7ad930b8b"
+    },
+    {
+      "bytes": 3132,
+      "path": "data/clean/q1/m1_pairs/snapshots/sse_pair_2_put.csv",
+      "sha256": "bbb882382602e30ed0216a8a4b183bc5564130327df76716cfbe270ca97c0295"
+    },
+    {
+      "bytes": 270,
+      "path": "data/clean/q1/m1_pairs/snapshots/sse_pair_3_call.csv",
+      "sha256": "ffc8a05de51b00fb28eed5b56d75c6584e19acb0a8818695f33d088ebc235908"
+    },
+    {
+      "bytes": 273,
+      "path": "data/clean/q1/m1_pairs/snapshots/sse_pair_3_put.csv",
+      "sha256": "11b5cbdaf0990f222416677dd57af69792dbf391f26914a4c93d5c4815b4fc78"
+    }
+  ],
+  "source_manifests": [
+    {
+      "path": "data/clean/q1/m1_evidence/snapshot_manifest.json",
+      "sha256": "b34faa9acfaadc4efc70788c98017a7fae1f06ac48d6c695817ca0f52c7ea438"
+    },
+    {
+      "path": "data/clean/q1/m15_recovery/audit_manifest.json",
+      "sha256": "be7b08c321a1ddacba28f7b81f3d205726dba9f576b31456f7536e8435adb7de"
+    }
+  ],
+  "timestamp_policy": "No invented retrieval/build timestamp; source retrieval times retained, reproducible outputs contain no wall-clock run time"
+}

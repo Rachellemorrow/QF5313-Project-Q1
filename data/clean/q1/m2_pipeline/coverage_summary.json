@@ -1,0 +1,71 @@
+{
+  "all_real_observations_including_separate_index_and_unknown_metadata_rows": {
+    "calls": 301,
+    "contracts": 13,
+    "date_max": "2026-11-04",
+    "date_min": "2021-11-29",
+    "dates": 187,
+    "expiries": 4,
+    "puts": 228,
+    "quotes": 606,
+    "strikes": 4
+  },
+  "complete_chain_expiry_counts_verified": false,
+  "complete_month_verified": false,
+  "dataset_readiness": "PARTIAL_HISTORICAL",
+  "date_effective_metadata_verified_rows": 0,
+  "examination_historical_requirement_satisfied": false,
+  "five_verified_sample_chains_spanning_two_years": false,
+  "incomplete_contract_attribute_rows": 117,
+  "index_options_are_not_an_etf_substitute": true,
+  "input_rows_are_real_not_synthetic": true,
+  "missing_bid_or_ask_rows": 604,
+  "missing_open_interest_rows": 604,
+  "partial_diagnostic_preview_NOT_empirical": {
+    "calls": 261,
+    "contracts": 10,
+    "date_max": "2026-11-04",
+    "date_min": "2026-04-23",
+    "dates": 130,
+    "expiries": 4,
+    "puts": 228,
+    "quotes": 489,
+    "strikes": 3
+  },
+  "readiness_reason": "No complete dated chain roster and official calendar over the required historical scope have been supplied",
+  "source_daily_close_rows": 604,
+  "source_timestamped_current_quote_rows": 2,
+  "strictly_usable_for_empirical_analysis": {
+    "calls": 0,
+    "contracts": 0,
+    "date_max": null,
+    "date_min": null,
+    "dates": 0,
+    "expiries": 0,
+    "puts": 0,
+    "quotes": 0,
+    "strikes": 0
+  },
+  "target_etf_observations_not_automatically_eligible": {
+    "calls": 261,
+    "contracts": 10,
+    "date_max": "2026-11-04",
+    "date_min": "2026-04-23",
+    "dates": 130,
+    "expiries": 4,
+    "puts": 228,
+    "quotes": 489,
+    "strikes": 3
+  },
+  "verified_empirical_rows_complete_metadata_only": {
+    "calls": 0,
+    "contracts": 0,
+    "date_max": null,
+    "date_min": null,
+    "dates": 0,
+    "expiries": 0,
+    "puts": 0,
+    "quotes": 0,
+    "strikes": 0
+  }
+}

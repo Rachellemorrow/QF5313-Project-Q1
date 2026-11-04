@@ -4,5 +4,6 @@ m1_alignment/** -text whitespace=cr-at-eol
 m1_pairs/** -text whitespace=cr-at-eol
 m1_evidence/** -text whitespace=cr-at-eol
 m15_recovery/** -text whitespace=cr-at-eol
+m2_pipeline/** -text whitespace=cr-at-eol
 # Original upstream bodies can contain intentional trailing whitespace.
 m1_*/http/*.body -whitespace

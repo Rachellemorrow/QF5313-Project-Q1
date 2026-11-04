@@ -1,0 +1,263 @@
+{
+  "columns": {
+    "ask": {
+      "dtype": "Float64",
+      "nullable": true
+    },
+    "bid": {
+      "dtype": "Float64",
+      "nullable": true
+    },
+    "contract_id": {
+      "dtype": "string",
+      "nullable": true
+    },
+    "contract_unit": {
+      "dtype": "Float64",
+      "nullable": true
+    },
+    "conventions_approved": {
+      "dtype": "boolean",
+      "nullable": false
+    },
+    "data_origin": {
+      "dtype": "string",
+      "nullable": true
+    },
+    "discount_factor": {
+      "dtype": "Float64",
+      "nullable": true
+    },
+    "dividend_yield": {
+      "dtype": "Float64",
+      "nullable": true
+    },
+    "eligible_for_empirical": {
+      "dtype": "boolean",
+      "nullable": false
+    },
+    "exchange": {
+      "dtype": "string",
+      "nullable": true
+    },
+    "expiry_date": {
+      "dtype": "string",
+      "nullable": true
+    },
+    "forward": {
+      "dtype": "Float64",
+      "nullable": true
+    },
+    "high": {
+      "dtype": "Float64",
+      "nullable": true
+    },
+    "instrument_family": {
+      "dtype": "string",
+      "nullable": true
+    },
+    "listing_date": {
+      "dtype": "string",
+      "nullable": true
+    },
+    "log_moneyness": {
+      "dtype": "Float64",
+      "nullable": true
+    },
+    "low": {
+      "dtype": "Float64",
+      "nullable": true
+    },
+    "metadata_basis": {
+      "dtype": "string",
+      "nullable": true
+    },
+    "metadata_complete": {
+      "dtype": "boolean",
+      "nullable": false
+    },
+    "metadata_effective_valid": {
+      "dtype": "boolean",
+      "nullable": false
+    },
+    "metadata_source_sha256": {
+      "dtype": "string",
+      "nullable": true
+    },
+    "metadata_source_snapshot": {
+      "dtype": "string",
+      "nullable": true
+    },
+    "metadata_valid_from": {
+      "dtype": "string",
+      "nullable": true
+    },
+    "metadata_valid_to": {
+      "dtype": "string",
+      "nullable": true
+    },
+    "observation_date": {
+      "dtype": "string",
+      "nullable": true
+    },
+    "open": {
+      "dtype": "Float64",
+      "nullable": true
+    },
+    "open_interest": {
+      "dtype": "Float64",
+      "nullable": true
+    },
+    "option_type": {
+      "dtype": "string",
+      "nullable": true
+    },
+    "partial_preview_eligible": {
+      "dtype": "boolean",
+      "nullable": false
+    },
+    "price": {
+      "dtype": "Float64",
+      "nullable": true
+    },
+    "price_kind": {
+      "dtype": "string",
+      "nullable": true
+    },
+    "price_unit": {
+      "dtype": "string",
+      "nullable": true
+    },
+    "price_unit_verified": {
+      "dtype": "boolean",
+      "nullable": false
+    },
+    "provenance_verified": {
+      "dtype": "boolean",
+      "nullable": false
+    },
+    "quote_id": {
+      "dtype": "string",
+      "nullable": true
+    },
+    "quote_timestamp": {
+      "dtype": "string",
+      "nullable": true
+    },
+    "quoted_strike": {
+      "dtype": "Float64",
+      "nullable": true
+    },
+    "rate_approval_reference": {
+      "dtype": "string",
+      "nullable": true
+    },
+    "rate_date": {
+      "dtype": "string",
+      "nullable": true
+    },
+    "rate_source_sha256": {
+      "dtype": "string",
+      "nullable": true
+    },
+    "rate_source_snapshot": {
+      "dtype": "string",
+      "nullable": true
+    },
+    "rate_status": {
+      "dtype": "string",
+      "nullable": true
+    },
+    "raw_price": {
+      "dtype": "string",
+      "nullable": true
+    },
+    "rejection_reasons": {
+      "dtype": "string",
+      "nullable": true
+    },
+    "row_readiness": {
+      "dtype": "string",
+      "nullable": true
+    },
+    "shibor_quote_decimal": {
+      "dtype": "Float64",
+      "nullable": true
+    },
+    "source_probe": {
+      "dtype": "string",
+      "nullable": true
+    },
+    "source_retrieved_at_utc": {
+      "dtype": "string",
+      "nullable": true
+    },
+    "source_row": {
+      "dtype": "string",
+      "nullable": true
+    },
+    "source_sha256": {
+      "dtype": "string",
+      "nullable": true
+    },
+    "source_snapshot": {
+      "dtype": "string",
+      "nullable": true
+    },
+    "spot": {
+      "dtype": "Float64",
+      "nullable": true
+    },
+    "spot_adjustment": {
+      "dtype": "string",
+      "nullable": true
+    },
+    "spot_date": {
+      "dtype": "string",
+      "nullable": true
+    },
+    "spot_source_sha256": {
+      "dtype": "string",
+      "nullable": true
+    },
+    "spot_source_snapshot": {
+      "dtype": "string",
+      "nullable": true
+    },
+    "strike": {
+      "dtype": "Float64",
+      "nullable": true
+    },
+    "time_to_expiry": {
+      "dtype": "Float64",
+      "nullable": true
+    },
+    "underlying": {
+      "dtype": "string",
+      "nullable": true
+    },
+    "volume": {
+      "dtype": "Float64",
+      "nullable": true
+    },
+    "warnings": {
+      "dtype": "string",
+      "nullable": true
+    },
+    "zero_rate": {
+      "dtype": "Float64",
+      "nullable": true
+    }
+  },
+  "date_format": "ISO YYYY-MM-DD; timestamps retain explicit Asia/Shanghai offset",
+  "metadata_policy": "Current master values are candidate attributes only; version bounds are never inferred from listing/expiry",
+  "partial_preview_warning": "Diagnostic cleaning preview only, not empirical-ready or examination-compliant",
+  "price_unit_policy": "Raw source premium unchanged; source quote units unverified until independently validated",
+  "readiness_states": [
+    "VERIFIED_EMPIRICAL",
+    "PARTIAL_HISTORICAL"
+  ],
+  "rejection_encoding": "JSON array of all applicable reasons; reason counts overlap",
+  "schema_version": 1,
+  "verified_row_not_full_dataset": "A verified row is not proof of the required multi-year/monthly coverage"
+}

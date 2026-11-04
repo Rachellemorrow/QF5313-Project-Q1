@@ -1,0 +1,40 @@
+{
+  "provenance": "SYNTHETIC_SCHEMA_TEST_ONLY_NOT_MARKET_DATA",
+  "quote": {
+    "data_origin": "SYNTHETIC_SCHEMA_TEST_ONLY",
+    "observation_date": "2000-01-04",
+    "contract_id": "SYNTHETIC_CALL",
+    "exchange": "SSE",
+    "instrument_family": "ETF",
+    "underlying": "SYNTHETIC_ETF",
+    "price_kind": "daily_close",
+    "price_unit": "SYNTHETIC_TEST_UNIT",
+    "price_unit_verified": true,
+    "price": 0.05,
+    "open": 0.05,
+    "high": 0.06,
+    "low": 0.04,
+    "volume": 100,
+    "bid": 0.049,
+    "ask": 0.051,
+    "open_interest": 500,
+    "source_row": "0"
+  },
+  "metadata": {
+    "contract_id": "SYNTHETIC_CALL",
+    "exchange": "SSE",
+    "instrument_family": "ETF",
+    "underlying": "SYNTHETIC_ETF",
+    "option_type": "C",
+    "strike": 3.0,
+    "contract_unit": 10000,
+    "listing_date": "2000-01-03",
+    "expiry_date": "2000-04-04",
+    "valid_from": "2000-01-03",
+    "valid_to": "2000-04-04",
+    "evidence_level": "VERIFIED_DATE_EFFECTIVE"
+  },
+  "synthetic_tenor_days_not_an_exchange_calendar": [1, 7, 14, 31, 91, 182, 273, 365],
+  "shibor_percent_levels": [2, 2, 2, 2, 2, 2, 2, 2],
+  "spot": 3.0
+}

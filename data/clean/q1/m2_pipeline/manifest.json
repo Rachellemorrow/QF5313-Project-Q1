@@ -1,0 +1,72 @@
+{
+  "dataset_readiness": "PARTIAL_HISTORICAL",
+  "files": [
+    {
+      "bytes": 885,
+      "name": "accepted_quotes.csv",
+      "sha256": "3833ffc88a7bd932004ee0562e59ca9b1db4ff844824ca9ba83dbd28532767ba"
+    },
+    {
+      "bytes": 225602,
+      "name": "contract_metadata.csv",
+      "sha256": "514072788bb67002ade64eba9639772c90311119e4c81d2fcbe1e58f77fc5d8e"
+    },
+    {
+      "bytes": 27047,
+      "name": "coverage_by_date_expiry.csv",
+      "sha256": "486baa93a5a907727d9a78fda2a5f42cfd26028bf98a81b5eb3d00b232b6a62b"
+    },
+    {
+      "bytes": 1926,
+      "name": "coverage_summary.json",
+      "sha256": "88e42b5e01090ba199b32632696e3c721fe177caea9c4a3633d361309fc1bbe1"
+    },
+    {
+      "bytes": 607461,
+      "name": "partial_diagnostic_quotes.csv",
+      "sha256": "ee57f52132dc57edb63c13ffba4361e12caad473e99a8f66c0ed329f698fdb67"
+    },
+    {
+      "bytes": 28620,
+      "name": "provenance.json",
+      "sha256": "a2ee6d417d63dccb755b429f8de5a4c32d091b3604df82de3943cff36f005477"
+    },
+    {
+      "bytes": 711925,
+      "name": "quotes.csv",
+      "sha256": "dd5c9e84566741b9661d6cffd878a128376d91c9958bf6ce7548c71bb8bbb4e5"
+    },
+    {
+      "bytes": 388,
+      "name": "rejection_counts.csv",
+      "sha256": "9efaa74e3e8ed0bcadacdd906f37b72d3c2b37e448b75f03da842931eed9d1d9"
+    },
+    {
+      "bytes": 156117,
+      "name": "rejections.csv",
+      "sha256": "76bd4b839387abea10b1b4fd3367d83d9433a3ab67ded7eaea1bd37b13755f9d"
+    },
+    {
+      "bytes": 5650,
+      "name": "schema.json",
+      "sha256": "bebeb6867d7b0db8292a780c1133c76930de54464cb328390886a2ea608f44ca"
+    },
+    {
+      "bytes": 744582,
+      "name": "shibor_quotes.csv",
+      "sha256": "fef9bdfd201572f239a6b1542d11ca13730e1d72917d54f31b532fd8e1940b1e"
+    },
+    {
+      "bytes": 135076,
+      "name": "underlying_spots.csv",
+      "sha256": "6c85b207ef6fb51da9b22e721fee87714d6a246b315f0bbdd1bf60e715c581d0"
+    },
+    {
+      "bytes": 109,
+      "name": "warning_counts.csv",
+      "sha256": "2913ad6fd23a1556ec90f24364c3cad523df9fc94212e9411e64924ac363f606"
+    }
+  ],
+  "question": "q1",
+  "schema_version": 1
+}
