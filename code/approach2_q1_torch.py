@@ -1,4 +1,4 @@
-"""Approach B Part 1: CPU float64 differentiable SVI; no neural surface in M5."""
+"""Q1 Approach B: CPU float64 differentiable SVI or neural surface ablations."""
 
 import argparse
 import csv
@@ -60,12 +60,24 @@ def main(argv=None):
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--output-dir", type=Path, default=ROOT/"results")
     parser.add_argument("--mode", choices=["development", "empirical"], default="empirical")
-    parser.add_argument("--component", choices=["svi"], default="svi", help="M5 implements differentiable SVI only; neural integration is a later milestone")
+    parser.add_argument("--component", choices=["svi", "neural"], default="svi", help="SVI comparison (M5) or neural penalty ablations (M6)")
+    parser.add_argument("--hidden", type=int, nargs="+", default=[16,16])
+    parser.add_argument("--activation", choices=["tanh","softplus"], default="tanh")
+    parser.add_argument("--epochs", type=int, default=600)
+    parser.add_argument("--batch-size", type=int, default=256)
+    parser.add_argument("--learning-rate", type=float, default=.01)
+    parser.add_argument("--patience", type=int, default=100)
+    parser.add_argument("--lambda-butterfly", type=float, default=1.)
+    parser.add_argument("--lambda-calendar", type=float, default=1.)
+    parser.add_argument("--neural-threads", type=int, default=1)
     parser.add_argument("--adam-lr", type=float, default=0.03)
     parser.add_argument("--adam-max-steps", type=int, default=10000)
     parser.add_argument("--lbfgs-lr", type=float, default=1.0)
     parser.add_argument("--lbfgs-max-iter", type=int, default=1000)
     args = parser.parse_args(argv)
+    if args.component == "neural":
+        from q1.neural_cli import run_neural
+        return run_neural(args,parser)
     dataset = "q1_synthetic_svi_optimizer_comparison" if args.mode == "development" else "q1_510050"
     if args.dataset != dataset:
         parser.error("Mode/dataset origin mismatch; use "+dataset)

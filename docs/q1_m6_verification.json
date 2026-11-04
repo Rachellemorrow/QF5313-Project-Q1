@@ -1,0 +1,63 @@
+{
+  "milestone": "M6 neural volatility surface and mandatory arbitrage ablation",
+  "SOFTWARE_VERIFICATION": "PASS",
+  "EMPIRICAL_REQUIREMENTS": "BLOCKED",
+  "scope": "Synthetic mathematical/software verification only; no market-performance or global no-arbitrage claim; no M7 robustness",
+  "baseline_commit": "e8ae94d52062b24f4d8fc4f870f1ff1a4bbd93a3",
+  "full_q1_regression": {"executions": 1, "passed": 247, "failed": 0, "seconds": 227.07, "command": "py -3.11 -B scripts/project.py uv run --locked --offline python -m pytest tests/q1 -q", "includes": "228 pre-existing Q1 tests plus 19 new neural tests"},
+  "files_modified": ["code/approach2_q1_torch.py"],
+  "files_created": ["code/q1/neural_surface.py", "code/q1/neural_training.py", "code/q1/neural_evaluation.py", "code/q1/neural_experiment.py", "code/q1/neural_figures.py", "code/q1/neural_cli.py", "tests/q1/test_neural_math.py", "tests/q1/test_neural_training.py", "docs/q1_neural_surface.md", "docs/q1_m6_verification.json"],
+  "execution_efficiency": {
+    "complete_synthetic_configuration_executions": 1,
+    "complete_synthetic_models_trained": 4,
+    "final_figure_sets_generated": 1,
+    "external_data_searches": 0,
+    "m5_optimizer_retuning": false,
+    "debug_smoke": {"epochs": 12, "initial_validation_price_mse": 2.83394763145547, "best_validation_price_mse": 0.35303651101202826},
+    "targeted_tests": {"initial_mathematical_passed": 7, "initial_seconds": 7.68, "expanded_passed": 19, "expanded_seconds": 34.34}
+  },
+  "synthetic": {
+    "directory": "results/verification/approach2/q1_synthetic_neural_verification",
+    "metrics_sha256": "6aad108f41fba3a8a4dd92db9366e397dcf6ef274bbc199def0fc73195fcd6b0",
+    "artifact_manifest_sha256": "31c1f5abb13f2cc03f5b88a6d05376500e3296caaf77dbc0b0ea9a471f494f76",
+    "manifest_files_verified": 12,
+    "inline_figures_verified": 6,
+    "checkpoints_verified_with_exact_quote_volatility_restoration": 4,
+    "architecture": {"widths": [2, 16, 16, 1], "affine_layers_including_output": 3, "activation": "tanh", "trainable_parameters": 337, "positive_output": "1e-6 + softplus(logit)"},
+    "seed": 42,
+    "quote_count": 328,
+    "artificial_dates": 1,
+    "artificial_expiries": 4,
+    "split_quote_counts": {"train": 200, "validation": 64, "test": 64},
+    "training": {"epochs": 600, "batch_size": 256, "adam_learning_rate": 0.01, "patience": 100, "min_delta": 1e-8, "penalty_collocation_shape": [7, 17]},
+    "evaluation_grid_shape": [15, 201],
+    "evaluation_moneyness_bounds": [-0.5, 0.5],
+    "common_initial_tensor_sha256": "8d5058f4afe8155ad168fd931b6c98d3ffd5bca7663284fc6e714fa58fd2ffb4",
+    "initial_validation_price_mse": 2.83394763145547,
+    "selection": {"protocol": "minimum best-validation price MSE on mandatory {0,1}x{0,1} coefficient grid; ties A/B/C/D; held-out evaluation only afterward", "selected_ablation": "C", "tied_with": "D"},
+    "ablations": [
+      {"case": "A", "lambda_butterfly": 0, "lambda_calendar": 0, "epochs": 600, "best_epoch": 600, "termination": "MAX_EPOCHS", "restored_training_price_mse": 0.00031926269335541476, "validation_price_mse": 0.0005074582153352174, "held_out_price_mse": 0.0008983031269098603, "held_out_date_max_relative_error": 0.10111152812692074, "fit_seconds": 9.701280700006464},
+      {"case": "B", "lambda_butterfly": 1, "lambda_calendar": 0, "epochs": 600, "best_epoch": 600, "termination": "MAX_EPOCHS", "restored_training_price_mse": 0.00031926269335541476, "validation_price_mse": 0.0005074582153352174, "held_out_price_mse": 0.0008983031269098603, "held_out_date_max_relative_error": 0.10111152812692074, "fit_seconds": 7.897042399999918},
+      {"case": "C", "lambda_butterfly": 0, "lambda_calendar": 1, "epochs": 600, "best_epoch": 600, "termination": "MAX_EPOCHS", "restored_training_price_mse": 0.0003131422657321825, "validation_price_mse": 0.000499245492129125, "held_out_price_mse": 0.0008866055198775561, "held_out_date_max_relative_error": 0.09966194622546704, "fit_seconds": 7.804556600000069},
+      {"case": "D", "lambda_butterfly": 1, "lambda_calendar": 1, "epochs": 600, "best_epoch": 600, "termination": "MAX_EPOCHS", "restored_training_price_mse": 0.0003131422657321825, "validation_price_mse": 0.000499245492129125, "held_out_price_mse": 0.0008866055198775561, "held_out_date_max_relative_error": 0.09966194622546704, "fit_seconds": 7.699327800000901}
+    ],
+    "per_ablation_accounting": {"optimizer_updates": 600, "backward_calls": 600, "training_objective_evaluations_including_initial_and_restored": 602, "validation_price_evaluations_including_initial_and_restored": 602, "mathematical_convergence_claimed": false},
+    "arbitrage_counts_each_ablation": {"examination_butterfly": 0, "complete_butterfly": 0, "calendar_derivative": 0, "all_maturity_pair_calendar": 0, "negative_forward_variance": 0},
+    "ablation_limitations": "A/B and C/D checkpoints are identical. Butterfly penalty never activated on this benign fixture (B/D history maximum 0). Calendar penalty did activate (C/D history maximum 8.091826393101344e-6). No general penalty-effectiveness claim is supported.",
+    "minimum_selected_evaluation_volatility": 0.31182275922725305,
+    "selected_torch_numpy_max_abs_price_difference": 2.842170943040401e-14,
+    "selected_checkpoint_finite_differences": {"physical_k": [-0.13, 0.17], "maturity": [0.2, 0.7], "central_step": 1e-5, "maximum_abs_errors": {"w_k": 8.682954355521133e-11, "w_T": 4.4479836480704193e-11, "w_kk": 8.929660083589752e-7}, "inspection_tolerances": {"w_k": 1e-7, "w_T": 1e-7, "w_kk": 1e-5}},
+    "runtime": {"python": "3.13.18", "numpy": "2.5.4", "torch": "2.15.0+cpu", "platform": "Windows-11-10.0.26200-SP0", "processor": "AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD", "torch_num_threads": 1},
+    "figures": ["training_validation.html", "neural_smiles.html", "neural_surface.html", "observed_predicted_prices.html", "arbitrage_heatmaps.html", "penalty_ablation.html"]
+  },
+  "empirical": {
+    "directory": "results/approach2/q1_510050_neural",
+    "registered_source_dataset": "q1_510050",
+    "metrics_sha256": "c3e4c529a13ae1e344998a34a6e4d9fe38a187481855f666bbb4eb668a2b84f2",
+    "artifact_manifest_sha256": "3eb61270eda68ddbb41830dbade9ce006151864b5df9256c42c05b75b622b7fd",
+    "status": "BLOCKED", "input_rows": 606, "eligible_rows": 0, "attempted_dates": 0, "fit_seconds": 0, "checkpoints": 0, "figures": 0,
+    "strict_eligibility_relaxed": false,
+    "direct_cli_exit": 2, "launcher_exit": 1
+  },
+  "preserved": {"m5_saved_metrics_hashes_verified_unchanged": true, "m5_status": "PARTIAL", "m4_m5_algorithm_changes": false, "q2_q3_changes": false, "shared_configuration_changes": false, "m7_started": false}
+}
