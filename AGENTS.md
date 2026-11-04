@@ -181,6 +181,60 @@ Use Plotly for interactive figures, with `include_plotlyjs=True`.
 
 The comparison script must aggregate available metrics and generate `results/comparison.html`.
 
+### Executable Environment Commands (M0)
+
+Verified in M0 on Windows x86-64: CPython **3.13.18**, uv **0.13.7**,
+all pinned imports/numerical checks, and **18 passing environment smoke tests**.
+Lockfile consistency and no-change synchronization checks also passed offline.
+
+Run these PowerShell commands from the repository root on Windows x86-64.
+The bootstrap prerequisite is the existing Python 3.11 installation and `py`
+launcher; it runs only the standard-library launcher with bytecode writes disabled.
+Project code runs with repository-managed Python 3.13, not that host interpreter.
+
+```powershell
+# Clean-clone setup: verifies a pinned uv wheel, installs the pinned Python,
+# and creates/synchronizes .venv from the committed uv.lock.
+py -3.11 -B scripts/project.py setup
+
+# Offline verification after setup: versions, lock check, sync check,
+# dependency consistency, and environment-only pytest tests.
+py -3.11 -B scripts/project.py verify
+
+# Individual diagnostics; always use the launcher for local cache isolation.
+py -3.11 -B scripts/project.py uv --version
+py -3.11 -B scripts/project.py uv run --locked --offline python --version
+py -3.11 -B scripts/project.py uv lock --check --offline
+py -3.11 -B scripts/project.py uv sync --locked --check --offline
+py -3.11 -B scripts/project.py uv pip check --python .venv/Scripts/python.exe
+py -3.11 -B scripts/project.py uv run --locked --offline python -m pytest tests/q1/test_environment.py -v -s
+```
+
+Use the launcher before every project command: it configures child-process-only
+environment variables for `.venv/`, `.tools/`, `.uv-cache/`, `.cache/`, and `.tmp/`.
+It disables Windows Python registry registration/discovery and user site packages.
+It does not change the host PATH, execution policy, profile, or system Python.
+Do not use bare system `python`, `pip`, `uv`, or activation scripts for project work.
+The Python patch version is pinned in `.python-version`, uv in the launcher and
+`pyproject.toml`, direct dependencies in `pyproject.toml`, and transitive dependencies
+with artifact hashes in `uv.lock`. The initial setup requires network access.
+Package downloads use the public Aliyun PyPI mirror; the uv wheel is checked
+against its pinned official-PyPI SHA-256. Generated HTML, environment evidence,
+and pytest temporary files were verified under `.tmp/` inside the repository.
+Execution evidence, verification status, and shared configuration decisions are
+recorded in `docs/decisions/m0-environment.md`.
+
+**Planned Q1 commands — not implemented or verified in M0:**
+
+```powershell
+py -3.11 -B scripts/project.py uv run --locked python code/approach1_q1_svi.py --seed 42
+py -3.11 -B scripts/project.py uv run --locked python code/approach2_q1_torch.py --seed 42
+```
+
+These are future CLI contracts, not claims that the scripts currently exist.
+Dataset arguments and reproduction commands will be finalized in later milestones.
+No Q2/Q3 commands or implementations are introduced by this session.
+
 ---
 
 ## 4. Question 1 — Implied Volatility Surface
