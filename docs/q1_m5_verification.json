@@ -1,0 +1,122 @@
+{
+  "milestone": "M5 differentiable SVI calibration",
+  "SOFTWARE_VERIFICATION": "PARTIAL",
+  "EMPIRICAL_REQUIREMENTS": "BLOCKED",
+  "verification_scope": "CPU float64 synthetic software checks and unchanged strict historical eligibility gate; not an empirical optimizer benchmark",
+  "baseline_commit": "609a5adfa5d2576091a8dbd4615c083a9f9fa966",
+  "final_regression": {
+    "full_q1_passed": 228,
+    "failed": 0,
+    "seconds": 228.02,
+    "command": "py -3.11 -B scripts/project.py uv run --locked --offline python -m pytest tests/q1 -q",
+    "note": "Passing failure-accounting tests does not imply all calibration recovery criteria passed. SOFTWARE_VERIFICATION remains PARTIAL."
+  },
+  "initial_verification": {
+    "prerequisite_numerical_tests_passed": 111,
+    "prerequisite_seconds": 30.28,
+    "new_model_tests_passed": 12,
+    "new_model_seconds": 14.05,
+    "intermediate_full_q1_run": {
+      "passed": 227,
+      "failed": 1,
+      "seconds": 212.82,
+      "cause": "Absolute-only 1e-24 cross-library RSS assertion rejected roundoff. A saved-artifact check also rejected an initial rel=1e-10 correction. Final objective parity compares sqrt(RSS) to weighted residual norm with tolerance 64*float64_epsilon*max(1,norm(sqrt(weights)*target)); optimizer and calibration acceptance tolerances unchanged."
+    },
+    "second_intermediate_full_q1_run": {
+      "passed": 227,
+      "failed": 1,
+      "seconds": 226.17,
+      "cause": "Run collected the initial relative-RSS correction before the saved-artifact check exposed Adam roundoff. Final norm-based correction was launched as a separate full regression run."
+    },
+    "first_comparison_test_run": {
+      "passed": 4,
+      "setup_errors": 5,
+      "seconds": 105.36,
+      "cause": "Test fixture incorrectly assumed exit 0; actual default L-BFGS nonconvergence correctly returned 1. Tests now check retained failure, not weakened convergence tolerances."
+    }
+  },
+  "initial_saved_run": {
+    "directory": "results/verification/approach2/q1_synthetic_svi_optimizer_comparison",
+    "metrics_sha256": "340ca39b475b0a7695e0f90336c175bb2be62aefa5a7a5b474582c12430dda96",
+    "artifact_manifest_sha256": "326a2a1e130cdda56531c97c6b7c4c84a2f7510042e625b52ce6377ca5efe1ca",
+    "note": "Preserved initial output. Initial summary maxima covered converged slices only; full failed candidates were always retained. Final reporting includes every available candidate in aggregate maxima and adds runtime information.",
+    "successful_slices": {"scipy": 4, "adam": 4, "lbfgs": 3},
+    "attempted_slices_per_algorithm": 4,
+    "measured_fit_seconds": {"scipy": 0.0545167000091169, "adam": 37.87748379999539, "lbfgs": 4.799105599988252}
+  },
+  "final_saved_run": {
+    "directory": "results/m5_final/verification/approach2/q1_synthetic_svi_optimizer_comparison",
+    "metrics_sha256": "e93ce4f1269a487a4d85296a5ddd772a345b162dd0eb96dc5aa9f74d7e369cdb",
+    "artifact_manifest_sha256": "15eb1d4888e099ececb042aa2867cee2f8ea6fc3f4c0652d65f678f1ed58dcaa",
+    "all_manifest_hashes_and_sizes_verified": true,
+    "saved_artifact_validation_functions_passed": 5,
+    "saved_artifact_checks": ["matched objective, starts, weights and fingerprints", "recovery, failures and actual counts", "unchanged SciPy baseline", "shared arbitrage and repricing", "six inline figures, artifact hashes and no-overwrite"],
+    "manifest_file_count": 9,
+    "quote_count": 328,
+    "quote_preparation_rejections": 0,
+    "valuation_date_count": 1,
+    "seed": 42,
+    "synthetic_not_empirical": true,
+    "fixture_sha256": "414ac64c7dd674c3a1f0dc8e319c91850532b9efdb74509811ba5c74c204ac24",
+    "m5_cli_recovery_tolerances": {"variance": 1e-6, "parameters": 1e-4},
+    "original_m4_fixture_recovery_tolerances": {"variance": 1e-9, "parameters": 1e-6},
+    "converged_slices_meeting_original_m4_fixture_tolerances": {"scipy": 4, "adam": 0, "lbfgs": 3},
+    "adam_m4_precision_recovery_limitation": "4/4 meets declared M5 optimizer/post-check and looser CLI accuracy thresholds, but 0/4 meets the unchanged original M4 fixture recovery thresholds. These are not equivalent standards.",
+    "maximum_errors_include_nonconverged_candidates": true,
+    "runtime": {
+      "python": "3.13.18", "numpy": "2.5.4", "scipy": "1.18.1", "torch": "2.15.0+cpu",
+      "platform": "Windows-11-10.0.26200-SP0", "machine": "AMD64",
+      "processor": "AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD", "torch_num_threads": 8
+    },
+    "measured_fit_seconds": {"scipy": 0.0706549000024097, "adam": 40.82938140000624, "lbfgs": 5.0857115000035265},
+    "timing_caveat": "Single fixed-order logged run, not an isolated repeated benchmark; regression verification also ran during the reporting work.",
+    "maximum_final_rss": {"scipy": 4.7189609179845875e-26, "adam": 9.988384977801619e-15, "lbfgs": 7.10249285642912e-11},
+    "maximum_known_variance_grid_error": {"scipy": 1.4066525722000733e-13, "adam": 1.0437453489692272e-7, "lbfgs": 8.07095617801068e-6},
+    "maximum_known_parameter_error": {"scipy": 2.2937207688755734e-12, "adam": 8.226811321010441e-6, "lbfgs": 0.0003419139049006814},
+    "successful_slices": {"scipy": 4, "adam": 4, "lbfgs": 3},
+    "arbitrage": {
+      "examination_butterfly_violations_among_successful_fits": 0,
+      "complete_butterfly_violations_among_successful_fits": 0,
+      "calendar_violations_among_successful_fits": 0,
+      "negative_forward_variance_locations_among_successful_fits": 0,
+      "lbfgs_failed_slice_without_diagnostics": "2000-01-03|2000-04-02"
+    },
+    "figures": ["objective_vs_iteration.html", "objective_vs_wall_time.html", "parameter_comparison.html", "optimizer_convergence.html", "repricing_comparison.html", "arbitrage_summary.html"]
+  },
+  "known_default_lbfgs_failure": {
+    "slice_id": "2000-01-03|2000-04-02",
+    "iterations": 1000,
+    "closure_calls": 1508,
+    "objective_evaluations_including_postcheck": 1509,
+    "gradient_evaluations_including_postcheck": 1509,
+    "weighted_rss": 7.10249285642912e-11,
+    "physical_half_rss_gradient_infinity_norm": 3.3153415752301685e-7,
+    "known_variance_grid_max_abs_error": 8.07095617801068e-6,
+    "known_parameter_max_abs_error": 0.0003419139049006814,
+    "complete_date_repricing_median": null,
+    "complete_date_repricing_p95": null,
+    "diagnostics_unavailable_for_failed_fit": true,
+    "tolerances_or_budget_relaxed": false
+  },
+  "empirical": {
+    "status": "BLOCKED",
+    "input_rows": 606,
+    "eligible_rows": 0,
+    "rejected_rows": 606,
+    "attempted_slices": 0,
+    "fit_seconds": 0.0,
+    "figures_generated": 0,
+    "partial_preview_used": false,
+    "strict_pipeline_eligibility_relaxed": false,
+    "metrics_path": "results/approach2/q1_510050/metrics.json",
+    "metrics_sha256": "79f9c32a7de4dbbe20aea96928f91535fff5757b7e6550a79fad668df9121613",
+    "artifact_manifest_sha256": "39c76860e3a16ce7778879bb3eae586bde2eb23288bbef36bc63beaa0cd38ea4"
+  },
+  "exit_behavior": {
+    "direct_cli_default_synthetic_partial": 1,
+    "direct_cli_empirical_blocked": 2,
+    "shared_launcher_nonzero": 1,
+    "existing_output_refused": true
+  },
+  "scope": {"approach_a_changed": false, "shared_configuration_changed": false, "q2_q3_changed": false, "m6_started": false}
+}
