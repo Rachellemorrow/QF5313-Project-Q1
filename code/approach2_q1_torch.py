@@ -60,7 +60,10 @@ def main(argv=None):
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--output-dir", type=Path, default=ROOT/"results")
     parser.add_argument("--mode", choices=["development", "empirical"], default="empirical")
-    parser.add_argument("--component", choices=["svi", "neural"], default="svi", help="SVI comparison (M5) or neural penalty ablations (M6)")
+    parser.add_argument("--component", choices=["svi", "neural", "robustness"], default="svi", help="SVI (M5), neural ablation (M6), or missing-quote study (M7)")
+    parser.add_argument("--seeds", type=int, nargs="+", default=[42,43,44], help="M7 complete study seeds")
+    parser.add_argument("--smoke", action="store_true", help="M7 debugging budgets only; outputs labelled separately")
+    parser.add_argument("--resume", action="store_true", help="M7: reuse completed per-fit cache jobs without overwriting evidence")
     parser.add_argument("--hidden", type=int, nargs="+", default=[16,16])
     parser.add_argument("--activation", choices=["tanh","softplus"], default="tanh")
     parser.add_argument("--epochs", type=int, default=600)
@@ -75,6 +78,9 @@ def main(argv=None):
     parser.add_argument("--lbfgs-lr", type=float, default=1.0)
     parser.add_argument("--lbfgs-max-iter", type=int, default=1000)
     args = parser.parse_args(argv)
+    if args.component == "robustness":
+        from q1.robustness_cli import run_robustness
+        return run_robustness(args,parser)
     if args.component == "neural":
         from q1.neural_cli import run_neural
         return run_neural(args,parser)

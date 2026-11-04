@@ -1,0 +1,94 @@
+{
+  "milestone": "M7 quote-level missing-quote robustness",
+  "SOFTWARE_VERIFICATION": "PARTIAL",
+  "EMPIRICAL_REQUIREMENTS": "BLOCKED",
+  "scope": "Labelled synthetic verification only. One retained-data L-BFGS nonconvergence and dense-grid neural calendar violations remain visible; no empirical or global no-arbitrage claim.",
+  "baseline_commit": "0a46178bc87b3dde0846558c4dc5cf81b564945a",
+  "full_q1_regression": {"executions": 1, "passed": 259, "failed": 0, "seconds": 252.61, "command": "py -3.11 -B scripts/project.py uv run --locked --offline python -m pytest tests/q1 -q", "scope": "247 pre-existing tests plus 12 new M7 tests; passing failure-accounting tests does not promote nonconvergence or erase arbitrage"},
+  "files_modified": ["code/approach2_q1_torch.py", "code/q1/neural_training.py"],
+  "files_created": ["code/q1/robustness_protocol.py", "code/q1/robustness.py", "code/q1/robustness_cli.py", "code/q1/robustness_figures.py", "tests/q1/test_robustness_protocol.py", "tests/q1/test_robustness_runner.py", "docs/q1_missing_quote_robustness.md", "docs/q1_m7_verification.json"],
+  "protocol_approval": {
+    "neural_coefficients": [1, 1],
+    "decision": "User explicitly chose Fixed D preset before complete M7 performance inspection",
+    "reason": "M6's selected C used this same complete synthetic universe, so reusing it as a supposedly held-out-independent selection would be inappropriate. D reuses the original both-penalty preset without M7 tuning.",
+    "fresh_neural_fit_each_mask": true,
+    "m6_checkpoint_reused_for_fitting": false
+  },
+  "execution": {
+    "complete_three_seed_runs": 1,
+    "final_eight_figure_sets": 1,
+    "fresh_svi_fits": 36,
+    "fresh_dated_neural_fits": 3,
+    "full_reference": "REUSED_HASH_VERIFIED_M4_REFERENCE_FOR_ILLUSTRATION_ONLY",
+    "new_cache_records": 40,
+    "note": "40 cache records = 36 SVI fits + 3 neural fits + one reused reference record, not 40 new calibrations",
+    "total_refit_seconds": 136.82880920000753,
+    "external_source_searches": 0,
+    "targeted_tests": {"initial_protocol_passed": 5, "initial_seconds": 12.75, "m7_plus_m6_training_passed": 22, "m7_plus_m6_training_seconds": 62.55, "stabilized_m7_passed": 12, "stabilized_m7_seconds": 39.36},
+    "debug_smoke": "Seed 42, two-step Adam/L-BFGS budgets, five neural epochs; 100 matched attempts each. SciPy/neural predicted 100, Adam/L-BFGS zero with explicit under-budget failures. Initial calendar-only debug preset, not the final user-approved D study."
+  },
+  "synthetic": {
+    "directory": "results/verification/approach2/q1_synthetic_missing_quotes",
+    "metrics_sha256": "39a4b66131b2aaa3ad31ecd78f0632de6d03c2caddd73233a4c23780d8665542",
+    "artifact_manifest_sha256": "060dbe6fe16aea7d566c0e2eb193b0027f2dfe874f79b24ddba7047fd7d4dcca",
+    "configuration_sha256": "59261d07bd8701c5c9a17a48dd6d1b567117ac38417d48e7a374cadde478bc50",
+    "artifact_hashes_and_sizes_verified": 61,
+    "inline_html_no_external_script_sources_verified": 8,
+    "neural_checkpoints_and_exact_saved_prediction_restoration_verified": 3,
+    "train_only_normalization_verified_against_actual_training_ids": true,
+    "quote_universe": 328,
+    "artificial_dates": 1,
+    "artificial_expiries": 4,
+    "seeds": [42, 43, 44],
+    "rounding": "floor(0.30*N+0.5) per date/expiry",
+    "per_expiry": {"universe": 82, "retained": 57, "dropped": 25},
+    "per_seed": {"retained": 228, "dropped": 100, "realized_drop_fraction": 0.3048780487804878},
+    "manifest_sha256": {"42": "df9a7d7981387f82ed132df2f084bea4a0e9cb63290198a7c4127007ff713300", "43": "5469bf3e32ecef6534a85f904800b5c7c8a7ab5b04b63c909f00d149ede18837", "44": "f706cecd54e566b7647e7c834f61c96121e4aa540355100d3a1ab4e7844a8fab"},
+    "neural_split_and_training": [
+      {"seed": 42, "train": 182, "validation": 46, "held_out": 100, "epochs": 600, "best_epoch": 600, "termination": "MAX_EPOCHS"},
+      {"seed": 43, "train": 185, "validation": 43, "held_out": 100, "epochs": 600, "best_epoch": 598, "termination": "MAX_EPOCHS"},
+      {"seed": 44, "train": 186, "validation": 42, "held_out": 100, "epochs": 600, "best_epoch": 596, "termination": "MAX_EPOCHS"}
+    ],
+    "prediction_counts": {"scipy": [300, 300], "adam": [300, 300], "lbfgs": [275, 300], "neural": [300, 300]},
+    "successful_expiry_readiness_counts": {"scipy": [12, 12], "adam": [12, 12], "lbfgs": [11, 12], "neural": [12, 12]},
+    "mean_sample_std_across_seeds": {
+      "definition": "Each pair is [mean, sample std ddof=1]. Error metrics are conditional on available predictions; L-BFGS seed 42 has 75/100 predictions, others 100/100. Complete-cohort errors remain null for its failed cohort.",
+      "scipy": {"iv_mae": [1.1919718915602099e-12, 1.9437969721815866e-12], "iv_rmse": [2.5413755609905457e-12, 4.201954755852036e-12], "price_mae": [1.057507273879062e-11, 1.6122552867515705e-11], "price_rmse": [2.3619976928141926e-11, 3.655227986522702e-11], "relative_price_mae": [3.857271874685936e-12, 6.340889099437918e-12], "fit_seconds": [0.055862166664155666, 0.013341983419940496]},
+      "adam": {"iv_mae": [7.092743370333092e-8, 4.655085460446674e-9], "iv_rmse": [9.863483429209237e-8, 7.822626338149075e-9], "price_mae": [8.873588777553777e-7, 5.039060498572559e-8], "price_rmse": [1.1328168649237233e-6, 6.817789517907978e-8], "relative_price_mae": [2.532851137323195e-7, 2.0038053002715347e-8], "fit_seconds": [35.33479206666865, 4.685503336546097]},
+      "lbfgs": {"iv_mae": [1.6664665510498128e-9, 2.1160372112162085e-9], "iv_rmse": [3.5148416907537155e-9, 4.7097769000140584e-9], "price_mae": [2.1253499926531127e-8, 2.9723645016343343e-8], "price_rmse": [4.845238079453135e-8, 7.3222498854726e-8], "relative_price_mae": [6.915674619502308e-9, 9.307713653367919e-9], "fit_seconds": [2.543268733335329, 2.413948628514189]},
+      "neural": {"iv_mae": [0.003067912864770955, 0.0014436782146252682], "iv_rmse": [0.006398918025922343, 0.0023888172262881047], "price_mae": [0.02506752203148624, 0.013152837606739682], "price_rmse": [0.029728164870798757, 0.014808097537642655], "relative_price_mae": [0.014527997760291672, 0.00984572292075502], "fit_seconds": [7.6756801000010455, 0.07007483565853767]}
+    },
+    "secondary_common_success_intersection": {
+      "per_seed_counts_all_methods": [75, 100, 100],
+      "does_not_replace_original_300_target_failure_denominator": true,
+      "mean_iv_rmse": {"scipy": 2.5473024528141347e-12, "adam": 9.93823091053289e-8, "lbfgs": 3.5148416907537155e-9, "neural": 0.006607047994347009},
+      "mean_price_mae": {"scipy": 1.0768045390537512e-11, "adam": 8.736471940897402e-7, "lbfgs": 2.1253499926531127e-8, "neural": 0.025505701427671428}
+    },
+    "interpolation_extrapolation": {
+      "per_seed_common_support": {"42": {"interpolation": 100, "extrapolation": 0}, "43": {"interpolation": 100, "extrapolation": 0}, "44": {"interpolation": 98, "extrapolation": 2}},
+      "pooled_interpolation_expected": 298,
+      "pooled_extrapolation_expected": 2,
+      "extrapolation_ids": ["SYNTHETIC_365_40_C", "SYNTHETIC_365_40_P"],
+      "limitation": "Two legs at ONE boundary strike in ONE seed; not independent broad extrapolation evidence. Empty seed categories have null errors/std.",
+      "neural_pooled_interpolation": {"iv_rmse": 0.006702667586883051, "price_mae": 0.024483531165891675, "coverage": [298, 298]},
+      "neural_pooled_extrapolation": {"iv_rmse": 0.00431629414828491, "price_mae": 0.11208216100507618, "coverage": [2, 2]},
+      "lbfgs_interpolation_coverage": [273, 298],
+      "lbfgs_extrapolation_coverage": [2, 2]
+    },
+    "failure": {"method": "lbfgs", "seed": 42, "slice_id": "2000-01-03|2000-04-02", "retained_quotes": 57, "uncovered_targets": 25, "native_iterations": 1000, "objective_evaluations": 1493, "gradient_evaluations": 1493, "closure_calls": 1492, "rss": 1.966800858520566e-12, "physical_half_rss_gradient_inf": 2.970835626899567e-8, "fit_seconds": 4.795832800002245, "budget_or_tolerances_changed": false},
+    "common_expiry_grid_arbitrage": {"k_points": 201, "k_bounds": [-0.5, 0.5], "original_expiries": 4, "all_available_examination_butterfly_counts": 0, "all_available_complete_butterfly_counts": 0, "all_available_calendar_counts": 0, "all_available_negative_forward_counts": 0, "unverified_lbfgs_expiry_nodes": 1},
+    "dense_neural_supplement": {
+      "grid": "M6 independent 15 maturities x 201 k nodes; supplementary to matched four-expiry comparison",
+      "42": {"examination_butterfly": 0, "complete_butterfly": 0, "negative_w_T": 0, "calendar_pairs": 0, "negative_forward": 0},
+      "43": {"examination_butterfly": 0, "complete_butterfly": 0, "negative_w_T": 0, "calendar_pairs": 0, "negative_forward": 0},
+      "44": {"examination_butterfly": 0, "complete_butterfly": 0, "negative_w_T": 402, "calendar_pairs": 448, "negative_forward": 272},
+      "mean_sample_std_across_seeds": {"negative_w_T": [134.0, 232.09480821422954], "calendar_pairs": [149.33333333333334, 258.65292059695236], "negative_forward": [90.66666666666667, 157.0392732195782]},
+      "all_locations_and_magnitudes": "metrics.json history.diagnostics[neural seed 44].dense_neural_supplement",
+      "warning": "Soft penalties did NOT eliminate calendar arbitrage between expiry nodes. No zero-arbitrage surface claim; no coefficient/budget tuning after inspection."
+    },
+    "runtime": {"python": "3.13.18", "numpy": "2.5.4", "torch": "2.15.0+cpu", "platform": "Windows-11-10.0.26200-SP0", "processor": "AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD", "torch_num_threads": 1},
+    "figures": ["full_data_implied_volatility.html", "retained_dropped_quotes.html", "full_data_svi_reference.html", "retained_svi_refits.html", "neural_predictions.html", "held_out_errors_moneyness.html", "held_out_errors_maturity.html", "robustness_comparison.html"]
+  },
+  "empirical": {"directory": "results/approach2/q1_510050_missing_quotes", "metrics_sha256": "7100daf411f626657370cdcc802aa600d53e29d77bb9c9dc3585790997eaec59", "artifact_manifest_sha256": "f10f4332a1a99f99eb313ec3d7a73c31c5495ff96bb0d0a63166f714d9b11dbc", "input_rows": 606, "eligible_rows": 0, "fits": 0, "predictions": 0, "figures": 0, "fit_seconds": 0, "status": "BLOCKED", "eligibility_relaxed": false, "direct_cli_exit": 2, "launcher_exit": 1},
+  "preservation": {"m4_m5_algorithms_unchanged": true, "m6_training_default_behavior_preserved": true, "prior_m5_m6_result_hashes_verified_unchanged": true, "q2_q3_modified": false, "shared_configuration_modified": false, "m8_started": false}
+}

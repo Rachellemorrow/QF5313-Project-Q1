@@ -72,9 +72,10 @@ def paired_split(rows, *, seed=42, config=TrainingConfig()):
     return {name: sorted(indices) for name, indices in folds.items()}
 
 
-def validate_split(rows, split):
-    if set(split) != {"train", "validation", "test"} or any(not split[name] for name in split):
-        raise ValueError("Require three nonempty folds")
+def validate_split(rows, split, *, require_test=True):
+    required = {"train", "validation", "test"} if require_test else {"train", "validation"}
+    if set(split) != required or any(not split[name] for name in split):
+        raise ValueError("Require three nonempty folds" if require_test else "Require nonempty retained-only train/validation folds")
     combined = [index for indices in split.values() for index in indices]
     if sorted(combined) != list(range(len(rows))):
         raise ValueError("Folds must partition all rows without overlaps or omissions")
@@ -119,11 +120,13 @@ def state_fingerprint(model):
 
 
 def train_surface(rows, split, *, lambda_butterfly=0., lambda_calendar=0., seed=42,
-                  surface_config=SurfaceConfig(), training_config=TrainingConfig()):
+                  surface_config=SurfaceConfig(), training_config=TrainingConfig(), retained_only=False):
     """Price MSE + the exact required soft penalties; no IV regression/pretraining.
 
     Return the best VALIDATION-price checkpoint. MAX_EPOCHS is a finite completed
     budget, not claimed mathematical convergence. No test quote is read in fitting.
+    M7 retained_only=True accepts ONLY retained train/validation rows, including
+    single C/P legs. The original M6 three-fold interface remains the default.
     """
     start = perf_counter()
     record = {"success": False, "status": "FAILED", "failure_reason": None, "history": [],
@@ -137,7 +140,7 @@ def train_surface(rows, split, *, lambda_butterfly=0., lambda_calendar=0., seed=
     try:
         if any(not math.isfinite(number) or number < 0 for number in [lambda_butterfly,lambda_calendar]):
             raise ValueError("Penalty coefficients must be finite and nonnegative")
-        validate_split(rows,split)
+        validate_split(rows,split,require_test=not retained_only)
         training = quote_tensors([rows[i] for i in split["train"]])
         validation = quote_tensors([rows[i] for i in split["validation"]])
         x = torch.stack((training["k"],training["time_to_expiry"]),dim=1)
