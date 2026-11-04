@@ -1,0 +1,20 @@
+{
+  "provenance": "SYNTHETIC_SOFTWARE_VERIFICATION_ONLY",
+  "not_historical_market_observations": true,
+  "seed": 42,
+  "textbook_case": {
+    "spot": 100.0, "strike": 100.0, "rate": 0.05,
+    "dividend_yield": 0.0, "time_to_expiry": 1.0, "volatility": 0.2,
+    "call_reference": 10.450583572185565,
+    "put_reference": 5.573526022256971
+  },
+  "svi_smooth": {"a": 0.02, "b": 0.15, "rho": -0.3, "m": 0.04, "eta": 0.2},
+  "svi_exam_only_violation": {"a": 0.001, "b": 1.0, "rho": 0.9, "m": 0.0, "eta": 0.01},
+  "svi_both_violation": {"a": 0.01, "b": 4.0, "rho": 0.0, "m": 0.0, "eta": 0.1},
+  "term_structure": {
+    "maturities": [0.25, 0.5, 1.0],
+    "total_variance": [[0.01, 0.02], [0.03, 0.04], [0.02, 0.08]],
+    "query": 0.75,
+    "expected": [0.025, 0.06]
+  }
+}
