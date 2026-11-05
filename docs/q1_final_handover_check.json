@@ -1,0 +1,91 @@
+{
+  "source_files": [
+    "code/approach1_q1_svi.py",
+    "code/approach2_q1_torch.py",
+    "code/compare.py",
+    "code/q1/__init__.py",
+    "code/q1/_validation.py",
+    "code/q1/approach_a.py",
+    "code/q1/approach_a_figures.py",
+    "code/q1/audit_interfaces.py",
+    "code/q1/build_feasibility.py",
+    "code/q1/classical_svi.py",
+    "code/q1/comparison.py",
+    "code/q1/final_audit.py",
+    "code/q1/final_recovery.py",
+    "code/q1/inspect_public_archives.py",
+    "code/q1/market_data.py",
+    "code/q1/neural_cli.py",
+    "code/q1/neural_evaluation.py",
+    "code/q1/neural_experiment.py",
+    "code/q1/neural_figures.py",
+    "code/q1/neural_surface.py",
+    "code/q1/neural_training.py",
+    "code/q1/pricing.py",
+    "code/q1/provenance.py",
+    "code/q1/rates.py",
+    "code/q1/robustness.py",
+    "code/q1/robustness_cli.py",
+    "code/q1/robustness_figures.py",
+    "code/q1/robustness_protocol.py",
+    "code/q1/svi.py",
+    "code/q1/torch_comparison.py",
+    "code/q1/torch_comparison_figures.py",
+    "code/q1/torch_svi.py",
+    "code/q1/validation_bundle.py",
+    "code/q1/verification_fixtures.py"
+  ],
+  "source_ast_parse": "PASS",
+  "tracked_scope_file_counts": {
+    "tests/q1": 48,
+    "data/clean/q1": 127
+  },
+  "required_files": [
+    "data/fetch.py",
+    "data/metadata.json",
+    "pyproject.toml",
+    "uv.lock",
+    ".python-version",
+    "scripts/project.py",
+    "scripts/q1_session_export.py",
+    "scripts/q1_isolated_replay.py",
+    "docs/Q1_validation.md",
+    "docs/q1_final_recovery.md",
+    "docs/q1_final_recovery_evidence.json",
+    "docs/q1_report_support.md"
+  ],
+  "verified_snapshots": 24,
+  "verified_original_figures": 27,
+  "sessions": [
+    {
+      "session_id": "ses_e58f9132affeaic2LlD5RPAtxS",
+      "message_count": 378,
+      "tool_parts": 476,
+      "json_sha256": "88e097335e009da8ff24bfbfbe5da3f739b5254eaa428aad57569416c56b09da",
+      "markdown_sha256": "adf1bc84d265e61c731e74000013328e6d592e81edac826501515a889faf4b31"
+    },
+    {
+      "session_id": "ses_e56e1d212ffeee7u9TZpxmA6j0",
+      "message_count": 44,
+      "tool_parts": 48,
+      "json_sha256": "4184c6a789f059d09857003790c061cebf07c480bc8df438157ea96e36208c22",
+      "markdown_sha256": "2244ddd9ab29a417719c652dce93079ca98beb9098337f268d8b7e0b87c205b7"
+    }
+  ],
+  "secret_scan": {
+    "files_scanned": 243,
+    "patterns": "private-key headers, AWS AKIA IDs, long sk-prefixed keys",
+    "findings": [],
+    "limitation": "Bounded pattern scan only; human review of sessions, attachments and redistribution remains required."
+  },
+  "tracked_files_over_50MB": [],
+  "tracked_temporary_paths": [],
+  "SOFTWARE": "PARTIAL",
+  "EMPIRICAL": "BLOCKED",
+  "GROUP_SUBMISSION": "NOT_READY",
+  "training_or_downloads": false,
+  "offline_data_verification": "PASS; 606 archived, zero eligible",
+  "offline_lock_check": "PASS; 70 packages",
+  "offline_sync_check": "PASS; 50 installed packages; no changes",
+  "tests_this_audit": "Not rerun; availability/tracking checked; prior outcomes in verification records"
+}
