@@ -1,0 +1,143 @@
+{
+  "baseline_commit": "d34b0138ad9c9e76b23731e62d996f2ad7ec9b69",
+  "sessions": [
+    {
+      "session_id": "ses_e58f9132affeaic2LlD5RPAtxS",
+      "message_count": 378,
+      "types": {
+        "user": 13,
+        "assistant": 322,
+        "idle": 14,
+        "system": 4,
+        "synthetic": 24,
+        "compaction": 1
+      },
+      "tool_parts": 476,
+      "tool_states_preserved": true,
+      "round_trip_equal": true,
+      "user_prompt_inventory": [
+        {
+          "id": "msg_1a706ecdb0014NkhoNhWeZM1xv",
+          "heading": "We are now starting Milestone M0: Repository Initialization and Environment Setup."
+        },
+        {
+          "id": "msg_1a70d7dd5001NwWB8734t4VKoD",
+          "heading": "I have now populated and saved AGENTS.md with the complete group-wide agent contract covering Q1, Q2, and Q3."
+        },
+        {
+          "id": "msg_1a7113f71001do7oGL6IWdkwAE",
+          "heading": "Your M0 repository assessment has been reviewed and accepted."
+        },
+        {
+          "id": "msg_1a718112f001Xm0nar3zMXa2TD",
+          "heading": "Please continue Milestone M0: Python 3.13 and uv Environment Setup."
+        },
+        {
+          "id": "msg_1a75b4f2a001PyWyGwaGv4vqJL",
+          "heading": "Proceed to Milestone M1: Historical Option Data Feasibility Audit for Question 1."
+        },
+        {
+          "id": "msg_1a771a7a5001tT8msXYyB5cr6M",
+          "heading": "Proceed to Milestone M1.5: Historical ETF Options Data Recovery and Source Validation."
+        },
+        {
+          "id": "msg_1a7827bb80012VTcovICmYqhBM",
+          "heading": "Proceed to Milestone M2A: Data-Independent Mathematical Foundations for Question 1."
+        },
+        {
+          "id": "msg_1a79c9da3001W3C3fp47iHVi2S",
+          "heading": "Proceed to Milestone M2: Reproducible Market Data Pipeline for Question 1."
+        },
+        {
+          "id": "msg_1a89602b1001LYD8akGohhZRJi",
+          "heading": "# Milestone M4 — Classical SVI Calibration (Approach A)"
+        },
+        {
+          "id": "msg_1a8b14d40001KNr2RnrXXQvz2t",
+          "heading": "# Milestone M5 — Differentiable SVI Calibration (Approach B, Part 1)"
+        },
+        {
+          "id": "msg_1a8cb9001001dbUYZdUQWVodD7",
+          "heading": "# Milestone M6 — Neural Volatility Surface (Efficient Execution)"
+        },
+        {
+          "id": "msg_1a8db49e4001iFMrGdGOcr0ENv",
+          "heading": "# Milestone M7 — Missing-Quote Robustness Study (Efficient Execution)"
+        },
+        {
+          "id": "msg_1a8fcc3ab001pBda3CWjws0LxJ",
+          "heading": "# Milestone M8 — Final Q1 Integration, Reproducibility and Compliance Audit"
+        }
+      ],
+      "json_sha256": "88e097335e009da8ff24bfbfbe5da3f739b5254eaa428aad57569416c56b09da",
+      "markdown_sha256": "adf1bc84d265e61c731e74000013328e6d592e81edac826501515a889faf4b31",
+      "warning": "Live-session snapshot: re-export after the final response/commit. Review and explicitly redact secrets before group submission. Other members/machines are not certified.",
+      "local_directory": ".tmp/q1_handover_sessions_m0_m8"
+    },
+    {
+      "session_id": "ses_e56e1d212ffeee7u9TZpxmA6j0",
+      "message_count": 44,
+      "types": {
+        "user": 6,
+        "assistant": 27,
+        "idle": 7,
+        "model-switched": 3,
+        "compaction": 1
+      },
+      "tool_parts": 48,
+      "tool_states_preserved": true,
+      "round_trip_equal": true,
+      "user_prompt_inventory": [
+        {
+          "id": "msg_1a91e2df2001ikoxYALEmTzEIl",
+          "heading": "D:\\NUS\\after admission\\Academic\\QF5313-Submission"
+        },
+        {
+          "id": "msg_1a91e8c21001OdbED4CNrcS1IW",
+          "heading": "D:\\NUS\\after admission\\Academic\\QF5313-Submission# Resume Interrupted M8 — No Rework, Minimal Compute"
+        },
+        {
+          "id": "msg_1a9258d7d001OXbDEJUxB4vJen",
+          "heading": "# Q1 Final Data Recovery — Phase 1: Diagnosis Only"
+        },
+        {
+          "id": "msg_1a92d5f9d001weaZVJzY6g1VbU",
+          "heading": "# Q1 Final Completion — Resume After M8"
+        },
+        {
+          "id": "msg_1a92e1b0d001OSRlcKa4IOv2dK",
+          "heading": "# QF5313 Q1 — URGENT FINAL COMPLETION"
+        },
+        {
+          "id": "msg_1a9515e560016LgY4n2ot7sGOC",
+          "heading": "# QF5313 Q1 — URGENT FINAL COMPLETION"
+        }
+      ],
+      "json_sha256": "4184c6a789f059d09857003790c061cebf07c480bc8df438157ea96e36208c22",
+      "markdown_sha256": "2244ddd9ab29a417719c652dce93079ca98beb9098337f268d8b7e0b87c205b7",
+      "warning": "Live-session snapshot: re-export after the final response/commit. Review and explicitly redact secrets before group submission. Other members/machines are not certified.",
+      "local_directory": ".tmp/q1_handover_sessions_recovery"
+    }
+  ],
+  "tracked_required_files": [
+    "code/approach1_q1_svi.py",
+    "code/approach2_q1_torch.py",
+    "data/fetch.py",
+    "data/metadata.json",
+    "pyproject.toml",
+    "uv.lock",
+    "scripts/project.py",
+    "scripts/q1_session_export.py",
+    "docs/q1_report_support.md",
+    "docs/q1_final_recovery.md"
+  ],
+  "tracked_bundle_files_verified": 24,
+  "targeted_tests": "2 passed in 2.11s",
+  "offline_data_check": "PASS; 606 archived observations, zero eligible",
+  "bundle_restore": "PASS; 24 snapshots, 102 indexed artifacts; no training",
+  "lock_check": "PASS; 70 packages",
+  "sync_check": "PASS; 50 packages, no changes",
+  "SOFTWARE": "PARTIAL",
+  "EMPIRICAL": "BLOCKED",
+  "GROUP_SUBMISSION": "NOT_READY"
+}
