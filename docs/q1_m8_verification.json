@@ -1,0 +1,100 @@
+{
+  "milestone": "M8 Q1 integration, reproducibility and compliance audit",
+  "baseline_commit": "6b6f0bb0a156ac7468e8f956a87e4e9d9904dc95",
+  "verdicts": {"SOFTWARE": "PARTIAL", "EMPIRICAL": "BLOCKED", "GROUP_SUBMISSION": "NOT_READY", "original_labels": ["SOFTWARE_PARTIAL", "EMPIRICAL_BLOCKED", "SUBMISSION_NOT_READY"]},
+  "scope": "Q1 audit/read-only comparison and lossless evidence replay. No completed M4-M7 experiment was retrained; small numerical/unit-fit tests still execute. No Q2/Q3 or group report/session deliverables changed; no final tag.",
+  "tests": {
+    "new_integration_targeted": {"passed": 5, "seconds": 9.96},
+    "extended_targeted_with_verified_existing_cli_artifacts": {"passed": 16, "seconds": 79.60},
+    "full_q1": {"executions": 1, "passed": 264, "failed": 0, "seconds": 205.0, "command": "py -3.11 -B scripts/project.py uv run --locked --offline python -m pytest tests/q1 -q --reuse-q1-artifacts"},
+    "reuse_flag": "Validates original M4/M5 manifests and reuses their full CLI experiment fixtures, without weakening numerical/coverage/figure assertions. Default test behavior remains unchanged."
+  },
+  "comparison": {
+    "paths": ["results/comparison.html", "results/comparison.json", "results/comparison.csv"],
+    "runs": 9, "canonical_snapshot_runs": 8, "normalized_rows": 131, "schema_or_provenance_issues": 0,
+    "scoped_rank_rows": 44, "rankable_complete_cohorts": 11,
+    "ranking_rule": "M7 only: identical run/date/expiry/seed/held-out-ID hash, all FOUR models at 100% coverage; no global or conditional unequal-coverage ranking",
+    "html_self_contained_verified": true,
+    "html_sha256": "ca5c267f3305715522086262a6718214d8c0b98ca672fc73dd56b4685f1b2f23",
+    "json_sha256": "d679ba154ca6fbb273479947c04ae05aaa9abfc089ec3244bbb585c187f7c00e",
+    "csv_sha256": "61ee920bcd87b4fb3ed1f953e21b69e980101d32836e0a65a807b56ea1bea09c",
+    "m5_initial_duplicate_run": "Preserved as a distinct run; canonical report uses results/m5_final, never averages duplicate timings or trusts successful-only initial aggregate maxima",
+    "other_questions": "Generic mandatory-schema records/raw metrics preserved without interpreting Q1 fields; schema compatibility tested on Q1-owned temporary fixtures, not Q2/Q3 files"
+  },
+  "tracked_verification_bundle": {
+    "directory": "tests/q1/fixtures/verified_runs",
+    "kind": "SYNTHETIC_VERIFICATION_AND_BLOCKED_GATE_EVIDENCE_NOT_MARKET_DATA",
+    "manifest_sha256": "341f774a05da6d8735c0b35bde8f2dce2fcb408a5e1d43cd93ecb2b88d8ce7f6",
+    "lossless_snapshot_files": 24, "original_artifacts_hash_verified": 102,
+    "compressed_bytes": 6060847, "largest_uncompressed_snapshot_bytes": 30046173,
+    "includes": "Eight canonical metrics/gates, original manifests, M4 diagnostics, four M6 and three M7 checkpoints",
+    "original_html": "Indexed with original SHA-256/size, not copied or regenerated; original milestone renderers and numeric figure data remain available",
+    "not_a_new_training_replication": true
+  },
+  "isolated_reproduction": {
+    "status": "PASS_SCOPE_QUALIFIED_ARTIFACT_REPLAY_AND_OFFLINE_DATA_REBUILD",
+    "directory": ".tmp/q1_m8_clean_checkout",
+    "source": "git checkout-index --all into an empty directory; then-staged source/snapshots, followed only by final documentation/test assertions/byte-preservation metadata",
+    "command": "py -3.11 -B scripts/project.py uv run --locked --offline python scripts/q1_isolated_replay.py --destination .tmp/q1_m8_clean_checkout",
+    "seconds": 51.41850560000603,
+    "original_ignored_results_or_model_caches_used": false,
+    "completed_experiment_training_performed": false,
+    "dependencies": "Pre-provisioned repository-managed pinned Python environment shared read-only; NOT a fully offline first-time dependency installation",
+    "steps": [
+      {"action": "Restore exact tracked snapshots", "seconds": 0.5668564000006882, "files": 24},
+      {"action": "Rebuild M2 from tracked M1/M1.5 snapshots", "seconds": 9.879319599996961, "quote_csv_byte_identical": true},
+      {"action": "Regenerate comparison from canonical replayed metrics", "seconds": 3.9324238000044716, "runs": 8, "rows": 119, "issues": 0},
+      {"action": "Checkpoint inference and finite-difference audit", "seconds": 0.8614015999992262, "genuine_dense_violations": true},
+      {"action": "M4 strict empirical gate", "seconds": 7.243458899996767, "direct_exit": 2},
+      {"action": "M5 strict empirical gate", "seconds": 12.603172999995877, "direct_exit": 2},
+      {"action": "M6 strict empirical gate", "seconds": 8.228066800002125, "direct_exit": 2},
+      {"action": "M7 strict empirical gate", "seconds": 8.103603499999736, "direct_exit": 2}
+    ],
+    "execution_evidence_sha256": "852887c46c0c1351e7c4224df68631039f359d3dfd9be09332e8fd4f3a80760a",
+    "limitations": ["Independent M4-M7 refitting deliberately UNVERIFIED in M8 to avoid repeated training", "Original milestone HTML not redundantly regenerated", "Fresh dependency bootstrap requires network or a separately provisioned authorized interpreter/wheel cache", "Offline artifact reproducibility does not validate historical metadata, market coverage or redistribution rights"]
+  },
+  "mathematical_audit": {
+    "source_and_data_audit_path": "results/q1_m8/audit.json",
+    "audit_sha256": "a8f615fade2cb9471f3d41e2d2edd7ba5342753493e9d86ce73d167c596758a2",
+    "verified_original_source_artifacts": 110,
+    "dense_neural_checkpoint_sha256": "550dfa6ce95d0359477a10fe90bfbf6c2385e71f71ee1c6174b3694bfe7525ef",
+    "saved_and_recomputed_counts": {"negative_w_T": 402, "calendar_pairs": 448, "negative_forward": 272},
+    "physical_point": {"k": 0.41500000000000004, "T": 1.0, "autograd_w_T": -0.023403562931940847},
+    "finite_differences": [
+      {"h": 0.001, "w_T": -0.02340339883487308},
+      {"h": 0.0001, "w_T": -0.023403561291157615},
+      {"h": 0.00001, "w_T": -0.023403562914026118},
+      {"h": 0.000001, "w_T": -0.023403562907087228}
+    ],
+    "independent_interior_k_pair": {"k": 0.355, "T1": 0.8470319634703196, "T2": 1.0, "later_minus_earlier_w": -0.001629876721397805},
+    "conclusion": "GENUINE MODEL BEHAVIOR, not a numerical sign/normalization error. No model retraining or outcome changes."
+  },
+  "historical_data": {"readiness": "PARTIAL_HISTORICAL", "all_rows": 606, "known_etf_rows": 489, "known_etf_dates": 130, "known_etf_strikes": 3, "strictly_eligible_rows_dates_expiries": [0, 0, 0], "verified_effective_metadata_rows": 0, "complete_month_verified": false, "complete_four_expiry_historical_chains_verified": false, "five_verified_dates_two_years": false, "empirical_benchmarks_claimed": false},
+  "known_scientific_issues_preserved": ["M5 L-BFGS nonconvergence and original strict recovery limitations", "Unequal SciPy/Torch boundary domains and stopping criteria", "M6 butterfly penalty inactive; A/B and C/D identical", "M6/M7 maximum-epoch neural termination is not convergence", "M7 L-BFGS 275/300 coverage; missing cohort scores stay null", "M7 seed44 dense calendar/forward violations", "Only two extrapolation legs at one strike in one seed", "Zero strictly eligible historical ETF option observations"],
+  "session_export": {
+    "installed_version": "opencode v2.2.5",
+    "inventory": [{"id": "ses_e58f9132affeaic2LlD5RPAtxS", "title": "M0 repository and environment setup", "milestone_prompts": ["M0", "M1", "M1.5", "M2A", "M2", "M4", "M5", "M6", "M7", "M8"]}],
+    "project_api_next_page_sessions": 0,
+    "m3_note": "Mathematical M3 duties were implemented under M2A; no separate session invented",
+    "native_cli_format": "JSON; byte-preserving subprocess capture verified",
+    "native_tui": "V2 documented session.export / Export session to editor; native editor export not automatically invoked or claimed verified",
+    "verified_markdown": ".tmp/m8_sessions/verified_markdown/session.md",
+    "snapshot_messages": 337, "snapshot_user_prompts": 13, "snapshot_assistant_messages": 288, "snapshot_tool_parts": 436,
+    "all_exported_message_objects_and_tool_states_round_trip_equal": true,
+    "snapshot_json_sha256": "71885be80958bf65a65393b296e45f08ce4554deae5ebb7efb62792278d7c40f",
+    "snapshot_markdown_sha256": "44bb731cb79ea7c3b9869f6408d5b16cbf2068d2376dabdbed065a95ab3b1f5e",
+    "capture_failure_preserved": "Initial PowerShell text/line capture produced invalid JSON on a long line; direct subprocess byte capture succeeded",
+    "remaining": "Live M8 session must be re-exported AFTER final commit/response; collect other members/machines and review/redact actual secrets/attachments. Root SESSION.md not written."
+  },
+  "environment_and_integrity": {
+    "python": "3.13.18", "uv": "0.13.7", "locked_package_entries": 70, "compatible_installed_distributions": 50,
+    "offline_lock_check": "PASS", "offline_sync_check_no_changes": "PASS", "dependency_consistency": "PASS",
+    "current_index_literal_secret_scan_files": 233, "existing_history_commits_scanned": 11, "high_confidence_findings": 0,
+    "secret_scan_scope": "Private-key blocks, AWS access-key IDs, long sk-prefixed strings; decompressed new evidence snapshots included. Not proof of absence of every possible credential.",
+    "initial_commit_AGENTS_bytes": 0,
+    "initial_full_contract_before_first_session": "FAIL_DEVIATION_PRESERVED_NOT_REWRITTEN",
+    "root_report_exists": false, "root_SESSION_exists": false,
+    "README": "9 lines but stale M0 status; group review/update pending, not overwritten",
+    "Q2_Q3_modified": false, "shared_configuration_modified": false, "group_report_overwritten": false, "group_SESSION_overwritten": false, "submission_tag_created": false
+  }
+}

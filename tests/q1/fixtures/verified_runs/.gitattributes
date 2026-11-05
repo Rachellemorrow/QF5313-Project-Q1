@@ -1,0 +1,3 @@
+# Preserve exact verification snapshot and manifest hashes on Windows checkout.
+*.gz -text
+manifest.json -text

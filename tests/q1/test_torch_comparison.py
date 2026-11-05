@@ -29,7 +29,13 @@ def no_network(monkeypatch):
 
 
 @pytest.fixture(scope="module")
-def completed_run(tmp_path_factory):
+def completed_run(tmp_path_factory, request):
+    if request.config.getoption("--reuse-q1-artifacts"):
+        from conftest import existing_run
+        output,metrics = existing_run("results/m5_final/verification/approach2/q1_synthetic_svi_optimizer_comparison")
+        command = [sys.executable,str(CLI),"--mode","development","--dataset","q1_synthetic_svi_optimizer_comparison",
+                   "--seed","42","--output-dir",str(ROOT/"results/m5_final")]
+        return metrics,output,command
     base = tmp_path_factory.mktemp("m5_comparison")
     command = [sys.executable, str(CLI), "--mode", "development", "--dataset", "q1_synthetic_svi_optimizer_comparison",
                "--seed", "42", "--output-dir", str(base)]

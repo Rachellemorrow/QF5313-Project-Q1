@@ -87,13 +87,19 @@ def test_cli_help_and_dataset_mode_boundary(tmp_path):
     assert invalid.returncode == 2
 
 
-def test_cli_development_figures_are_inline_and_isolated(tmp_path):
+def test_cli_development_figures_are_inline_and_isolated(tmp_path, request):
     command = [sys.executable, str(CLI), "--mode", "development", "--dataset", "q1_synthetic_svi_verification",
                "--seed", "42", "--output-dir", str(tmp_path)]
-    result = subprocess.run(command, cwd=ROOT, capture_output=True, text=True)
-    assert result.returncode == 0, result.stdout+result.stderr
-    output = tmp_path/"verification/approach1/q1_synthetic_svi_verification"
-    metrics = json.loads((output/"metrics.json").read_text(encoding="utf-8"))
+    reuse = request.config.getoption("--reuse-q1-artifacts")
+    if reuse:
+        from conftest import existing_run
+        output,metrics = existing_run("results/verification/approach1/q1_synthetic_svi_verification")
+        command = [sys.executable,str(CLI),"--mode","development","--dataset","q1_synthetic_svi_verification","--output-dir",str(ROOT/"results")]
+    else:
+        result = subprocess.run(command, cwd=ROOT, capture_output=True, text=True)
+        assert result.returncode == 0, result.stdout+result.stderr
+        output = tmp_path/"verification/approach1/q1_synthetic_svi_verification"
+        metrics = json.loads((output/"metrics.json").read_text(encoding="utf-8"))
     assert metrics["history"]["SOFTWARE_VERIFICATION"] == "PASS"
     assert metrics["history"]["EMPIRICAL_REQUIREMENTS"] == "BLOCKED"
     assert len(metrics["history"]["figures"]) == 7
