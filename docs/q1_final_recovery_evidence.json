@@ -1,0 +1,4157 @@
+{
+  "input_rows": 606,
+  "eligible_before": 0,
+  "eligible_after": 0,
+  "recovered_dates": [],
+  "recovered_expiries": [],
+  "waterfall": [
+    {
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY",
+      "rejected": 94,
+      "remaining": 512
+    },
+    {
+      "primary_reason": "MISSING_OR_NON_TARGET_UNDERLYING",
+      "rejected": 23,
+      "remaining": 489
+    },
+    {
+      "primary_reason": "INVALID_OR_NONPOSITIVE_PRICE",
+      "rejected": 0,
+      "remaining": 489
+    },
+    {
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED",
+      "rejected": 489,
+      "remaining": 0
+    },
+    {
+      "primary_reason": "PRICE_UNIT_UNVERIFIED",
+      "rejected": 0,
+      "remaining": 0
+    },
+    {
+      "primary_reason": "CONVENTIONS_UNAPPROVED",
+      "rejected": 0,
+      "remaining": 0
+    },
+    {
+      "primary_reason": "OTHER_PIPELINE_REJECTION",
+      "rejected": 0,
+      "remaining": 0
+    }
+  ],
+  "primary_assignments": [
+    {
+      "quote_id": "6ad64d2e7b953b7908414af3",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "cf1a629a06583179ce61ceb5",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "962db57969214ff1b61eb020",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "fa8e2a7bd0aa331f56cf6e3d",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "0bc814e610906db97e95e51e",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "dc950bcedf5e14a3da7eb363",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "b93ae0baea7c8643d26d9a9d",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "41dea49a7162fa98120d2ac9",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "2f3235a3453fd9c3da7ee332",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "ddca478c82aa2138209e2cff",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "35531ed928ac0862c7cb9ff0",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "270174d061daed8dddc645e4",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "ea982b00289106a9a426afd4",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "33fb592c2b74ab9328a93093",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "d77c8fb55560b57b96e9ed2a",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "7e47d6bcf12be6f3adf489af",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "237de58ebb8fb551f77b0c95",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "4f1a647464289193c994675d",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "da718c736c1168de9aed4092",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "8857eed786c225241e7da189",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "9efe3785ff4ac7acabfc3548",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "918fca87be4d99155ba1f948",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "9c586ec0a73b9845384791d5",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "07c0e6137d7116da0e01a3ee",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "43783213f6307109f93e53c4",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "09fdcd5dfced29670aaede49",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "e635c3aff6d9d7aa83bb3f72",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "75738a0f7114af357a0e40f7",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "ccb6df2dbecd78aea5b36ea8",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "ad6c8238a44050fa209c1ec5",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "391c54f673c3c94032cee08b",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "291737dfdae09a24e78e3ece",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "0ed05259a1b161bea5222831",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "34a209178adfc70625e76615",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "621fd0e3beaf9e825ff5ba3d",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "2082b4f7431cc933ec7759e1",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "28e797ab9a787ae0362597e2",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "2765f33604550d64bf529388",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "f22cbecb4b4cedd91d9bda2b",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "3d49794e58733e39839000af",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "dc81bfedacdaec8ce2a76878",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "e7fbe43ef49b075ede27fca8",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "7018a626a03047bbdb37ee65",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "734a1fe38bb5339f541a52c1",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "251681e35da60db9af4d397c",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "2d45202d616081b8c52f1900",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "3b2b03c55dba83f19186e622",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "0de64bb73ad8d4e8612dfcf0",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "d0874fb5c7782e616e24c2e6",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "f8f04ca6b51eb75e34b6c314",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "c34595395da1c14929b63e11",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "04718ad4263c72214cb5bc43",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "c1406f9182602e132ffdb1fd",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "da0cfd2bb9d0b4f562caa162",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "76ff098d7b39b29c16dd25b3",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "47236858128ee3354d5a5954",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "df58bd4018617ee8449ec1b8",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "9bf8cd5034b620a7879066cc",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "4197450e0588c8e06d6b6c90",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "18d1d36bf3b7791579d2e9db",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "dab5cde5caec3dcfef96e772",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "41eac76210c0bea3d12c6bbd",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "57ed59bc2520ed7f8ed8d287",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "d02ef80f30bd7235d1932497",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "482779933236e75bcbecd9fb",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "6465d58ae75517f2145c805f",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "dc67e87e8076c59599939795",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "010698f5b6e53059f455b83e",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "be6a99b65a1478a6fac5c4dd",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "a6db34c6b3c6acd20568e696",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "79419b470c1e8ed8c22bd5b4",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "70e6d77145a276753a564816",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "c033d99d94e6c265450890f4",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "0c25a575f50c23d7bc70eaf8",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "72f30a25243f4664db923485",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "d9fa511e0040a9c04382f3ac",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "3d3777649407e1701a0c07aa",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "4a9550f5d6736dc317ae9d7b",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "6953ce6cfdca1397ca31fe08",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "abb128706dce16ad6755c7a1",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "eb88de2eab8272587112c86f",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "e3ede8bf1742c84e5206eda2",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "f8b6d5cab2c9574bf64cbed2",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "ab8efe89bf8ca2369676de45",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "5815c4a4ebf1f0bce29803e6",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "62412e4e86f60048ca51a364",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "de3245ea360055e6e6d9a646",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "92825d2bee741f526aef13a3",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "8d444ad51453fbe8cd07da75",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "ad558649688bf8e40a28fbbb",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "a9c0769836ca8e59c6f225a0",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "616445cd25f70665a6006be2",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "6d0cc8d81eefa3cacc02329c",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "199b3366d45d149f953aef1e",
+      "primary_reason": "NON_TARGET_INSTRUMENT_FAMILY"
+    },
+    {
+      "quote_id": "4e11365eab6379dbefc7fdff",
+      "primary_reason": "MISSING_OR_NON_TARGET_UNDERLYING"
+    },
+    {
+      "quote_id": "9268dbedc69fadada30a41c6",
+      "primary_reason": "MISSING_OR_NON_TARGET_UNDERLYING"
+    },
+    {
+      "quote_id": "24e7472736e3b07e54f8b011",
+      "primary_reason": "MISSING_OR_NON_TARGET_UNDERLYING"
+    },
+    {
+      "quote_id": "34d82e5c81b1225967368850",
+      "primary_reason": "MISSING_OR_NON_TARGET_UNDERLYING"
+    },
+    {
+      "quote_id": "39c113568f272375fd6cf4f6",
+      "primary_reason": "MISSING_OR_NON_TARGET_UNDERLYING"
+    },
+    {
+      "quote_id": "b30de71c125bd4e864d8552b",
+      "primary_reason": "MISSING_OR_NON_TARGET_UNDERLYING"
+    },
+    {
+      "quote_id": "12c50c0bc50567ddc634f274",
+      "primary_reason": "MISSING_OR_NON_TARGET_UNDERLYING"
+    },
+    {
+      "quote_id": "131a6b6be0ada1cc06c06451",
+      "primary_reason": "MISSING_OR_NON_TARGET_UNDERLYING"
+    },
+    {
+      "quote_id": "e10845c2642dddc5e5dd7e2e",
+      "primary_reason": "MISSING_OR_NON_TARGET_UNDERLYING"
+    },
+    {
+      "quote_id": "7f3b2fa278109c0a189a95d8",
+      "primary_reason": "MISSING_OR_NON_TARGET_UNDERLYING"
+    },
+    {
+      "quote_id": "c9a8f78c10cc52ba066375e6",
+      "primary_reason": "MISSING_OR_NON_TARGET_UNDERLYING"
+    },
+    {
+      "quote_id": "1e4f62703859ed4dbbd8b179",
+      "primary_reason": "MISSING_OR_NON_TARGET_UNDERLYING"
+    },
+    {
+      "quote_id": "a7a0b7e858fb7b26e606f2ef",
+      "primary_reason": "MISSING_OR_NON_TARGET_UNDERLYING"
+    },
+    {
+      "quote_id": "dcdac3e1f313b102c5eabcc2",
+      "primary_reason": "MISSING_OR_NON_TARGET_UNDERLYING"
+    },
+    {
+      "quote_id": "83a10172ec4f983e75223207",
+      "primary_reason": "MISSING_OR_NON_TARGET_UNDERLYING"
+    },
+    {
+      "quote_id": "21185c5d02b07fc0406fad14",
+      "primary_reason": "MISSING_OR_NON_TARGET_UNDERLYING"
+    },
+    {
+      "quote_id": "37aac3c9fd5f472e1faa8c0b",
+      "primary_reason": "MISSING_OR_NON_TARGET_UNDERLYING"
+    },
+    {
+      "quote_id": "f36763965cd0abbc083474a9",
+      "primary_reason": "MISSING_OR_NON_TARGET_UNDERLYING"
+    },
+    {
+      "quote_id": "8f0196c9bfc0a8f8bf85427f",
+      "primary_reason": "MISSING_OR_NON_TARGET_UNDERLYING"
+    },
+    {
+      "quote_id": "969341b451199047010a11d2",
+      "primary_reason": "MISSING_OR_NON_TARGET_UNDERLYING"
+    },
+    {
+      "quote_id": "5c9152c75df152037f04472c",
+      "primary_reason": "MISSING_OR_NON_TARGET_UNDERLYING"
+    },
+    {
+      "quote_id": "bbd951287819ebda69178068",
+      "primary_reason": "MISSING_OR_NON_TARGET_UNDERLYING"
+    },
+    {
+      "quote_id": "2c1c64b1d11b1e2b7c8ce549",
+      "primary_reason": "MISSING_OR_NON_TARGET_UNDERLYING"
+    },
+    {
+      "quote_id": "59337036dc7199294af5911b",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "8fbcc1378bd03d96a66aa1c3",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "0b7ad36f8c74a0163a07e7a9",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "23837fca8635d637edf51fd9",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "dfd04efeb525e1acee4ad43f",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "524696c4e615c5f31612de87",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "0b408f49b404202c97c6645f",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "3d4cdcf95fa59aabca841a0c",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "be84a9dbf17952f3d16f3475",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "5767617f30edadd2c859ecc2",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "4052a83d7961b837d90627f2",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "809c4242627e329ab91b9287",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "fd0b474820e5cf67acc49fdc",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "bbbcb97918082c8ff9d60fb6",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "8a2eee17d56c411c25a08491",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "ff8b95a7ee504578582e3aab",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "338c1eb4b30f5d304314d95c",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "443bc2e99301dc3b4f35e854",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "2d5ae98f882f769b207512ea",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "117c93caa9d648efc483587c",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "dfbbf863135a6d0461e4e551",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "1d26824caba6d28cd1092303",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "773c60189300c836e2fd0ee8",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "7ed1e22cd58ef9698424793d",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "e86a692de8b427d1f14392a1",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "2bf5a4ab19f82ceda6d7ef40",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "62f28869a80bb4faab2bba18",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "54a38c6c444ee856a830b6b0",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "628e164a2dc2b803ce988987",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "74857254c553797d0ad204b6",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "1c15b78b9064c37398770a57",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "c5f34086f0e612550380e19a",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "4c2ca1514c1b5ff006f8ba5b",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "93e55b661b894a408265cdf3",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "37a9801b4932a893645f3e9d",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "4f2376b57aa01988bca39cce",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "9a6ba94d6482008ee486e7a3",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "c5a6b9361d628e1cee4e121a",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "bfa5456d8252741a57973174",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "3c1d25aa18252653c409b1b9",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "19b5806de90dbde37c24f277",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "824b9dfbd0cd31efb6f12aff",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "b00033bebdbed4c60a3577ab",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "fc30ce7f599f6aad82e5fc1c",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "c2d176845837f6686cfddeaf",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "77bc50103cadad9e2a4f4c79",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "c3e9b7222f2c406f2c3936d7",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "5c2b4a081b56e926b8f00582",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "db6d81e66a53b8db8e24e5f5",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "044b45bb51bce59eea0fbd71",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "80d64c06e91bb8a667ec8d00",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "44ae020f586d7a545e795bd2",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "b42983894079fafb242855cd",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "64334e0ea78e123f08ee90b6",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "75e69a90b5cc441e341a58ef",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "c98e8c1a281b81ae33f222f5",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "c0647a9cdd29b52bb15d933a",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "448f7e828a2590199283857a",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "65bfff56bd18078d44541a6d",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "ef366faf9cc81ec599e5e094",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "d9a82b17f52c91b5948f734e",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "d151027dd10967bafadd1fef",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "7b9243716aaed8a441b32a15",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "340565b3c92167c24ca503d8",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "e21109079a38b6c1f08d97df",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "8b9fc73ad23011f8cc0fabc5",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "42b5d2587e18e6df2fcbd8bf",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "25fd8f498e9f701ef37e4963",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "907003a9e122c241a1b841ab",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "86ba916b14912070bc142aa8",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "bbe92501ec22de5df60abdcc",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "ba4279b9ebac47e80c6f92f6",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "8b6b9f120e5bab9c3cf6a13d",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "c2bd12e8aa22fa31f0d8162d",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "06639d11bc96ee5aecb65fd7",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "74ab001380b07ecd8c53f670",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "7851816b8a17954cab838072",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "ccedd6d8d73ce65a35305b35",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "7554cd20c3c70c7076aac8e0",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "d0c8e4af3170ae0355146262",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "1cec5bb1d2a93551a01dd50d",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "917e0601dab2292bc2e231db",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "8d635be2909a8da39132c059",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "b8fa5fc940a6290f102fe3a2",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "37c83e0030c7df3108012304",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "2f690f5cf054e46df091f01a",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "a11c02f5fb74e97bdd6f42e0",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "cc30f977510e24fc4986d37e",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "338a4f4a378b26b8b4f86f01",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "763a0f9a420129e06ce1113a",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "5de3852a49bf87d3c6e08558",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "55aa0ed4d02f59445a378547",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "886a3e586d9f23b94da3c050",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "66ec8dc15a602ee002f9e372",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "000195aa53bc434559b8100a",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "a4da4370be8f88b4788048e8",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "949a58b8b4366f203fe36e41",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "ee83bd40121e32f14dadb4a6",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "ec82fa9cf66ef2383e30331c",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "72fba594bf8e27f1dd66680c",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "7b2d71342f4eb7337739af44",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "8401754757ce5613225623cb",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "ce799d5c0ef5fa010a1b0535",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "a587577d6296efc6b5dd6767",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "7ceaa704190793a8151d697d",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "72d19787541636187229ca08",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "76cfd7396a1158bc15db9dc0",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "43f3b5efe06fcd5c3c1e4440",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "6c6db4bd2cb638a90d2623de",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "1144ed0095c2c581786eac80",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "f705730bdac59c85ef393ffe",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "5d66400e90677f96e82aef6b",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "db78b995549cba6e669f0e15",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "7c1c25d3e68b533d12c37671",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "c8d7353978a37413ddfcc873",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "d218aa5683f46d82bd816412",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "a31461196f9c512d50139f19",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "5490c6de4c67e994d5a453c4",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "090fe2b1a75f4bf3b3967ef5",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "b8f8016151d3c17f521fd381",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "b82a286bc2d957498d931f9e",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "f3e98f0098df9a49f5640ce3",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "ba240cdd0f7aeaab89a6297b",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "c005b28c4b42975a1d15d26f",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "2076b1400b541f42c0fc3492",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "b96f32aa90ba9b8fa343a959",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "d6713f58be33b19476bf77ea",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "3c88e1b9921048f4c01386fd",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "ae3c54dd7678d574c5a4aa37",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "5cd4f78d78348d3836e240c1",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "c653f4809c8955f962345960",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "d250ab30dbed5e5acb2ea5e8",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "04268290f4612f131cc09d0e",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "f7c413f1fd4f117edb211ae8",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "a5964dfc80865bac4f248de9",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "d400c207f53ba22fb244dd51",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "350b2d0471b9e654c47983cf",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "e2d029d490ada16255b7e537",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "b9337a639165af884bfce999",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "49a5a05fe90530e190c70158",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "ae6276423b92964349977783",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "31a8d75230f6f6d106c7465d",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "3c8db11f7d42fd85f7548a97",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "3c62dae05220288338e981e3",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "c0ab8cb26de2d391f9e5ec6a",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "e9c0dedfdb38206ec7166927",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "4dc9c9fdb6d61b05de916e3d",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "4cd09efaa7a2d5ec1e64a071",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "0ea96daa25b6b43556f67461",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "14f49dbeebb6e0ee239b11b8",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "787d27cd7f90dd63ad830af8",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "ad5ef0858fc763714b95d597",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "392b0dc662da4729be982fba",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "ed5f00e16b8b3ca2df99aa10",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "27898bfa1983a43ed724f0ae",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "e39dffb3ea292ffef21b0ea5",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "7da51fe53119beaa565e402b",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "44e75d0330f82fdfd7b633cd",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "68ecda89f5a62830f3aff553",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "39d0de0bd0c5bfa72f720688",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "7bab6d73234233f2f14b160d",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "3b5a2ea50d9892b7fa903948",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "d299edd3196596ee9c991480",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "624162a0edb07ecc343462db",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "c1d8758be4c9bea13616e2c3",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "cb6159e2fd79caaf19bc7f84",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "693fbe7b237b0690e912628b",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "0656f3add2e10ffc932c1ebc",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "c410f7e6649b85a8c58a267c",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "8143d5924ce139d43ee96ebd",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "553612749789f188059bf4f0",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "2d15c23b71592157573dd651",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "be38f59043d483387a495b0f",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "4ba131a5dd0bab77fcfa669f",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "c32ee17b3045e028a1291ff9",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "90cfa48e656b9d1880ca5660",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "e85b0ba380b8390fc7b03d28",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "3e0e30cd4e48696aa62a7470",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "8654e5fc22bb00255aa396a9",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "6a8640b8dd3f6dd4d7fc9f32",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "98a15892d11626041d570d9d",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "8241f22ba15129cb7a8305c9",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "4ae2b5ef25dc3c969c08f907",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "630417077f0909d93d5c5da2",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "cece17d9636a793cd4981cc9",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "0a9ffbf3d690cbb029164e32",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "6adb1ab4c9c7eef99d57e40f",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "b951987c5c15a011537cc41c",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "d61664189c0498132fb0e23e",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "7a076f52689ffbc8d192d98b",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "9b91f9b18e93076bc74ab65b",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "4eaf6c1a8af50c83701529ec",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "8475be28e53d330889df7b87",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "7f05c4b110b26b83f394c63b",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "2dfd5c8015395296d63db91e",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "a97a57f17fb414dbdf465412",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "9da5fb68e12bf2ea2c54243f",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "7d02bbea785eedb0bdf4cb28",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "7da1b2c510347e500f53a5b8",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "d4a3ffba2c11db0d4d119e83",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "f7f9860d027e13a77c135111",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "390b9e273435ef555043cdcf",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "e231bbd46935f94d6188cd7e",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "bc2654b9137280c851ea73c4",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "e0cac7a3dc5694c3dc9a505d",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "a893b91e5bc6d61b6ea093d1",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "0c39e31b38c0d229032933b4",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "97ebccc5c834023dc7f530d3",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "17f3998a5c0c3994ee1c75ec",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "7a169f14c9fa6f53308a07ee",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "796c647bf4983bcc5e385afb",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "d0909e3a13ac53528959440c",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "ab3d0f234601c5765aa2f6ee",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "d64cb4a09be320722e356608",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "1e6e21ed83d3ee0ae19b9ba2",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "81d5022459f967553777c413",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "46db2070ae17b45f4b98ba7a",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "2fa82061b1f9132d7c02300e",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "0f97a3d1a415ec95940be4a5",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "254a4586fbff3f490c29a24a",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "0917f2c5a12ba8e342657464",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "f561d7d96af0e237bcd53771",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "cae213b0b66c3975781a1a42",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "10ba16d59361c8e7c7a2fbe0",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "5cfa30a775d3301a989a00cd",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "7faa1eb0f93069e8d1452ce1",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "8c94cef48da4d58755c01722",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "33facb339c1b394f2d1e6015",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "3f71f7859829e10664ef8409",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "59c32bb66ef71cbab16e22fe",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "21a2a63885c4888d5578654f",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "508a658ff9364f970ff1124c",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "ccd07a8de486a5fc7b986764",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "e7fb44a882cf0df4a08d0ddb",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "d16e8b77d956d2209ce987dc",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "51d886cefc91f846db80c79e",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "b1ef77e5f827137fbedc4777",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "89a09f3a66151f63a7fc3a2c",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "65e11cf9f29b0bf141e35014",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "ff428219a44ea9c1a161a68f",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "c9aa2ff88c99f48043862b73",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "bcfaa254765a69c67f5feadb",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "3c7a474df737af667899a08a",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "1f3d509c03c8c74d05fd481e",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "a886933404f5d49cea3aac1f",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "958c2c5a317c49583a7dc85d",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "4287c415ece06c9233a3568f",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "71c290a43191c8acca83ec31",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "df8af82456c08ac14e8b4819",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "38ca44e95b925e541d5492db",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "602bba647eb4c00f688391af",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "1b6a84cf59488d9d4b832ef7",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "215f468f38f4bda2a9e80c14",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "3f4258dcf12611ec915a9916",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "94cc70a2ab54287bb665133b",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "8cbccb2074901a7a6b977dff",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "c823bb8da658187aea730e3a",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "a346df76906dac1a4202b867",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "830edb561161a0ff423ded93",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "7ccc5aeaa03e98ab45740158",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "6de978f461d4895b810a6cae",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "d41727c086b275bf4a16aa16",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "2cb6b2a51145ca71bdf9f985",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "d5c7c34a361e1cb1da18ab7f",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "e6a4e2fc38aad98b75e09d25",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "d2a161b656af4dc51e2ca7db",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "b839519ee0c2673377a04923",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "019a621bd9c9e722da14ffa8",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "8d521da222df1821ae092be4",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "187107ce7d1d0eaff96627a1",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "a8aad6063ce1e035e8239c83",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "4593babbe87c7d17a8033cec",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "dc598791065468719032bb2b",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "be83d99ba60506bbae6f6f07",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "92b11c8cd1d037ee8904992d",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "8ffd7312bff3d73163562a21",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "f34353b0bf85fa1898eed652",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "153883dcd56f98b1a0f7935f",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "ed9346300ebc94662e0fc5fa",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "5b5f116123b9638b1f202bc5",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "7dd77f71b0365566a331fb60",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "cf9953449f5f6aa9baea18de",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "eac7b3b17de082c6d91813cd",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "43891e3e069803e471925f85",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "ef95b5187905c67670943a49",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "8f6f56d29f3554aac87588a7",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "e2a90650f1dc56c62a1ff26a",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "f91840be2208ad70e3bbd93b",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "36e4127055fbfb77b4e928e0",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "6f7e66a73bfa5da776260d21",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "3ee2744e25bd7e00b02d539e",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "ad9484df5f4eed04669f0b0b",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "25e5b68b74997360f0cde3f1",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "7e910834c62f7c194d830783",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "e414943ab7f27548ab2b024b",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "940a1028dd1609451ac2c36d",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "362e8ad27b0a46a3e6e22e99",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "68ca24f0416cd7fdd996d8df",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "ecf5cfa9d68f851143d6bfdd",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "ae06c72820747cc68ab7f3aa",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "07dab4768a030941f9136d35",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "0a8e17c1f41d69fca86f0054",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "963b3ed91c1c73e9a3ea36bc",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "e19555cffea35e380320fc62",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "9adcbca5e90b85d46c707207",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "6be6139bfbd4fdd4391a8f47",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "16a08289b2efe6577b6d673c",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "0057da5b8b65a0f73a41b2b9",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "b8f2086a6c5f92e209dee890",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "a5bd9b24ff776a4add585fd4",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "c9a57d28f53578c4ba9178b7",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "95034abe85843cbdb3918497",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "207191ccf7fb813e398c4a55",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "09e7f3c440506895100a59a2",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "5826b08ccbdcf36fafadd9cc",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "73d0284ecb036e26ff2da2c9",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "b53e5edc31d8fa55fd63b659",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "6e237c1f7355216dbee63e1a",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "d8ed97d9fc8a52bf12ee85b1",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "61143769a36170ac89493633",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "d4dd7e00d6b3e36efc71e71c",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "1af1465c2d4ed3aa8bad5d5c",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "5fb079a4bbb8bb3a454d3f76",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "11938942372298611892fbd8",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "fe9a8dc3f83ada402947d320",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "57a5ce0661ca2d8e926ab08a",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "e7e7bfb82da5cb52a4dcd313",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "13cd26b28529e31565055526",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "472ffb5ced22cf016834afef",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "273de69cacf479cd0f609591",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "4d798de1130a4a43f1a27457",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "bf771f2047d36644ffedf557",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "5484ef091d0675ab446e38b5",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "f784473ec6a4f9af950b8a2f",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "033cf02b09616aba487d54d9",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "738d8fedff5b512c08e10748",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "17bae5f6206162473e30cda3",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "cbf0eba914b715414b25c3b7",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "69c573bb4b33db2a97039f59",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "e1c13700dbf98fb2456b1e75",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "443937eb74903963261a0e5e",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "f2d375a8af0f489ea200efbf",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "f89976fc5d7780f3716c23fe",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "d6f1709f176c49ba9525ac20",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "94813428ac69c545850ef1f9",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "c3b1126417634d231ad667d8",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "70fee07d60aa3ca4c960379d",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "47b4c11fba0d14e05a12bf21",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "d8caa0cfba4886b9ca85fa0d",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "98c5e8c29922a4f31ca953c9",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "6c6371e789ab562809423b13",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "91d12f44a851ff2abcf2dbbb",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "ebb5bcdcfa0e991730b20ecc",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "c1a9939c80c0e41643923376",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "4733e5dcac5a9f7795411782",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "dff46966ab891f997a8d35a7",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "b79e566b51462bafbda713cd",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "be5472861fdf7e9b1f860021",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "7e8c2bc6a3b0c07b93f56ac9",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "33a5683b5753f5ae54c9cf9d",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "d26da12ca68b9fc48fde23ab",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "047f203298bc6ead39b24c74",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "634b071505525f193232902d",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "fe485a3b55134401ce1245ad",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "61d3b1416aacac49d8a90e73",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "4a1a41ab3d3be8a4bd27b5b6",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "3a9005f7a683b713d62ea146",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "691cf99142b04f126de157f2",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "3af833d7a6eedd0bf5f1c869",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "920f0f6f21281b0e6b092acb",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "0583a1ddf0c34c592df38f52",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "832f40aec75aefca9eab3a95",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "f0c918f121e70e8c2c4c333a",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "dc3e329761acada47902955b",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "a5a4c4ac54630e0a04f4c65c",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "8292f99168eac98367198a20",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "944f33b5cb17a1bf97bb8f56",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "2650685dad054b66e014e096",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "27657da3ea17041fddc17391",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "701d94a61457d7adf4667bad",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "8bbd0c308fa0884c45513219",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "6cfb7d7199d32a17fed85ecb",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "45a0bf2767f30fdc0e564d5b",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "23165c10658369ae6fb48ee6",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "46c54f2c699a446ceb26b2ad",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "06e5ff8a7c12a3baf2a04d6a",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "266efebd99335edd902fbdba",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "1da4d3d8a5357efe8a6099d8",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "6ad0b10ae13762ac84b31b23",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "2aae664a28aabede7cbaa2c4",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "0676474326ed7e8bf8691022",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "41e4de1e69c728792a00730b",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "ec1d8256994e7ebe6cddd8fa",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "261a6635bded89c77f7daf72",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "30d1b9164a7ff09dd0230218",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "55b5491bf08c78adcdd8db3c",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "591475be745f6adcd2ed7511",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "36abce0d73e5373192cd8ca0",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "b0b26369503e06ca723dd094",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "33d111c3b7818c6495bcc971",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "1197c9c2260005cd533cbdb7",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "348b2d0603c64d1bf98b6628",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "1582ed2a930235fd3af01b73",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "04b4945fdd376632457958dc",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "9e687ec6763350f9b788c72d",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "7af32b5eeee4f0afb98d7bbd",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "cc405fc9a568f884a2a18bd4",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "992c7d334b0bdbf40dbffd1e",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "cb68d7f6875e518b63a2afc4",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "e386bcd106f18917e19dad23",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "7ac38ccf97e75fff7c398bba",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "3305c6eb11c5073734813628",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "289eb3bb9924b6137f64662e",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "c705005233bc0d2c6ec4da1c",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "fe44ca921611adc0b62a8c3d",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "2afcaf31d0f5a237f2de224b",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "3b829b227ef2624a6b08a1d8",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "1c73ea15f82add953a2f67c0",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "08279385919051174023ed48",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "09436ccdf387a216f992b3fe",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "a70f120f2c3fe595d8e5f8be",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "79cec5baf3abb3ad15b78ad4",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "6b38ed5554a916d9b9bc713a",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "45f8b3194e1ac8f9f069fd32",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "f3bb7ca49f61e1f37ddd06ca",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "023bdf3fcb3eaa8696997ef1",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "1d6ba8871e1582cd44e96fd7",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "3b9eb402f649327c0722d890",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "7a67fb3c5fd7e57fed60803b",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "12f2595432defbb4837782e0",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "3885fec19d2d6e3b0de8542e",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "7128ea736cbf14a80b8d7869",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "1d7299c7430aacf911860cdd",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "4fc3288ffdbaf0b33fda1926",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "e33dfeac495a9eae6fefaf45",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "a67868a3263f52a0a23f12dd",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "915789bf95cb4b00bba579ea",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "3b770d07bb1f7d8262d37121",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "bc59e7ab1ca20a0ad32fc9ec",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "fbd9b745201cecd523079982",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "833039122544edea0bfe9fd7",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "28f7780d406ddaa297836ff0",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "c35afa8371342a9bf2a2f208",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "7b7bc3fee70d7b5e1e503e87",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "ebf78f5b49a21d6b5bf2e14f",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "a5d703c493d671c1d0492f19",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "7bb26979e3356dfd52cc41ff",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "32e921bd9ee761f056f214a0",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "d89454ba21c134d942785ad9",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "4f97d5d4bc90e4fb864b5bf4",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "0c3e6db8b72490d831e421ff",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "5a74f4b2db3419434cbf4c49",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "533fc833bb285ea8f688c857",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "d3aae436be91e63b2e79cb27",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "2f6bd201bc923a19a3ae198a",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "04bfb47052220f91fbec43a0",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "db354c27e568363e9c3afe73",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "a4794962a123f2112b56dbef",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "b5fa33ca87cba2acbe91be09",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "ebfae8a3daf97b2ca4cb0b59",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "07a4d4cc986249afddefb427",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "2b9220262d3b131437884b5d",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "470359dc1a8a76bd3b350c94",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "5cfb727df5545ccc1786404c",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "77492c3c2a20452677c5add5",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "569320d4645fbbeab625271b",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "b4608dc56b9600372c10c4bd",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "ff274ab4a671b6623a6c38e3",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "92d32bf05a8f4a2fc39404b7",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "3f7f7a6424c628537b37cfb6",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "501bd4694c03d0da675401e9",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "0d1ccfa3642cae68c3301c35",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "953b7a39af18597cfcd1492f",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "e47b11cd1212fed7c5ea2ec5",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "b37013d23433d4ea6c88fcb7",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "57a3d5da234e224b59d21290",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "4146de5f16c31aa06025cd4b",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "874aa35dbcc4ab46aa329bcd",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "b437448a96d8ae8f68e150f3",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "70ff021885c4c0602bd1a61f",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "4600dd84c40d4028b745ac93",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "412f540f429e323e8242de6f",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "d1b3b5da3c84d1952a6727c4",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "19f6c47ac6e43cd25bd553a4",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "1b5f730b7bc6c4c8037b7e2a",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "d3127be01d2740ef127684cf",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "640f96a387221e8023864cfd",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "61c438684ae1bb74335f13cd",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    },
+    {
+      "quote_id": "21c09b20cbb1b7270adb0ac3",
+      "primary_reason": "HISTORICAL_METADATA_NOT_VERIFIED"
+    }
+  ],
+  "eligible_after_waterfall": 0,
+  "overlapping_failures": {
+    "DIVIDEND_OR_RATE_CONVENTIONS_UNAPPROVED": 606,
+    "INCOMPLETE_CONTRACT_METADATA": 117,
+    "INCONSISTENT_OHLC": 1,
+    "INDICATIVE_UNAPPROVED_CONVENTIONS": 489,
+    "INVALID_OR_NONPOSITIVE_PRICE": 1,
+    "MISSING_DATE_OR_EXPIRY": 117,
+    "MISSING_EFFECTIVE_METADATA": 77,
+    "MISSING_OR_NON_TARGET_UNDERLYING": 117,
+    "MISSING_SPOT_DATE": 117,
+    "NON_TARGET_INSTRUMENT_FAMILY": 94,
+    "PRICE_UNIT_UNVERIFIED": 606,
+    "UNDATED_CURRENT_METADATA": 529
+  },
+  "mutually_exclusive_failure_patterns": [
+    {
+      "reasons": [
+        "DIVIDEND_OR_RATE_CONVENTIONS_UNAPPROVED",
+        "INCOMPLETE_CONTRACT_METADATA",
+        "INCONSISTENT_OHLC",
+        "INVALID_OR_NONPOSITIVE_PRICE",
+        "MISSING_DATE_OR_EXPIRY",
+        "MISSING_EFFECTIVE_METADATA",
+        "MISSING_OR_NON_TARGET_UNDERLYING",
+        "MISSING_SPOT_DATE",
+        "NON_TARGET_INSTRUMENT_FAMILY",
+        "PRICE_UNIT_UNVERIFIED"
+      ],
+      "rows": 1
+    },
+    {
+      "reasons": [
+        "DIVIDEND_OR_RATE_CONVENTIONS_UNAPPROVED",
+        "INCOMPLETE_CONTRACT_METADATA",
+        "MISSING_DATE_OR_EXPIRY",
+        "MISSING_EFFECTIVE_METADATA",
+        "MISSING_OR_NON_TARGET_UNDERLYING",
+        "MISSING_SPOT_DATE",
+        "NON_TARGET_INSTRUMENT_FAMILY",
+        "PRICE_UNIT_UNVERIFIED"
+      ],
+      "rows": 53
+    },
+    {
+      "reasons": [
+        "DIVIDEND_OR_RATE_CONVENTIONS_UNAPPROVED",
+        "INCOMPLETE_CONTRACT_METADATA",
+        "MISSING_DATE_OR_EXPIRY",
+        "MISSING_EFFECTIVE_METADATA",
+        "MISSING_OR_NON_TARGET_UNDERLYING",
+        "MISSING_SPOT_DATE",
+        "PRICE_UNIT_UNVERIFIED"
+      ],
+      "rows": 23
+    },
+    {
+      "reasons": [
+        "DIVIDEND_OR_RATE_CONVENTIONS_UNAPPROVED",
+        "INCOMPLETE_CONTRACT_METADATA",
+        "MISSING_DATE_OR_EXPIRY",
+        "MISSING_OR_NON_TARGET_UNDERLYING",
+        "MISSING_SPOT_DATE",
+        "NON_TARGET_INSTRUMENT_FAMILY",
+        "PRICE_UNIT_UNVERIFIED",
+        "UNDATED_CURRENT_METADATA"
+      ],
+      "rows": 40
+    },
+    {
+      "reasons": [
+        "DIVIDEND_OR_RATE_CONVENTIONS_UNAPPROVED",
+        "INDICATIVE_UNAPPROVED_CONVENTIONS",
+        "PRICE_UNIT_UNVERIFIED",
+        "UNDATED_CURRENT_METADATA"
+      ],
+      "rows": 489
+    }
+  ],
+  "target_candidate_rows": 489,
+  "target_candidate_dates": 130,
+  "candidate_slices_NOT_verified": [
+    {
+      "date": "2026-04-23",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-04-24",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-04-27",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-04-28",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-04-29",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-04-30",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-05-06",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-05-07",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-05-08",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-05-11",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-05-12",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-05-13",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-05-14",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-05-15",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-05-18",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-05-19",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-05-20",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-05-21",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-05-22",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-05-25",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-05-26",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-05-27",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-05-28",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-05-29",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-06-01",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-06-02",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-06-03",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-06-04",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-06-05",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-06-08",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-06-09",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-06-10",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-06-11",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-06-12",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-06-15",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-06-16",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-06-17",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-06-18",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-06-22",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-06-23",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-06-24",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-06-25",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-06-26",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-06-29",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-06-30",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-07-01",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-07-02",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-07-03",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-07-06",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-07-07",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-07-08",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-07-09",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-07-10",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-07-13",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-07-14",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-07-15",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-07-16",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-07-17",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-07-20",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-07-21",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-07-22",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-07-23",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-07-23",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-07-24",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-07-24",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-07-27",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-07-27",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-07-28",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-07-28",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-07-29",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-07-29",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-07-30",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-07-30",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-07-31",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-07-31",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 1,
+      "candidate_strikes": 1,
+      "paired_strikes": 0
+    },
+    {
+      "date": "2026-08-03",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-08-03",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 1,
+      "candidate_strikes": 1,
+      "paired_strikes": 0
+    },
+    {
+      "date": "2026-08-04",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-08-04",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 1,
+      "candidate_strikes": 1,
+      "paired_strikes": 0
+    },
+    {
+      "date": "2026-08-05",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-08-05",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-08-06",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-08-06",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-08-07",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-08-07",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-08-10",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-08-10",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-08-11",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-08-11",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-08-12",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-08-12",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-08-13",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-08-13",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 1,
+      "candidate_strikes": 1,
+      "paired_strikes": 0
+    },
+    {
+      "date": "2026-08-14",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-08-14",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-08-17",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-08-17",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-08-18",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-08-18",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-08-19",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-08-19",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-08-20",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-08-20",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-08-21",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-08-21",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-08-24",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-08-24",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-08-25",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-08-25",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-08-26",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-08-26",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-08-27",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-08-27",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-08-28",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-08-28",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-08-31",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-08-31",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-09-01",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-09-01",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-09-02",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-09-02",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-09-03",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-09-03",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-09-04",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-09-04",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-09-07",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-09-07",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-09-08",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-09-08",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-09-09",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-09-09",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-09-10",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-09-10",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-09-11",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-09-11",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-09-14",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-09-14",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-09-15",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-09-15",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-09-16",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-09-16",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-09-17",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-09-17",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-09-18",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-09-18",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-09-21",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-09-21",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-09-22",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-09-22",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-09-23",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-09-23",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-09-24",
+      "candidate_expiry": "2026-11-25",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-09-24",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-09-24",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-09-28",
+      "candidate_expiry": "2026-11-25",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-09-28",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-09-28",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-09-29",
+      "candidate_expiry": "2026-11-25",
+      "daily_quotes": 3,
+      "candidate_strikes": 2,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-09-29",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-09-29",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-09-30",
+      "candidate_expiry": "2026-11-25",
+      "daily_quotes": 3,
+      "candidate_strikes": 2,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-09-30",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-09-30",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-10-08",
+      "candidate_expiry": "2026-11-25",
+      "daily_quotes": 3,
+      "candidate_strikes": 2,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-10-08",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-10-08",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-10-09",
+      "candidate_expiry": "2026-11-25",
+      "daily_quotes": 3,
+      "candidate_strikes": 2,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-10-09",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-10-09",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-10-12",
+      "candidate_expiry": "2026-11-25",
+      "daily_quotes": 3,
+      "candidate_strikes": 2,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-10-12",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-10-12",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-10-13",
+      "candidate_expiry": "2026-11-25",
+      "daily_quotes": 3,
+      "candidate_strikes": 2,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-10-13",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-10-13",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-10-14",
+      "candidate_expiry": "2026-11-25",
+      "daily_quotes": 3,
+      "candidate_strikes": 2,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-10-14",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-10-14",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-10-15",
+      "candidate_expiry": "2026-11-25",
+      "daily_quotes": 3,
+      "candidate_strikes": 2,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-10-15",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-10-15",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-10-16",
+      "candidate_expiry": "2026-11-25",
+      "daily_quotes": 3,
+      "candidate_strikes": 2,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-10-16",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-10-16",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-10-19",
+      "candidate_expiry": "2026-11-25",
+      "daily_quotes": 4,
+      "candidate_strikes": 3,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-10-19",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-10-19",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-10-20",
+      "candidate_expiry": "2026-11-25",
+      "daily_quotes": 4,
+      "candidate_strikes": 3,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-10-20",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-10-20",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-10-21",
+      "candidate_expiry": "2026-11-25",
+      "daily_quotes": 4,
+      "candidate_strikes": 3,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-10-21",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-10-21",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-10-22",
+      "candidate_expiry": "2026-11-25",
+      "daily_quotes": 4,
+      "candidate_strikes": 3,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-10-22",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-10-22",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-10-23",
+      "candidate_expiry": "2026-11-25",
+      "daily_quotes": 4,
+      "candidate_strikes": 3,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-10-23",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-10-23",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-10-26",
+      "candidate_expiry": "2026-11-25",
+      "daily_quotes": 4,
+      "candidate_strikes": 3,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-10-26",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-10-26",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-10-27",
+      "candidate_expiry": "2026-11-25",
+      "daily_quotes": 4,
+      "candidate_strikes": 3,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-10-27",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-10-27",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-10-28",
+      "candidate_expiry": "2026-11-25",
+      "daily_quotes": 4,
+      "candidate_strikes": 3,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-10-28",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-10-28",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-10-29",
+      "candidate_expiry": "2026-11-25",
+      "daily_quotes": 4,
+      "candidate_strikes": 3,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-10-29",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-10-29",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-10-29",
+      "candidate_expiry": "2027-06-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-10-30",
+      "candidate_expiry": "2026-11-25",
+      "daily_quotes": 4,
+      "candidate_strikes": 3,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-10-30",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-10-30",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-10-30",
+      "candidate_expiry": "2027-06-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-11-02",
+      "candidate_expiry": "2026-11-25",
+      "daily_quotes": 4,
+      "candidate_strikes": 3,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-11-02",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-11-02",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-11-02",
+      "candidate_expiry": "2027-06-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-11-03",
+      "candidate_expiry": "2026-11-25",
+      "daily_quotes": 4,
+      "candidate_strikes": 3,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-11-03",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-11-03",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-11-03",
+      "candidate_expiry": "2027-06-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-11-04",
+      "candidate_expiry": "2026-11-25",
+      "daily_quotes": 4,
+      "candidate_strikes": 3,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-11-04",
+      "candidate_expiry": "2026-12-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-11-04",
+      "candidate_expiry": "2027-03-24",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    },
+    {
+      "date": "2026-11-04",
+      "candidate_expiry": "2027-06-23",
+      "daily_quotes": 2,
+      "candidate_strikes": 1,
+      "paired_strikes": 1
+    }
+  ],
+  "max_candidate_daily_strikes_per_slice": 3,
+  "max_candidate_paired_strikes_per_slice": 1,
+  "network_checks": 0,
+  "model_fits": 0,
+  "eligibility_rules_changed": false,
+  "stop_reason": "No verified historical metadata/units; even candidate ETF slices have fewer than five distinct strikes required by existing SVI. Existing index histories lack matched spot and complete metadata. No bounded metadata-only check can repair strike support.",
+  "source_manifest_sha256": "baa14155d69f3ee9e443924a740c048808594c1f30c43a371b939ccecada63a4",
+  "scope": "Existing hash-verified archive only; primary precedence is presentation, overlapping failures remain unchanged"
+}

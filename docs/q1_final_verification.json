@@ -1,0 +1,65 @@
+{
+  "task": "Q1 final bounded recovery and submission support, not a repeated milestone",
+  "baseline_commit": "5ea9e47",
+  "entry_working_tree": "clean",
+  "verdicts": {"SOFTWARE": "PARTIAL", "EMPIRICAL": "BLOCKED", "GROUP_SUBMISSION": "NOT_READY"},
+  "real_data": {
+    "processed": 606,
+    "eligible_before": 0,
+    "eligible_after": 0,
+    "recovered_dates": [],
+    "recovered_expiries": [],
+    "primary_rejections": {"non_etf": 94, "unknown_underlying_sse": 23, "target_metadata_not_historically_verified": 489},
+    "max_candidate_daily_strikes_per_slice": 3,
+    "max_candidate_paired_strikes_per_slice": 1,
+    "source_requests": 0,
+    "model_fits": 0,
+    "metadata_or_unit_flags_promoted": 0,
+    "original_data_or_filters_changed": false,
+    "evidence": "docs/q1_final_recovery_evidence.json"
+  },
+  "executed_tests": {
+    "command": "py -3.11 -B scripts/project.py uv run --locked --offline python -m pytest tests/q1/test_final_recovery.py -q",
+    "passed": 2,
+    "failed": 0,
+    "seconds": 1.51,
+    "scope": "Exact registered-archive waterfall, quote-ID partition, overlapping failures, strike support, saved-evidence equality and no input mutation",
+    "full_suite_rerun": false,
+    "previous_full_suite_evidence": "docs/q1_m8_verification.json: 264 passed in 205 seconds; historical result, not rerun here"
+  },
+  "environment_checks": {
+    "offline_lock_check": "PASS, 70 resolved packages",
+    "offline_sync_check": "PASS, 50 installed packages, would make no changes",
+    "configuration_modified": false
+  },
+  "artifact_integrity": {
+    "tracked_bundle_snapshots_hash_and_size_verified": 24,
+    "snapshot_git_tracking_verified": true,
+    "original_html_figures_hash_verified": 27,
+    "missing_or_changed_indexed_figures": [],
+    "existing_comparison_runs": 9,
+    "existing_comparison_rows": 131,
+    "existing_comparison_issues": [],
+    "original_results_modified": false,
+    "clean_checkout_scope": "Tracked metrics/checkpoint replay and inference, not a new independent training replication; original ignored HTML is indexed, not copied",
+    "previous_isolated_replay_evidence": "docs/q1_m8_verification.json: eight canonical runs / 119 rows, network blocked and no original ignored inputs",
+    "initial_dependency_provisioning": "Requires network or independently provisioned authorized interpreter and package cache"
+  },
+  "sessions": {
+    "inventory_command": "opencode.cmd session list --format json --max-count 1000",
+    "local_q1_session_ids": ["ses_e58f9132affeaic2LlD5RPAtxS", "ses_e56e1d212ffeee7u9TZpxmA6j0"],
+    "export_script": "scripts/q1_session_export.py",
+    "exports_created_or_overwritten": false,
+    "final_live_response_export": "Student action after completion",
+    "other_members_or_machines_verified": false
+  },
+  "group_files": {
+    "report_md_exists": false,
+    "SESSION_md_exists": false,
+    "README": "Existing 9-line M0-era text inspected, unchanged; group coordination still required",
+    "pyproject_and_lock": "Pinned, offline consistent, unchanged",
+    "gitignore": "Local environments/caches/results/secrets exclusions inspected, unchanged",
+    "Q2_Q3_modified": false,
+    "submission_tag_created": false
+  }
+}

@@ -1,5 +1,33 @@
 # Q1 report-support materials — NOT the student-authored final report
 
+## Final handover and student report outline
+
+The final empirical outcome is **0 eligible quotes before / 0 after recovery**;
+no empirical IV, SVI, neural, repricing or arbitrage result is claimed. The 606
+archived observations and all synthetic results below are preserved. Exact
+rejection/strike-support tables, scope-qualified replay commands and authentic
+two-session export instructions are in `q1_final_recovery.md`; row-level primary
+attribution is in `q1_final_recovery_evidence.json`. There are no new market figures.
+
+Suggested structure for the **students to author**, not a completed report:
+
+| Section | Verified support to use | Required student contribution |
+|---|---|---|
+| Data and eligibility | Final recovery waterfall; M2 source hashes and candidate expiry table | Explain why evidence cannot support empirical claims; review source rights |
+| Mathematical models | Forward BS, Brent, SVI and two butterfly formulas below | Verify equations, state assumptions and objective rationale |
+| Protocol | M4–M7 configuration table below | Discuss synthetic-only scope, splits and comparability caveats |
+| Results | Actual M5/M6/M7 tables below; comparator with coverage | Interpret measured findings without treating fixtures as market evidence |
+| Verification | M8 264-test record, isolated artifact replay, final targeted checks | Distinguish software tests, checkpoint inference and independent replication |
+| Limitations | Missing historical coverage, failed L-BFGS fit, dense neural calendar violations | Discuss implications; no universal no-arbitrage or market benchmark claim |
+| Reproducibility and work division | Final recovery commands and two authentic session IDs | Write statement of work; combine Q2/Q3 and authentic exports |
+
+Q1 compliance checklist: implemented numerical methods/provenance/diagnostics and
+synthetic ablations **evidenced**; fitted-model outcomes **partial**; real ETF
+calibration, complete historical month/four verified expiries/five multi-year
+sample chains and empirical <2% benchmark **not demonstrated**. Group report,
+complete `SESSION.md`, six-approach integration and submission policy remain
+student/group actions. Do not fill missing empirical cells with synthetic values.
+
 ## Mathematical model descriptions
 
 **Forward Black–Scholes.** With positive exogenous F(T), discount D(T), strike K,

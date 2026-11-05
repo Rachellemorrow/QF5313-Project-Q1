@@ -1,5 +1,24 @@
 # Q1 M8 — Integration, scientific verification and compliance audit
 
+## Post-M8 final completion addendum
+
+M8 baseline `5ea9e47` is preserved. Final bounded recovery confirms **0 → 0**
+eligible real quotes; no real date/expiry was recovered. Exact primary waterfall:
+606 input → exclude 94 index → exclude 23 unknown-underlying SSE → reject 489 for
+unverified date-effective metadata → 0. Overlapping unit/convention failures are
+not added to these counts. Even candidate ETF slices have at most three strikes
+(one paired strike), below existing SVI's five-strike minimum. q=0, SHIBOR
+interpolation and volume-based filters are permissible documented choices, but
+cannot repair contract evidence or strike support. No empirical fitting, new
+downloads or synthetic retraining was justified. See `q1_final_recovery.md` and
+`q1_final_recovery_evidence.json` for exact counts, external-field gaps, CFFEX
+assessment, minimum viable sample, commands and hard-stop decision.
+
+The session inventory now has two local Q1 sessions; use the updated two-session
+export instructions in `q1_final_recovery.md`, not the older one-session snapshot
+in §5 below. Historical M8 tests/results remain unchanged. Final targeted results
+are separately recorded in `q1_final_verification.json`. Verdicts remain unchanged.
+
 ## Verdict and scope
 
 **SOFTWARE: PARTIAL — EMPIRICAL: BLOCKED — GROUP_SUBMISSION: NOT_READY.**
